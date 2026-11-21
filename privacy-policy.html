@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidad / Privacy Policy - DriverFlow</title>
+    <meta name="description" content="Política de Privacidad oficial de DriverFlow (com.driverflow). Asistente visual y por voz para conductores.">
+    <style>
+        :root {
+            --bg: #0b0914;
+            --surface: #151226;
+            --surface-alt: #1d1836;
+            --border: #2e2654;
+            --primary: #8b5cf6;
+            --primary-light: #a78bfa;
+            --green: #00e676;
+            --yellow: #ffb800;
+            --red: #ff2a55;
+            --text: #f8fafc;
+            --text-muted: #94a3b8;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.65;
+            padding: 24px 16px 64px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        header {
+            background: linear-gradient(135deg, var(--surface) 0%, var(--surface-alt) 100%);
+            border: 1px solid var(--border);
+            border-radius: 18px;
+            padding: 28px 24px;
+            margin-bottom: 24px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+        }
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+        .traffic-icon {
+            width: 28px;
+            height: 62px;
+            background: #090710;
+            border: 1.5px solid var(--green);
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            padding: 5px 0;
+            flex-shrink: 0;
+        }
+        .lens {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+        .lens.green { background: var(--green); box-shadow: 0 0 8px var(--green); }
+        .lens.yellow { background: var(--yellow); opacity: 0.75; }
+        .lens.red { background: var(--red); opacity: 0.75; }
+        .brand-text h1 {
+            font-size: 1.55rem;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            color: var(--text);
+        }
+        .brand-text p {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+        .lang-nav {
+            display: flex;
+            gap: 8px;
+        }
+        .lang-btn {
+            background: var(--surface);
+            color: var(--text);
+            border: 1px solid var(--border);
+            padding: 8px 14px;
+            border-radius: 10px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.15s ease;
+        }
+        .lang-btn:hover, .lang-btn.active {
+            background: var(--primary);
+            border-color: var(--primary-light);
+            color: #fff;
+        }
+        .badges {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 12px;
+            margin-bottom: 24px;
+        }
+        .badge-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 14px 16px;
+        }
+        .badge-card strong {
+            display: block;
+            color: var(--green);
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            margin-bottom: 4px;
+        }
+        .badge-card span {
+            font-size: 0.9rem;
+            color: var(--text);
+        }
+        section.policy-block {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 18px;
+            padding: 28px 24px;
+            margin-bottom: 28px;
+        }
+        .lang-tag {
+            display: inline-block;
+            background: rgba(139, 92, 246, 0.18);
+            color: var(--primary-light);
+            border: 1px solid rgba(139, 92, 246, 0.4);
+            border-radius: 8px;
+            padding: 3px 10px;
+            font-size: 0.78rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+        h2 {
+            font-size: 1.35rem;
+            margin-bottom: 14px;
+            color: #fff;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 10px;
+        }
+        h3 {
+            font-size: 1.05rem;
+            color: var(--primary-light);
+            margin: 20px 0 8px;
+        }
+        p, li {
+            font-size: 0.95rem;
+            color: #e2e8f0;
+            margin-bottom: 10px;
+        }
+        ul {
+            padding-left: 20px;
+            margin-bottom: 14px;
+        }
+        code {
+            background: rgba(255, 255, 255, 0.08);
+            color: var(--green);
+            padding: 2px 6px;
+            border-radius: 5px;
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+            font-size: 0.86rem;
+        }
+        .highlight-box {
+            background: rgba(0, 230, 118, 0.08);
+            border-left: 4px solid var(--green);
+            padding: 14px 16px;
+            border-radius: 8px;
+            margin: 14px 0;
+        }
+        footer {
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            padding-top: 12px;
+        }
+        footer a {
+            color: var(--primary-light);
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <header>
+        <div class="brand">
+            <div class="traffic-icon" aria-hidden="true">
+                <div class="lens green"></div>
+                <div class="lens yellow"></div>
+                <div class="lens red"></div>
+            </div>
+            <div class="brand-text">
+                <h1>DriverFlow</h1>
+                <p>Política de Privacidad y Divulgación de Accesibilidad · Privacy Policy</p>
+            </div>
+        </div>
+        <nav class="lang-nav" aria-label="Selector de idioma">
+            <a href="#es" class="lang-btn active">🇪🇸 Español</a>
+            <a href="#en" class="lang-btn">🇺🇸 English</a>
+        </nav>
+    </header>
+
+    <div class="badges">
+        <div class="badge-card">
+            <strong>100% Pasivo</strong>
+            <span><code>canPerformGestures="false"</code> — Sin toques ni automatización</span>
+        </div>
+        <div class="badge-card">
+            <strong>Cero Red / Sin Internet</strong>
+            <span>No solicita el permiso <code>INTERNET</code>; ningún dato sale del teléfono</span>
+        </div>
+        <div class="badge-card">
+            <strong>Sin GPS ni Micrófono</strong>
+            <span>No solicita permisos de ubicación ni grabación de audio</span>
+        </div>
+        <div class="badge-card">
+            <strong>Memoria Efímera</strong>
+            <span>Cálculo en tiempo real en RAM local sin almacenar datos personales</span>
+        </div>
+    </div>
+
+    <!-- ==================== ESPAÑOL ==================== -->
+    <section id="es" class="policy-block" lang="es">
+        <span class="lang-tag">🇪🇸 Español</span>
+        <h2>Política de Privacidad — DriverFlow (<code>com.driverflow</code>)</h2>
+        <p><strong>Última actualización:</strong> Noviembre de 2026 · <strong>Desarrollador:</strong> Ezequiel Vecchio (<a href="mailto:eivecchio@hotmail.com" style="color: var(--primary-light);">eivecchio@hotmail.com</a>)</p>
+
+        <p><strong>DriverFlow</strong> es un asistente visual y auditivo de seguridad vial diseñado para conductores profesionales. Esta Política de Privacidad describe de forma transparente cómo opera la aplicación y por qué <strong>no recopila, almacena ni comparte datos personales o sensibles del usuario</strong>.</p>
+
+        <h3>1. Divulgación Destacada sobre la API AccessibilityService</h3>
+        <div class="highlight-box">
+            <p><strong>Solo Lectura Efímera y Sin Toques Automáticos:</strong> DriverFlow utiliza la API <code>AccessibilityService</code> de Android (<code>android.permission.BIND_ACCESSIBILITY_SERVICE</code>) con la capacidad de gestos estrictamente deshabilitada por configuración del sistema (<code>android:canPerformGestures="false"</code> y sin captura de pantalla <code>canTakeScreenshot="false"</code>).</p>
+        </div>
+        <ul>
+            <li><strong>Propósito exclusivo:</strong> Cuando el conductor recibe una oferta de viaje en la aplicación de movilidad que él mismo seleccionó, el servicio inspecciona en tiempo real los valores numéricos visibles en la tarjeta de oferta (tarifa ofrecida, distancia y tiempo estimado) únicamente para calcular la rentabilidad instantánea (<code>$/km</code> o <code>$/mi</code>, y <code>$/h</code>), mostrar el semáforo flotante de alto contraste en pantalla y anunciar la métrica mediante voz nativa (<code>TextToSpeech</code>).</li>
+            <li><strong>Cero automatización:</strong> DriverFlow <strong>NO realiza toques automáticos en pantalla</strong>, no invoca jamás <code>dispatchGesture</code>, ni realiza auto-aceptación o auto-rechazo de viajes. El conductor conserva el 100% del control manual en todo momento.</li>
+            <li><strong>Procesamiento 100% efímero en memoria local:</strong> Los textos leídos de la oferta se evalúan instantáneamente en la memoria RAM volátil del dispositivo y se descartan de inmediato. No se guardan historiales de viajes, datos de pasajeros, direcciones ni información de terceros.</li>
+        </ul>
+
+        <h3>2. Cero Recolección y Cero Transmisión de Datos Personales</h3>
+        <p>DriverFlow ha sido diseñado bajo el principio de privacidad por diseño (<em>Privacy by Design</em>):</p>
+        <ul>
+            <li><strong>Sin acceso a Internet:</strong> La aplicación <strong>NO solicita el permiso <code>android.permission.INTERNET</code></strong> en su manifiesto. Es técnicamente imposible que la aplicación transmita información a servidores externos, nubes o terceros.</li>
+            <li><strong>Sin rastreo de ubicación (GPS):</strong> No solicita <code>ACCESS_FINE_LOCATION</code> ni <code>ACCESS_COARSE_LOCATION</code>.</li>
+            <li><strong>Sin acceso al micrófono:</strong> No solicita <code>RECORD_AUDIO</code>. La locución de ofertas utiliza exclusivamente el motor de síntesis de voz del sistema (<code>TextToSpeech</code>).</li>
+            <li><strong>Sin SDKs de rastreo ni publicidad:</strong> No incorpora analíticas de terceros, rastreadores publicitarios ni telemetría remota.</li>
+        </ul>
+
+        <h3>3. Permisos Solicitados y su Justificación Técnica</h3>
+        <ul>
+            <li><code>SYSTEM_ALERT_WINDOW</code> (Mostrar sobre otras aplicaciones): Requerido exclusivamente para mostrar el semáforo flotante de rentabilidad sobre la pantalla cuando ingresa una oferta.</li>
+            <li><code>BIND_ACCESSIBILITY_SERVICE</code> (Servicio de Accesibilidad): Requerido únicamente para leer de forma pasiva el monto, distancia y tiempo de la oferta en pantalla tras aceptar la Divulgación Destacada en la aplicación.</li>
+            <li><code>BLUETOOTH</code> / <code>BLUETOOTH_CONNECT</code> y <code>MODIFY_AUDIO_SETTINGS</code>: Utilizados únicamente para detectar si el conductor tiene conectado un auricular manos libres Bluetooth o audio vehicular y enrutar correctamente los anuncios de voz TTS.</li>
+            <li><code>VIBRATE</code>: Respuesta háptica al ajustar controles dentro de la aplicación.</li>
+        </ul>
+
+        <h3>4. Almacenamiento Local y Control Total del Usuario (Borrado de Datos)</h3>
+        <ul>
+            <li><strong>Preferencias del usuario:</strong> Los umbrales del semáforo (<code>$/km</code>, <code>$/h</code>), el idioma/acento de voz, el tema visual y la lista de aplicaciones habilitadas se guardan únicamente en el almacenamiento local privado del dispositivo (<code>SharedPreferences</code>).</li>
+            <li><strong>Diagnóstico local opcional:</strong> Los registros técnicos de diagnóstico se mantienen únicamente en la carpeta privada de la aplicación en el dispositivo por un máximo de 7 días y solo se comparten si el usuario pulsa manualmente el botón <em>"Exportar diagnóstico"</em>.</li>
+            <li><strong>Eliminación instantánea:</strong> El usuario puede eliminar todos los ajustes locales y registros en cualquier momento tocando el botón <strong>"Restablecer datos locales"</strong> / <strong>"Restablecer ajustes y borrar datos locales"</strong> dentro de la pantalla principal de DriverFlow, o desinstalando la aplicación.</li>
+        </ul>
+
+        <h3>5. Descargo de No Afiliación</h3>
+        <p>DriverFlow es una herramienta independiente de asistencia visual y cálculo de rentabilidad para conductores profesionales y no está afiliada, patrocinada ni respaldada por Cabify, Uber, DiDi ni ninguna otra plataforma de transporte.</p>
+
+        <h3>6. Contacto</h3>
+        <p>Para cualquier consulta sobre esta Política de Privacidad, puede comunicarse con el desarrollador en: <a href="mailto:eivecchio@hotmail.com" style="color: var(--primary-light);">eivecchio@hotmail.com</a>.</p>
+    </section>
+
+    <!-- ==================== ENGLISH ==================== -->
+    <section id="en" class="policy-block" lang="en">
+        <span class="lang-tag">🇺🇸 English</span>
+        <h2>Privacy Policy — DriverFlow (<code>com.driverflow</code>)</h2>
+        <p><strong>Last updated:</strong> November 2026 · <strong>Developer:</strong> Ezequiel Vecchio (<a href="mailto:eivecchio@hotmail.com" style="color: var(--primary-light);">eivecchio@hotmail.com</a>)</p>
+
+        <p><strong>DriverFlow</strong> is a visual and voice road-safety assistant designed for professional rideshare drivers. This Privacy Policy transparently explains how the application works and why it <strong>does not collect, store, or share any personal or sensitive user data</strong>.</p>
+
+        <h3>1. Prominent Disclosure on AccessibilityService API Usage</h3>
+        <div class="highlight-box">
+            <p><strong>Ephemeral Read-Only Operation Without Automation:</strong> DriverFlow uses the Android <code>AccessibilityService</code> API (<code>android.permission.BIND_ACCESSIBILITY_SERVICE</code>) with gesture execution strictly disabled in its system configuration (<code>android:canPerformGestures="false"</code> and <code>canTakeScreenshot="false"</code>).</p>
+        </div>
+        <ul>
+            <li><strong>Sole Purpose:</strong> When an incoming trip offer appears on the driver app selected by the user, the service passively reads the on-screen numerical offer values (fare amount, distance, and estimated time) in real time solely to calculate instant profitability metrics (<code>$/km</code> or <code>$/mi</code>, and <code>$/h</code>), display the high-contrast floating traffic-light indicator, and announce the rating via native Android <code>TextToSpeech</code> to prevent visual and cognitive distraction while driving.</li>
+            <li><strong>Zero Automation:</strong> DriverFlow <strong>DOES NOT perform automated screen touches</strong>, never calls <code>dispatchGesture</code>, and never auto-accepts or auto-rejects rides. The driver retains 100% manual control at all times.</li>
+            <li><strong>100% Ephemeral Local Memory Processing:</strong> On-screen offer text is evaluated instantaneously in volatile device RAM and immediately discarded. No trip history, passenger names, addresses, or personal data are ever stored.</li>
+        </ul>
+
+        <h3>2. Zero Data Collection &amp; Zero External Transmission</h3>
+        <p>DriverFlow is built with strict <em>Privacy by Design</em> guarantees:</p>
+        <ul>
+            <li><strong>No Internet Permission:</strong> The app <strong>DOES NOT request the <code>android.permission.INTERNET</code> permission</strong> in its AndroidManifest. It is technically impossible for the application to transmit any data to external servers, cloud services, or third parties.</li>
+            <li><strong>No Location Tracking (GPS):</strong> Does not request <code>ACCESS_FINE_LOCATION</code> or <code>ACCESS_COARSE_LOCATION</code>.</li>
+            <li><strong>No Microphone Access:</strong> Does not request <code>RECORD_AUDIO</code>. Voice announcements rely exclusively on Android's built-in <code>TextToSpeech</code> engine.</li>
+            <li><strong>No Third-Party Analytics or Ads:</strong> Contains zero advertising SDKs, analytics trackers, or remote telemetry.</li>
+        </ul>
+
+        <h3>3. Permissions Requested and Technical Justification</h3>
+        <ul>
+            <li><code>SYSTEM_ALERT_WINDOW</code> (Display over other apps): Used exclusively to render the compact floating profitability indicator over incoming ride offers.</li>
+            <li><code>BIND_ACCESSIBILITY_SERVICE</code> (Accessibility Service): Used solely for read-only inspection of on-screen ride offer numbers after the user explicitly accepts the in-app Prominent Disclosure dialog.</li>
+            <li><code>BLUETOOTH</code> / <code>BLUETOOTH_CONNECT</code> &amp; <code>MODIFY_AUDIO_SETTINGS</code>: Used solely to detect connected Bluetooth headsets or car audio systems and route <code>TextToSpeech</code> voice announcements appropriately.</li>
+            <li><code>VIBRATE</code>: Used for tactile feedback when adjusting UI steppers.</li>
+        </ul>
+
+        <h3>4. Local Storage &amp; User Data Control (Instant Reset)</h3>
+        <ul>
+            <li><strong>Local Preferences:</strong> User-configured profitability thresholds (<code>$/km</code>, <code>$/h</code>), voice dialect, theme mode, and enabled driver app packages are stored exclusively in local device preferences (<code>SharedPreferences</code>).</li>
+            <li><strong>Optional Local Diagnostics:</strong> Local diagnostic logs are kept solely within the app's private device storage for up to 7 days (automatically pruned) and are only shared if the user manually initiates an export via the <em>"Exportar diagnóstico"</em> action.</li>
+            <li><strong>Instant Data Deletion:</strong> Users can erase all local settings and diagnostic files at any time using the in-app <strong>"Restablecer datos locales"</strong> (Reset local data) button on the main screen, or by uninstalling the app.</li>
+        </ul>
+
+        <h3>5. Non-Affiliation Disclaimer</h3>
+        <p>DriverFlow is an independent road-safety and profitability calculation tool developed for professional drivers and is not affiliated with, endorsed by, or sponsored by Cabify, Uber, DiDi, or any rideshare platform.</p>
+
+        <h3>6. Contact Information</h3>
+        <p>If you have any questions regarding this Privacy Policy, please contact the developer at: <a href="mailto:eivecchio@hotmail.com" style="color: var(--primary-light);">eivecchio@hotmail.com</a>.</p>
+    </section>
+
+    <footer>
+        <p>© 2026 DriverFlow (<code>com.driverflow</code>) · <a href="https://evecchio.github.io/driverflow-legal/privacy-policy.html">https://evecchio.github.io/driverflow-legal/privacy-policy.html</a></p>
+    </footer>
+</div>
+</body>
+</html>
