@@ -312,8 +312,8 @@
             <span><code>canPerformGestures="false"</code> — Sin toques ni automatización</span>
         </div>
         <div class="badge-card">
-            <strong>Cero Red / Sin Internet</strong>
-            <span>No solicita el permiso <code>INTERNET</code>; ningún dato sale del teléfono</span>
+            <strong>Sin Servidores Propios</strong>
+            <span>Procesamiento 100% local; conectividad exclusiva del SDK oficial de Google Play Billing</span>
         </div>
         <div class="badge-card">
             <strong>Sin GPS ni Micrófono</strong>
@@ -346,7 +346,7 @@
         <h3>2. Cero Recolección y Cero Transmisión de Datos Personales</h3>
         <p>DriverFlow ha sido diseñado bajo el principio de privacidad por diseño (<em>Privacy by Design</em>):</p>
         <ul>
-            <li><strong>Sin acceso a Internet:</strong> La aplicación <strong>NO solicita el permiso <code>android.permission.INTERNET</code></strong> en su manifiesto. Es técnicamente imposible que la aplicación transmita información a servidores externos, nubes o terceros.</li>
+            <li><strong>Sin servidores propios ni transmisión de ofertas:</strong> El código de DriverFlow <strong>NO declara <code>android.permission.INTERNET</code></strong> ni realiza conexiones de red propias. Únicamente el SDK oficial de <strong>Google Play Billing</strong> incorpora permisos de red (<code>INTERNET</code> / <code>ACCESS_NETWORK_STATE</code> / <code>com.android.vending.BILLING</code>) de forma exclusiva para validar y procesar compras integradas con Google Play Store. Ningún texto de accesibilidad ni oferta de viaje sale jamás del dispositivo.</li>
             <li><strong>Sin rastreo de ubicación (GPS):</strong> No solicita <code>ACCESS_FINE_LOCATION</code> ni <code>ACCESS_COARSE_LOCATION</code>.</li>
             <li><strong>Sin acceso al micrófono:</strong> No solicita <code>RECORD_AUDIO</code>. La locución de ofertas utiliza exclusivamente el motor de síntesis de voz del sistema (<code>TextToSpeech</code>).</li>
             <li><strong>Sin SDKs de rastreo ni publicidad:</strong> No incorpora analíticas de terceros, rastreadores publicitarios ni telemetría remota.</li>
@@ -401,7 +401,7 @@
         <h3>2. Zero Data Collection &amp; Zero External Transmission</h3>
         <p>DriverFlow is built with strict <em>Privacy by Design</em> guarantees:</p>
         <ul>
-            <li><strong>No Internet Permission:</strong> The app <strong>DOES NOT request the <code>android.permission.INTERNET</code> permission</strong> in its AndroidManifest. It is technically impossible for the application to transmit any data to external servers, cloud services, or third parties.</li>
+            <li><strong>No Own Servers &amp; Zero Offer Transmission:</strong> DriverFlow's application code <strong>DOES NOT declare <code>android.permission.INTERNET</code></strong> and opens zero own network connections. Network permissions (<code>INTERNET</code> / <code>ACCESS_NETWORK_STATE</code> / <code>com.android.vending.BILLING</code>) are merged solely by the official <strong>Google Play Billing SDK</strong> exclusively to validate and process optional one-time in-app purchases with Google Play Store. No accessibility text or ride offer data ever leaves your device.</li>
             <li><strong>No Location Tracking (GPS):</strong> Does not request <code>ACCESS_FINE_LOCATION</code> or <code>ACCESS_COARSE_LOCATION</code>.</li>
             <li><strong>No Microphone Access:</strong> Does not request <code>RECORD_AUDIO</code>. Voice announcements rely exclusively on Android's built-in <code>TextToSpeech</code> engine.</li>
             <li><strong>No Third-Party Analytics or Ads:</strong> Contains zero advertising SDKs, analytics trackers, or remote telemetry.</li>
