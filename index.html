@@ -362,9 +362,9 @@
 
         <h3>4. Almacenamiento Local y Control Total del Usuario (Borrado de Datos)</h3>
         <ul>
-            <li><strong>Preferencias del usuario:</strong> Los umbrales del semáforo (<code>$/km</code>, <code>$/h</code>), el idioma/acento de voz, el tema visual y la lista de aplicaciones habilitadas se guardan únicamente en el almacenamiento local privado del dispositivo (<code>SharedPreferences</code>).</li>
+            <li><strong>Preferencias del usuario:</strong> Los umbrales del semáforo (<code>$/km</code>, <code>$/h</code>), el idioma/acento de voz, el tema visual y la lista de aplicaciones habilitadas se guardan únicamente en el almacenamiento local privado del dispositivo (<code>SharedPreferences</code>), con respaldo automático en la nube deshabilitado explícitamente (<code>android:allowBackup="false"</code>).</li>
             <li><strong>Contadores anónimos del semáforo:</strong> Para mostrar un resumen de uso durante la prueba gratuita, la app mantiene únicamente 3 contadores numéricos locales (total de ofertas evaluadas, óptimas y en rojo), sin guardar montos, direcciones, plataformas, fechas ni historiales de viajes.</li>
-            <li><strong>Diagnóstico local opcional:</strong> Los registros técnicos de diagnóstico se mantienen únicamente en la carpeta privada de la aplicación en el dispositivo por un máximo de 7 días y solo se comparten si el usuario pulsa manualmente el botón <em>"Exportar diagnóstico"</em>.</li>
+            <li><strong>Diagnóstico técnico local opcional:</strong> Los registros técnicos de diagnóstico (estrictamente redactados en producción, sin montos, tarifas, paquetes ni historiales de ofertas) se mantienen únicamente en la carpeta privada de la aplicación en el dispositivo por un máximo de 7 días y solo se comparten si el usuario pulsa manualmente el botón <em>"Exportar diagnóstico"</em>.</li>
             <li><strong>Eliminación instantánea:</strong> El usuario puede eliminar todos los ajustes locales, contadores anónimos y registros en cualquier momento tocando el botón <strong>"Restablecer datos locales"</strong> / <strong>"Restablecer ajustes y borrar datos locales"</strong> dentro de la pantalla principal de DriverFlow, o desinstalando la aplicación.</li>
         </ul>
 
@@ -418,9 +418,9 @@
 
         <h3>4. Local Storage &amp; User Data Control (Instant Reset)</h3>
         <ul>
-            <li><strong>Local Preferences:</strong> User-configured profitability thresholds (<code>$/km</code>, <code>$/h</code>), voice dialect, theme mode, and enabled driver app packages are stored exclusively in local device preferences (<code>SharedPreferences</code>).</li>
+            <li><strong>Local Preferences:</strong> User-configured profitability thresholds (<code>$/km</code>, <code>$/h</code>), voice dialect, theme mode, and enabled driver app packages are stored exclusively in local device preferences (<code>SharedPreferences</code>), with cloud Auto Backup explicitly disabled (<code>android:allowBackup="false"</code>).</li>
             <li><strong>Anonymous Traffic-Light Counters:</strong> To display a usage summary during the free trial, the app stores only 3 local aggregate integer counters (total evaluated offers, optimal offers, and low-paying offers) with zero fares, addresses, app names, timestamps, or trip history.</li>
-            <li><strong>Optional Local Diagnostics:</strong> Local diagnostic logs are kept solely within the app's private device storage for up to 7 days (automatically pruned) and are only shared if the user manually initiates an export via the <em>"Exportar diagnóstico"</em> action.</li>
+            <li><strong>Optional Local Technical Diagnostics:</strong> Local diagnostic logs (redacted in production builds so zero fares, rates, app names, or offer histories are recorded) are kept solely within the app's private device storage for up to 7 days (automatically pruned) and are only shared if the user manually initiates an export via the <em>"Export diagnostics"</em> action.</li>
             <li><strong>Instant Data Deletion:</strong> Users can erase all local settings, anonymous counters, and diagnostic files at any time using the in-app <strong>"Restablecer datos locales"</strong> (Reset local data) button on the main screen, or by uninstalling the app.</li>
         </ul>
 
