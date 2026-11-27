@@ -1,27 +1,115 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Política de Privacidad / Privacy Policy - DriverFlow</title>
-    <meta name="description" content="Política de Privacidad oficial de DriverFlow (com.driverflow). Asistente visual y por voz para conductores.">
+    <meta name="color-scheme" content="light dark">
+    <title>Privacy Policy — DriverFlow (com.driverflow)</title>
+    <meta name="description" content="Official Privacy Policy and AccessibilityService Prominent Disclosure for DriverFlow (com.driverflow). Visual and voice driving safety assistant.">
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
     <style>
         :root {
-            --bg: #0b0914;
-            --surface: #151226;
-            --surface-alt: #1d1836;
-            --border: #2e2654;
-            --primary: #8b5cf6;
-            --primary-light: #a78bfa;
-            --green: #00e676;
-            --yellow: #ffb800;
-            --red: #ff2a55;
-            --text: #f8fafc;
-            --text-muted: #94a3b8;
+            color-scheme: light dark;
+
+            --bg-light: #f4f6fb;
+            --bg-dark: #0b0914;
+            --surface-light: #ffffff;
+            --surface-dark: #151226;
+            --surface-alt-light: #edf1f7;
+            --surface-alt-dark: #1d1836;
+            --border-light: #d8e0ec;
+            --border-dark: #2e2654;
+            --primary-light: #6d28d9;
+            --primary-dark: #8b5cf6;
+            --primary-strong-light: #5b21b6;
+            --primary-strong-dark: #a78bfa;
+            --green-light: #047857;
+            --green-dark: #00e676;
+            --highlight-bg-light: rgba(4, 120, 87, 0.08);
+            --highlight-bg-dark: rgba(0, 230, 118, 0.08);
+            --tag-bg-light: rgba(109, 40, 217, 0.10);
+            --tag-bg-dark: rgba(139, 92, 246, 0.18);
+            --code-bg-light: rgba(15, 23, 42, 0.06);
+            --code-bg-dark: rgba(255, 255, 255, 0.08);
+            --text-light: #111827;
+            --text-dark: #f8fafc;
+            --body-text-light: #1f2937;
+            --body-text-dark: #e2e8f0;
+            --muted-light: #4b5563;
+            --muted-dark: #94a3b8;
+            --btn-active-text: #ffffff;
+            --scrollbar-track-light: #e5e9f2;
+            --scrollbar-track-dark: #151226;
+            --scrollbar-thumb-light: #6b7280;
+            --scrollbar-thumb-dark: #8b5cf6;
+
+            --bg: var(--bg-light);
+            --surface: var(--surface-light);
+            --surface-alt: var(--surface-alt-light);
+            --border: var(--border-light);
+            --primary: var(--primary-light);
+            --primary-accent: var(--primary-strong-light);
+            --green: var(--green-light);
+            --highlight-bg: var(--highlight-bg-light);
+            --tag-bg: var(--tag-bg-light);
+            --code-bg: var(--code-bg-light);
+            --text: var(--text-light);
+            --body-text: var(--body-text-light);
+            --text-muted: var(--muted-light);
+            --scrollbar-track: var(--scrollbar-track-light);
+            --scrollbar-thumb: var(--scrollbar-thumb-light);
+
+            --yellow: #f59e0b;
+            --red: #e11d48;
+            accent-color: var(--primary);
         }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: var(--bg-dark);
+                --surface: var(--surface-dark);
+                --surface-alt: var(--surface-alt-dark);
+                --border: var(--border-dark);
+                --primary: var(--primary-dark);
+                --primary-accent: var(--primary-strong-dark);
+                --green: var(--green-dark);
+                --highlight-bg: var(--highlight-bg-dark);
+                --tag-bg: var(--tag-bg-dark);
+                --code-bg: var(--code-bg-dark);
+                --text: var(--text-dark);
+                --body-text: var(--body-text-dark);
+                --text-muted: var(--muted-dark);
+                --scrollbar-track: var(--scrollbar-track-dark);
+                --scrollbar-thumb: var(--scrollbar-thumb-dark);
+            }
+        }
+
+        @supports (color: light-dark(white, black)) {
+            :root {
+                --bg: light-dark(var(--bg-light), var(--bg-dark));
+                --surface: light-dark(var(--surface-light), var(--surface-dark));
+                --surface-alt: light-dark(var(--surface-alt-light), var(--surface-alt-dark));
+                --border: light-dark(var(--border-light), var(--border-dark));
+                --primary: light-dark(var(--primary-light), var(--primary-dark));
+                --primary-accent: light-dark(var(--primary-strong-light), var(--primary-strong-dark));
+                --green: light-dark(var(--green-light), var(--green-dark));
+                --highlight-bg: light-dark(var(--highlight-bg-light), var(--highlight-bg-dark));
+                --tag-bg: light-dark(var(--tag-bg-light), var(--tag-bg-dark));
+                --code-bg: light-dark(var(--code-bg-light), var(--code-bg-dark));
+                --text: light-dark(var(--text-light), var(--text-dark));
+                --body-text: light-dark(var(--body-text-light), var(--body-text-dark));
+                --text-muted: light-dark(var(--muted-light), var(--muted-dark));
+                --scrollbar-track: light-dark(var(--scrollbar-track-light), var(--scrollbar-track-dark));
+                --scrollbar-thumb: light-dark(var(--scrollbar-thumb-light), var(--scrollbar-thumb-dark));
+            }
+        }
+
+        :root {
+            scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
+        }
+
         * {
             box-sizing: border-box;
             margin: 0;
@@ -36,10 +124,10 @@
             background-color: var(--bg);
             color: var(--text);
             line-height: 1.65;
-            padding: 24px 16px 64px;
+            padding: 20px 16px 56px;
         }
         .container {
-            max-width: 900px;
+            max-width: 960px;
             width: 100%;
             margin: 0 auto;
         }
@@ -47,12 +135,10 @@
             background: linear-gradient(135deg, var(--surface) 0%, var(--surface-alt) 100%);
             border: 1px solid var(--border);
             border-radius: 18px;
-            padding: 28px 24px;
-            margin-bottom: 24px;
+            padding: 22px 20px;
+            margin-bottom: 20px;
             display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: space-between;
+            flex-direction: column;
             gap: 16px;
         }
         .brand {
@@ -63,8 +149,8 @@
         }
         .traffic-icon {
             width: 28px;
-            height: 62px;
-            background: #090710;
+            height: 60px;
+            background: #0f172a;
             border: 1.5px solid var(--green);
             border-radius: 10px;
             display: flex;
@@ -75,18 +161,18 @@
             flex-shrink: 0;
         }
         .lens {
-            width: 12px;
-            height: 12px;
+            width: 11px;
+            height: 11px;
             border-radius: 50%;
         }
-        .lens.green { background: var(--green); box-shadow: 0 0 8px var(--green); }
-        .lens.yellow { background: var(--yellow); opacity: 0.75; }
-        .lens.red { background: var(--red); opacity: 0.75; }
+        .lens.green { background: #00e676; box-shadow: 0 0 8px rgba(0, 230, 118, 0.75); }
+        .lens.yellow { background: var(--yellow); opacity: 0.85; }
+        .lens.red { background: var(--red); opacity: 0.85; }
         .brand-text {
             min-width: 0;
         }
         .brand-text h1 {
-            font-size: 1.55rem;
+            font-size: 1.5rem;
             font-weight: 800;
             letter-spacing: -0.02em;
             color: var(--text);
@@ -99,31 +185,40 @@
         }
         .lang-nav {
             display: flex;
-            gap: 8px;
-            flex-shrink: 0;
+            flex-wrap: wrap;
+            gap: 6px;
+            width: 100%;
         }
         .lang-btn {
+            appearance: none;
+            font: inherit;
             background: var(--surface);
             color: var(--text);
             border: 1px solid var(--border);
-            padding: 8px 14px;
+            padding: 6px 10px;
             border-radius: 10px;
-            font-size: 0.85rem;
+            font-size: 0.8rem;
             font-weight: 600;
-            text-decoration: none;
             cursor: pointer;
-            transition: all 0.15s ease;
+            line-height: 1.25;
+            white-space: nowrap;
+            transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
         }
-        .lang-btn:hover, .lang-btn.active {
+        .lang-btn:hover,
+        .lang-btn:focus-visible,
+        .lang-btn.active {
             background: var(--primary);
-            border-color: var(--primary-light);
-            color: #fff;
+            border-color: var(--primary-accent);
+            color: var(--btn-active-text);
+            outline: none;
         }
+
+        /* IMPORTANT: Never apply border/padding/background/display/visibility directly on .lang-panel ([hidden="until-found"]) */
         .badges {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 12px;
-            margin-bottom: 24px;
+            margin-bottom: 20px;
         }
         .badge-card {
             background: var(--surface);
@@ -136,30 +231,30 @@
         .badge-card strong {
             display: block;
             color: var(--green);
-            font-size: 0.85rem;
+            font-size: 0.82rem;
             text-transform: uppercase;
             letter-spacing: 0.04em;
             margin-bottom: 4px;
         }
         .badge-card span {
-            font-size: 0.9rem;
-            color: var(--text);
+            font-size: 0.88rem;
+            color: var(--body-text);
             overflow-wrap: break-word;
         }
         section.policy-block {
             background: var(--surface);
             border: 1px solid var(--border);
             border-radius: 18px;
-            padding: 28px 24px;
-            margin-bottom: 28px;
+            padding: 26px 22px;
+            margin-bottom: 24px;
             min-width: 0;
             overflow-wrap: break-word;
         }
         .lang-tag {
             display: inline-block;
-            background: rgba(139, 92, 246, 0.18);
-            color: var(--primary-light);
-            border: 1px solid rgba(139, 92, 246, 0.4);
+            background: var(--tag-bg);
+            color: var(--primary-accent);
+            border: 1px solid var(--border);
             border-radius: 8px;
             padding: 3px 10px;
             font-size: 0.78rem;
@@ -168,53 +263,53 @@
             text-transform: uppercase;
         }
         h2 {
-            font-size: 1.35rem;
+            font-size: 1.3rem;
             margin-bottom: 14px;
-            color: #fff;
+            color: var(--text);
             border-bottom: 1px solid var(--border);
             padding-bottom: 10px;
             overflow-wrap: break-word;
         }
         h3 {
-            font-size: 1.05rem;
-            color: var(--primary-light);
-            margin: 20px 0 8px;
+            font-size: 1.04rem;
+            color: var(--primary-accent);
+            margin: 18px 0 8px;
             overflow-wrap: break-word;
         }
         p, li {
-            font-size: 0.95rem;
-            color: #e2e8f0;
+            font-size: 0.94rem;
+            color: var(--body-text);
             margin-bottom: 10px;
             overflow-wrap: break-word;
             word-wrap: break-word;
         }
         ul {
-            padding-left: 20px;
+            padding-inline-start: 20px;
             margin-bottom: 14px;
         }
         code {
-            background: rgba(255, 255, 255, 0.08);
+            background: var(--code-bg);
             color: var(--green);
             padding: 2px 6px;
             border-radius: 5px;
             font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-            font-size: 0.86rem;
+            font-size: 0.84rem;
             overflow-wrap: anywhere;
             word-break: break-word;
             white-space: pre-wrap;
             max-width: 100%;
         }
         .highlight-box {
-            background: rgba(0, 230, 118, 0.08);
-            border-left: 4px solid var(--green);
-            padding: 14px 16px;
+            background: var(--highlight-bg);
+            border-inline-start: 4px solid var(--green);
+            padding: 13px 15px;
             border-radius: 8px;
             margin: 14px 0;
             min-width: 0;
             overflow-wrap: break-word;
         }
         a {
-            color: var(--primary-light);
+            color: var(--primary-accent);
             text-decoration: none;
             overflow-wrap: anywhere;
             word-break: break-word;
@@ -225,63 +320,57 @@
         footer {
             text-align: center;
             color: var(--text-muted);
-            font-size: 0.85rem;
-            padding-top: 12px;
+            font-size: 0.84rem;
+            padding-top: 8px;
             overflow-wrap: break-word;
         }
         footer a {
-            color: var(--primary-light);
+            color: var(--primary-accent);
             text-decoration: none;
             overflow-wrap: anywhere;
             word-break: break-all;
         }
 
-        /* Responsive Media Queries para Smartphones y Pantallas Estrechas */
         @media (max-width: 640px) {
             body {
-                padding: 16px 12px 48px;
+                padding: 14px 12px 44px;
             }
             header {
-                padding: 18px 14px;
-                margin-bottom: 18px;
-                flex-direction: column;
-                align-items: flex-start;
-                gap: 14px;
-            }
-            .lang-nav {
-                width: 100%;
-                justify-content: flex-start;
+                padding: 16px 14px;
+                margin-bottom: 16px;
+                gap: 12px;
             }
             .brand-text h1 {
-                font-size: 1.35rem;
+                font-size: 1.32rem;
             }
             .brand-text p {
                 font-size: 0.82rem;
             }
+            .lang-btn {
+                padding: 6px 9px;
+                font-size: 0.76rem;
+            }
             .badges {
                 grid-template-columns: 1fr;
                 gap: 10px;
-                margin-bottom: 20px;
+                margin-bottom: 16px;
             }
             section.policy-block {
-                padding: 20px 14px;
+                padding: 18px 14px;
                 border-radius: 14px;
-                margin-bottom: 20px;
+                margin-bottom: 18px;
             }
             h2 {
-                font-size: 1.2rem;
+                font-size: 1.15rem;
             }
             h3 {
-                font-size: 1rem;
+                font-size: 0.98rem;
             }
             p, li {
-                font-size: 0.9rem;
+                font-size: 0.89rem;
             }
             .highlight-box {
-                padding: 12px 12px;
-            }
-            ul {
-                padding-left: 18px;
+                padding: 11px 12px;
             }
         }
     </style>
@@ -297,149 +386,1472 @@
             </div>
             <div class="brand-text">
                 <h1>DriverFlow</h1>
-                <p>Política de Privacidad y Divulgación de Accesibilidad · Privacy Policy</p>
+                <p id="header-subtitle">Privacy Policy &amp; Accessibility Disclosure</p>
             </div>
         </div>
-        <nav class="lang-nav" aria-label="Selector de idioma">
-            <a href="#es" class="lang-btn active">🇪🇸 Español</a>
-            <a href="#en" class="lang-btn">🇺🇸 English</a>
+        <nav class="lang-nav" aria-label="Language selector">
+            <button type="button" class="lang-btn active" data-lang="en" aria-controls="lang-en" aria-expanded="true">🇺🇸 English</button>
+            <button type="button" class="lang-btn" data-lang="es" aria-controls="lang-es" aria-expanded="false">🇪🇸 Español</button>
+            <button type="button" class="lang-btn" data-lang="pt" aria-controls="lang-pt" aria-expanded="false">🇧🇷 Português</button>
+            <button type="button" class="lang-btn" data-lang="de" aria-controls="lang-de" aria-expanded="false">🇩🇪 Deutsch</button>
+            <button type="button" class="lang-btn" data-lang="fr" aria-controls="lang-fr" aria-expanded="false">🇫🇷 Français</button>
+            <button type="button" class="lang-btn" data-lang="it" aria-controls="lang-it" aria-expanded="false">🇮🇹 Italiano</button>
+            <button type="button" class="lang-btn" data-lang="nl" aria-controls="lang-nl" aria-expanded="false">🇳🇱 Nederlands</button>
+            <button type="button" class="lang-btn" data-lang="pl" aria-controls="lang-pl" aria-expanded="false">🇵🇱 Polski</button>
+            <button type="button" class="lang-btn" data-lang="ro" aria-controls="lang-ro" aria-expanded="false">🇷🇴 Română</button>
+            <button type="button" class="lang-btn" data-lang="ru" aria-controls="lang-ru" aria-expanded="false">🇷🇺 Русский</button>
+            <button type="button" class="lang-btn" data-lang="tr" aria-controls="lang-tr" aria-expanded="false">🇹🇷 Türkçe</button>
+            <button type="button" class="lang-btn" data-lang="ar" aria-controls="lang-ar" aria-expanded="false">🇸🇦 العربية</button>
+            <button type="button" class="lang-btn" data-lang="hi" aria-controls="lang-hi" aria-expanded="false">🇮🇳 हिन्दी</button>
+            <button type="button" class="lang-btn" data-lang="id" aria-controls="lang-id" aria-expanded="false">🇮🇩 Bahasa Indonesia</button>
+            <button type="button" class="lang-btn" data-lang="th" aria-controls="lang-th" aria-expanded="false">🇹🇭 ไทย</button>
+            <button type="button" class="lang-btn" data-lang="vi" aria-controls="lang-vi" aria-expanded="false">🇻🇳 Tiếng Việt</button>
+            <button type="button" class="lang-btn" data-lang="ja" aria-controls="lang-ja" aria-expanded="false">🇯🇵 日本語</button>
+            <button type="button" class="lang-btn" data-lang="ko" aria-controls="lang-ko" aria-expanded="false">🇰🇷 한국어</button>
         </nav>
     </header>
 
-    <div class="badges">
-        <div class="badge-card">
-            <strong>100% Pasivo</strong>
-            <span><code>canPerformGestures="false"</code> — Sin toques ni automatización</span>
+    <main id="policy-panels">
+    <div id="lang-en" class="lang-panel" lang="en" dir="ltr">
+        <div class="badges">
+                <div class="badge-card">
+                    <strong>100% Passive</strong>
+                    <span><code>canPerformGestures="false"</code> — No touches or automation</span>
+                </div>
+                <div class="badge-card">
+                    <strong>No Own Servers</strong>
+                    <span>100% local processing; network used solely by Google Play Billing SDK</span>
+                </div>
+                <div class="badge-card">
+                    <strong>No GPS or Microphone</strong>
+                    <span>Requests no location permissions and records no audio</span>
+                </div>
+                <div class="badge-card">
+                    <strong>Ephemeral Memory</strong>
+                    <span>Real-time calculation in local RAM without storing personal data</span>
+                </div>
         </div>
-        <div class="badge-card">
-            <strong>Sin Servidores Propios</strong>
-            <span>Procesamiento 100% local; conectividad exclusiva del SDK oficial de Google Play Billing</span>
-        </div>
-        <div class="badge-card">
-            <strong>Sin GPS ni Micrófono</strong>
-            <span>No solicita permisos de ubicación ni grabación de audio</span>
-        </div>
-        <div class="badge-card">
-            <strong>Memoria Efímera</strong>
-            <span>Cálculo en tiempo real en RAM local sin almacenar datos personales</span>
-        </div>
+        <section class="policy-block">
+            <span class="lang-tag">🇺🇸 English</span>
+            <h2>Privacy Policy — DriverFlow (<code>com.driverflow</code>)</h2>
+            <p><strong>Last updated:</strong> November 2026 · <strong>Support Contact:</strong> <a href="mailto:driverflow.support@gmail.com">driverflow.support@gmail.com</a></p>
+            <p><strong>DriverFlow</strong> is a visual and voice road-safety assistant designed for professional rideshare and delivery drivers. This Privacy Policy transparently explains how the application works and why it <strong>does not collect, store, or share any personal or sensitive user data</strong>.</p>
+
+            <h3>1. Prominent Disclosure on AccessibilityService API Usage</h3>
+            <div class="highlight-box">
+                <p><strong>Ephemeral Read-Only Operation Without Automation:</strong> DriverFlow uses the Android <code>AccessibilityService</code> API (<code>android.permission.BIND_ACCESSIBILITY_SERVICE</code>) with gesture execution strictly disabled in its system configuration (<code>android:canPerformGestures="false"</code> and <code>canTakeScreenshot="false"</code>).</p>
+            </div>
+            <ul>
+                <li><strong>Sole Purpose:</strong> When an incoming trip offer appears on the driver app selected by the user, the service passively reads the on-screen numerical offer values (fare amount, distance, and estimated time) in real time solely to calculate instant profitability metrics (<code>$/km</code> or <code>$/mi</code>, and <code>$/h</code>), display the high-contrast floating traffic-light indicator, and announce the rating via native Android <code>TextToSpeech</code> to reduce visual distraction while driving.</li>
+                <li><strong>Zero Automation:</strong> DriverFlow <strong>DOES NOT perform automated screen touches</strong>, never calls <code>dispatchGesture</code>, and never auto-accepts or auto-rejects offers. The driver retains 100% manual control at all times.</li>
+                <li><strong>100% Ephemeral Local Memory Processing:</strong> On-screen offer text is evaluated instantaneously in volatile device RAM and immediately discarded. No trip history, passenger names, addresses, or third-party data are ever stored.</li>
+                <li><strong>Optional Assisted Capture (30-Second Window):</strong> When you manually tap <em>"Add app"</em> to add a custom platform not listed by default, DriverFlow opens a temporary 30-second passive window solely to identify the foreground app package you explicitly confirm. It never uses <code>QUERY_ALL_PACKAGES</code> and never retains rejected app packages.</li>
+            </ul>
+
+            <h3>2. Zero Data Collection &amp; Zero External Transmission</h3>
+            <p>DriverFlow is engineered with strict <em>Privacy by Design</em> guarantees:</p>
+            <ul>
+                <li><strong>No Own Servers &amp; Zero Offer Transmission:</strong> DriverFlow's application code <strong>DOES NOT declare <code>android.permission.INTERNET</code></strong> and opens zero own network connections. Network permissions (<code>INTERNET</code> / <code>ACCESS_NETWORK_STATE</code> / <code>com.android.vending.BILLING</code>) are merged solely by the official <strong>Google Play Billing 9.1.0 SDK</strong> exclusively to validate and process optional one-time in-app purchases with Google Play Store. No accessibility text or ride offer data ever leaves your device.</li>
+                <li><strong>No Location Tracking (GPS):</strong> Does not request <code>ACCESS_FINE_LOCATION</code> or <code>ACCESS_COARSE_LOCATION</code>.</li>
+                <li><strong>No Microphone Access:</strong> Does not request <code>RECORD_AUDIO</code>. Voice announcements rely exclusively on Android's built-in <code>TextToSpeech</code> synthesizer.</li>
+                <li><strong>No Third-Party Analytics or Ads:</strong> Contains zero advertising SDKs, analytics trackers, or remote telemetry.</li>
+            </ul>
+
+            <h3>3. Permissions Requested and Technical Justification</h3>
+            <ul>
+                <li><code>SYSTEM_ALERT_WINDOW</code> (Display over other apps): Used exclusively to render the compact floating profitability indicator over incoming ride or delivery offers.</li>
+                <li><code>BIND_ACCESSIBILITY_SERVICE</code> (Accessibility Service): Used solely for read-only inspection of on-screen offer numbers after the user explicitly accepts the in-app Prominent Disclosure dialog.</li>
+                <li><code>BLUETOOTH</code> / <code>BLUETOOTH_CONNECT</code> &amp; <code>MODIFY_AUDIO_SETTINGS</code>: Used solely to detect connected Bluetooth headsets or vehicle audio systems and route <code>TextToSpeech</code> announcements appropriately.</li>
+                <li><code>VIBRATE</code>: Used for subtle tactile feedback when adjusting UI threshold steppers.</li>
+            </ul>
+
+            <h3>4. Local Storage &amp; User Data Control (Instant Reset)</h3>
+            <ul>
+                <li><strong>Local Preferences:</strong> User-configured traffic-light thresholds (<code>$/km</code>, <code>$/h</code>), voice dialect, theme mode, and enabled driver app packages are stored exclusively in private device preferences (<code>SharedPreferences</code>), with cloud Auto Backup explicitly disabled (<code>android:allowBackup="false"</code>).</li>
+                <li><strong>Anonymous Traffic-Light Counters:</strong> To display a local usage summary during the free trial, the app stores only 3 local aggregate counters (evaluated, optimal, and red offers) with zero fares, addresses, app names, dates, or trip history.</li>
+                <li><strong>Optional Local Technical Diagnostics:</strong> Diagnostic logs (strictly redacted in production builds so zero fares, rates, app names, or offer histories are recorded) are stored only inside the app's private device storage for up to 7 days and are shared only if you manually tap <em>"Export diagnostics (7 days)"</em>.</li>
+                <li><strong>Instant Data Deletion:</strong> You can erase all local settings, anonymous counters, and diagnostic files at any time by tapping <strong>"Reset local data"</strong> on DriverFlow's main screen, or by uninstalling the app.</li>
+            </ul>
+
+            <h3>5. Free Trial &amp; In-App Purchases (Google Play Billing)</h3>
+            <ul>
+                <li><strong>Local Free Trial:</strong> DriverFlow includes a <strong>7-day free trial</strong> starting on first installation, tracked locally on your device with no account creation or payment card required.</li>
+                <li><strong>One-Time Lifetime Pass (Traffic Light &amp; Voice):</strong> After the trial ends, you can unlock permanent access via a single one-time in-app purchase processed exclusively by <strong>Google Play Store</strong> (<code>Google Play Billing</code>). DriverFlow never accesses, processes, or stores cards or billing data; technical purchase tokens are handled strictly by the official Google Play Billing SDK to verify and restore your license across reinstalls or devices.</li>
+            </ul>
+
+            <h3>6. Non-Affiliation Disclaimer</h3>
+            <p>DriverFlow is an independent visual and voice road-safety assistant for professional drivers and couriers, and is not affiliated with, endorsed by, or sponsored by Cabify, Uber, DiDi, DoorDash, Rappi, PedidosYa, or any ride or delivery platform.</p>
+
+            <h3>7. Contact Information</h3>
+            <p>For any questions about this Privacy Policy or technical support, contact: <a href="mailto:driverflow.support@gmail.com">driverflow.support@gmail.com</a>.</p>
+        </section>
     </div>
 
-    <!-- ==================== ESPAÑOL ==================== -->
-    <section id="es" class="policy-block" lang="es">
-        <span class="lang-tag">🇪🇸 Español</span>
-        <h2>Política de Privacidad — DriverFlow (<code>com.driverflow</code>)</h2>
-        <p><strong>Última actualización:</strong> Noviembre de 2026 · <strong>Contacto de Soporte:</strong> <a href="mailto:driverflow.support@gmail.com" style="color: var(--primary-light);">driverflow.support@gmail.com</a></p>
-
-        <p><strong>DriverFlow</strong> es un asistente visual y auditivo de seguridad vial diseñado para conductores profesionales. Esta Política de Privacidad describe de forma transparente cómo opera la aplicación y por qué <strong>no recopila, almacena ni comparte datos personales o sensibles del usuario</strong>.</p>
-
-        <h3>1. Divulgación Destacada sobre la API AccessibilityService</h3>
-        <div class="highlight-box">
-            <p><strong>Solo Lectura Efímera y Sin Toques Automáticos:</strong> DriverFlow utiliza la API <code>AccessibilityService</code> de Android (<code>android.permission.BIND_ACCESSIBILITY_SERVICE</code>) con la capacidad de gestos estrictamente deshabilitada por configuración del sistema (<code>android:canPerformGestures="false"</code> y sin captura de pantalla <code>canTakeScreenshot="false"</code>).</p>
+    <div id="lang-es" class="lang-panel" lang="es" dir="ltr" hidden="until-found">
+        <div class="badges">
+                <div class="badge-card">
+                    <strong>100% Pasivo</strong>
+                    <span><code>canPerformGestures="false"</code> — Sin toques ni automatización</span>
+                </div>
+                <div class="badge-card">
+                    <strong>Sin Servidores Propios</strong>
+                    <span>Procesamiento 100% local; conectividad exclusiva del SDK oficial de Google Play Billing</span>
+                </div>
+                <div class="badge-card">
+                    <strong>Sin GPS ni Micrófono</strong>
+                    <span>No solicita permisos de ubicación ni grabación de audio</span>
+                </div>
+                <div class="badge-card">
+                    <strong>Memoria Efímera</strong>
+                    <span>Cálculo en tiempo real en RAM local sin almacenar datos personales</span>
+                </div>
         </div>
-        <ul>
-            <li><strong>Propósito exclusivo:</strong> Cuando el conductor recibe una oferta de viaje en la aplicación de movilidad que él mismo seleccionó, el servicio inspecciona en tiempo real los valores numéricos visibles en la tarjeta de oferta (tarifa ofrecida, distancia y tiempo estimado) únicamente para calcular la rentabilidad instantánea (<code>$/km</code> o <code>$/mi</code>, y <code>$/h</code>), mostrar el semáforo flotante de alto contraste en pantalla y anunciar la métrica mediante voz nativa (<code>TextToSpeech</code>).</li>
-            <li><strong>Cero automatización:</strong> DriverFlow <strong>NO realiza toques automáticos en pantalla</strong>, no invoca jamás <code>dispatchGesture</code>, ni realiza auto-aceptación o auto-rechazo de viajes. El conductor conserva el 100% del control manual en todo momento.</li>
-            <li><strong>Procesamiento 100% efímero en memoria local:</strong> Los textos leídos de la oferta se evalúan instantáneamente en la memoria RAM volátil del dispositivo y se descartan de inmediato. No se guardan historiales de viajes, datos de pasajeros, direcciones ni información de terceros.</li>
-        </ul>
+        <section class="policy-block">
+            <span class="lang-tag">🇪🇸 Español</span>
+            <h2>Política de Privacidad — DriverFlow (<code>com.driverflow</code>)</h2>
+            <p><strong>Última actualización:</strong> Noviembre de 2026 · <strong>Contacto de Soporte:</strong> <a href="mailto:driverflow.support@gmail.com">driverflow.support@gmail.com</a></p>
+            <p><strong>DriverFlow</strong> es un asistente visual y auditivo de seguridad vial diseñado para conductores profesionales y repartidores. Esta Política de Privacidad describe de forma transparente cómo opera la aplicación y por qué <strong>no recopila, almacena ni comparte datos personales o sensibles del usuario</strong>.</p>
 
-        <h3>2. Cero Recolección y Cero Transmisión de Datos Personales</h3>
-        <p>DriverFlow ha sido diseñado bajo el principio de privacidad por diseño (<em>Privacy by Design</em>):</p>
-        <ul>
-            <li><strong>Sin servidores propios ni transmisión de ofertas:</strong> El código de DriverFlow <strong>NO declara <code>android.permission.INTERNET</code></strong> ni realiza conexiones de red propias. Únicamente el SDK oficial de <strong>Google Play Billing</strong> incorpora permisos de red (<code>INTERNET</code> / <code>ACCESS_NETWORK_STATE</code> / <code>com.android.vending.BILLING</code>) de forma exclusiva para validar y procesar compras integradas con Google Play Store. Ningún texto de accesibilidad ni oferta de viaje sale jamás del dispositivo.</li>
-            <li><strong>Sin rastreo de ubicación (GPS):</strong> No solicita <code>ACCESS_FINE_LOCATION</code> ni <code>ACCESS_COARSE_LOCATION</code>.</li>
-            <li><strong>Sin acceso al micrófono:</strong> No solicita <code>RECORD_AUDIO</code>. La locución de ofertas utiliza exclusivamente el motor de síntesis de voz del sistema (<code>TextToSpeech</code>).</li>
-            <li><strong>Sin SDKs de rastreo ni publicidad:</strong> No incorpora analíticas de terceros, rastreadores publicitarios ni telemetría remota.</li>
-        </ul>
+            <h3>1. Divulgación Destacada sobre la API AccessibilityService</h3>
+            <div class="highlight-box">
+                <p><strong>Solo Lectura Efímera y Sin Toques Automáticos:</strong> DriverFlow utiliza la API <code>AccessibilityService</code> de Android (<code>android.permission.BIND_ACCESSIBILITY_SERVICE</code>) con la capacidad de gestos estrictamente deshabilitada por configuración del sistema (<code>android:canPerformGestures="false"</code> y sin captura de pantalla <code>canTakeScreenshot="false"</code>).</p>
+            </div>
+            <ul>
+                <li><strong>Propósito exclusivo:</strong> Cuando el conductor recibe una oferta de viaje o entrega en la aplicación que él mismo seleccionó, el servicio inspecciona en tiempo real los valores numéricos visibles en pantalla (tarifa ofrecida, distancia y tiempo estimado) únicamente para calcular la rentabilidad instantánea (<code>$/km</code> o <code>$/mi</code>, y <code>$/h</code>), mostrar el semáforo flotante de alto contraste y anunciar la métrica mediante voz nativa (<code>TextToSpeech</code>).</li>
+                <li><strong>Cero automatización:</strong> DriverFlow <strong>NO realiza toques automáticos en pantalla</strong>, no invoca jamás <code>dispatchGesture</code>, ni realiza auto-aceptación o auto-rechazo de viajes. El conductor conserva el 100% del control manual en todo momento.</li>
+                <li><strong>Procesamiento 100% efímero en memoria local:</strong> Los textos leídos de la oferta se evalúan instantáneamente en la memoria RAM volátil del dispositivo y se descartan de inmediato. No se guardan historiales de viajes, datos de pasajeros, direcciones ni información de terceros.</li>
+                <li><strong>Captura Asistida opcional (ventana de 30 segundos):</strong> Cuando el usuario pulsa manualmente <em>"Agregar app"</em> para incorporar una plataforma no listada por defecto, DriverFlow abre temporalmente una ventana pasiva de 30 segundos únicamente para identificar el paquete en primer plano tras confirmación explícita del usuario. No utiliza <code>QUERY_ALL_PACKAGES</code> ni conserva registros de apps descartadas.</li>
+            </ul>
 
-        <h3>3. Permisos Solicitados y su Justificación Técnica</h3>
-        <ul>
-            <li><code>SYSTEM_ALERT_WINDOW</code> (Mostrar sobre otras aplicaciones): Requerido exclusivamente para mostrar el semáforo flotante de rentabilidad sobre la pantalla cuando ingresa una oferta.</li>
-            <li><code>BIND_ACCESSIBILITY_SERVICE</code> (Servicio de Accesibilidad): Requerido únicamente para leer de forma pasiva el monto, distancia y tiempo de la oferta en pantalla tras aceptar la Divulgación Destacada en la aplicación.</li>
-            <li><code>BLUETOOTH</code> / <code>BLUETOOTH_CONNECT</code> y <code>MODIFY_AUDIO_SETTINGS</code>: Utilizados únicamente para detectar si el conductor tiene conectado un auricular manos libres Bluetooth o audio vehicular y enrutar correctamente los anuncios de voz TTS.</li>
-            <li><code>VIBRATE</code>: Respuesta háptica al ajustar controles dentro de la aplicación.</li>
-        </ul>
+            <h3>2. Cero Recolección y Cero Transmisión de Datos Personales</h3>
+            <p>DriverFlow ha sido diseñado bajo el principio estricto de privacidad por diseño (<em>Privacy by Design</em>):</p>
+            <ul>
+                <li><strong>Sin servidores propios ni transmisión de ofertas:</strong> El código de DriverFlow <strong>NO declara <code>android.permission.INTERNET</code></strong> ni realiza conexiones de red propias. Únicamente el SDK oficial de <strong>Google Play Billing 9.1.0</strong> incorpora permisos de red (<code>INTERNET</code> / <code>ACCESS_NETWORK_STATE</code> / <code>com.android.vending.BILLING</code>) de forma exclusiva para validar y procesar compras integradas opcionales con Google Play Store. Ningún texto de accesibilidad ni oferta sale jamás del dispositivo.</li>
+                <li><strong>Sin rastreo de ubicación (GPS):</strong> No solicita <code>ACCESS_FINE_LOCATION</code> ni <code>ACCESS_COARSE_LOCATION</code>.</li>
+                <li><strong>Sin acceso al micrófono:</strong> No solicita <code>RECORD_AUDIO</code>. La locución utiliza exclusivamente el motor de síntesis de voz del sistema (<code>TextToSpeech</code>).</li>
+                <li><strong>Sin SDKs de rastreo ni publicidad:</strong> No incorpora analíticas de terceros, rastreadores publicitarios ni telemetría remota.</li>
+            </ul>
 
-        <h3>4. Almacenamiento Local y Control Total del Usuario (Borrado de Datos)</h3>
-        <ul>
-            <li><strong>Preferencias del usuario:</strong> Los umbrales del semáforo (<code>$/km</code>, <code>$/h</code>), el idioma/acento de voz, el tema visual y la lista de aplicaciones habilitadas se guardan únicamente en el almacenamiento local privado del dispositivo (<code>SharedPreferences</code>), con respaldo automático en la nube deshabilitado explícitamente (<code>android:allowBackup="false"</code>).</li>
-            <li><strong>Contadores anónimos del semáforo:</strong> Para mostrar un resumen de uso durante la prueba gratuita, la app mantiene únicamente 3 contadores numéricos locales (total de ofertas evaluadas, óptimas y en rojo), sin guardar montos, direcciones, plataformas, fechas ni historiales de viajes.</li>
-            <li><strong>Diagnóstico técnico local opcional:</strong> Los registros técnicos de diagnóstico (estrictamente redactados en producción, sin montos, tarifas, paquetes ni historiales de ofertas) se mantienen únicamente en la carpeta privada de la aplicación en el dispositivo por un máximo de 7 días y solo se comparten si el usuario pulsa manualmente el botón <em>"Exportar diagnóstico"</em>.</li>
-            <li><strong>Eliminación instantánea:</strong> El usuario puede eliminar todos los ajustes locales, contadores anónimos y registros en cualquier momento tocando el botón <strong>"Restablecer datos locales"</strong> / <strong>"Restablecer ajustes y borrar datos locales"</strong> dentro de la pantalla principal de DriverFlow, o desinstalando la aplicación.</li>
-        </ul>
+            <h3>3. Permisos Solicitados y su Justificación Técnica</h3>
+            <ul>
+                <li><code>SYSTEM_ALERT_WINDOW</code> (Mostrar sobre otras aplicaciones): Requerido exclusivamente para mostrar el semáforo flotante de rentabilidad sobre pantalla cuando ingresa una oferta.</li>
+                <li><code>BIND_ACCESSIBILITY_SERVICE</code> (Servicio de Accesibilidad): Requerido únicamente para leer de forma pasiva el monto, distancia y tiempo de la oferta en pantalla tras aceptar la Divulgación Destacada en la aplicación.</li>
+                <li><code>BLUETOOTH</code> / <code>BLUETOOTH_CONNECT</code> y <code>MODIFY_AUDIO_SETTINGS</code>: Utilizados únicamente para detectar si el conductor tiene conectado un auricular Bluetooth o audio vehicular y enrutar correctamente los anuncios de voz TTS.</li>
+                <li><code>VIBRATE</code>: Respuesta háptica al ajustar los controles de umbral en la aplicación.</li>
+            </ul>
 
-        <h3>5. Prueba Gratuita y Compras Integradas (Google Play Billing)</h3>
-        <ul>
-            <li><strong>Prueba gratuita local:</strong> DriverFlow ofrece <strong>7 días gratuitos</strong> desde la primera instalación, calculados localmente en el dispositivo sin necesidad de crear una cuenta ni registrar tarjetas.</li>
-            <li><strong>Desbloqueo único (Pase Vitalicio — Semáforo y Voz):</strong> Finalizada la prueba gratuita, el usuario puede desbloquear de por vida el semáforo flotante y las alertas por voz mediante una única compra integrada gestionada exclusivamente por <strong>Google Play Store</strong> (<code>Google Play Billing</code>). DriverFlow nunca solicita, procesa ni almacena datos bancarios, tarjetas ni información de facturación; el comprobante de licencia queda vinculado únicamente a tu cuenta de Google Play para poder restaurarlo si cambiás de teléfono o reinstalás la app.</li>
-        </ul>
+            <h3>4. Almacenamiento Local y Control Total del Usuario (Borrado de Datos)</h3>
+            <ul>
+                <li><strong>Preferencias del usuario:</strong> Los umbrales del semáforo (<code>$/km</code>, <code>$/h</code>), el idioma/acento de voz, el tema visual y la lista de aplicaciones habilitadas se guardan únicamente en el almacenamiento local privado del dispositivo (<code>SharedPreferences</code>), con respaldo automático en la nube deshabilitado (<code>android:allowBackup="false"</code>).</li>
+                <li><strong>Contadores anónimos del semáforo:</strong> Para mostrar un resumen de uso durante la prueba gratuita, la app mantiene únicamente 3 contadores numéricos locales (ofertas evaluadas, óptimas y en rojo), sin guardar montos, direcciones, plataformas, fechas ni historiales.</li>
+                <li><strong>Diagnóstico técnico local opcional:</strong> Los registros técnicos de diagnóstico (estrictamente redactados en producción, sin montos, tarifas, paquetes ni historiales) se conservan únicamente en la carpeta privada del dispositivo hasta 7 días y solo se comparten si pulsás manualmente <em>"Exportar diagnóstico (7 días)"</em>.</li>
+                <li><strong>Eliminación instantánea:</strong> Podés eliminar todos los ajustes locales, contadores anónimos y registros en cualquier momento tocando el botón <strong>"Restablecer datos locales"</strong> en la pantalla principal de DriverFlow, o desinstalando la aplicación.</li>
+            </ul>
 
-        <h3>6. Descargo de No Afiliación</h3>
-        <p>DriverFlow es una herramienta independiente de asistencia visual y cálculo de rentabilidad para conductores profesionales y repartidores, y no está afiliada, patrocinada ni respaldada por Cabify, Uber, DiDi, PedidosYa, Rappi, DoorDash ni ninguna otra plataforma de movilidad o reparto.</p>
+            <h3>5. Prueba Gratuita y Compras Integradas (Google Play Billing)</h3>
+            <ul>
+                <li><strong>Prueba gratuita local:</strong> DriverFlow ofrece <strong>7 días gratuitos</strong> desde la primera instalación, calculados localmente en el dispositivo sin necesidad de crear cuenta ni registrar tarjetas.</li>
+                <li><strong>Desbloqueo único (Pase Vitalicio — Semáforo y Voz):</strong> Finalizada la prueba gratuita, el usuario puede desbloquear de por vida el semáforo flotante y las alertas por voz mediante una única compra integrada gestionada exclusivamente por <strong>Google Play Store</strong> (<code>Google Play Billing</code>). DriverFlow nunca solicita, procesa ni almacena datos bancarios ni facturación; la validación y restauración de licencia se realiza exclusivamente mediante el SDK oficial de Google Play Billing.</li>
+            </ul>
 
-        <h3>7. Contacto</h3>
-        <p>Para cualquier consulta sobre esta Política de Privacidad o soporte técnico, puede comunicarse al correo oficial: <a href="mailto:driverflow.support@gmail.com" style="color: var(--primary-light);">driverflow.support@gmail.com</a>.</p>
-    </section>
+            <h3>6. Descargo de No Afiliación</h3>
+            <p>DriverFlow es una herramienta independiente de asistencia visual y cálculo de rentabilidad para conductores profesionales y repartidores, y no está afiliada, patrocinada ni respaldada por Cabify, Uber, DiDi, PedidosYa, Rappi, DoorDash ni ninguna otra plataforma de movilidad o reparto.</p>
 
-    <!-- ==================== ENGLISH ==================== -->
-    <section id="en" class="policy-block" lang="en">
-        <span class="lang-tag">🇺🇸 English</span>
-        <h2>Privacy Policy — DriverFlow (<code>com.driverflow</code>)</h2>
-        <p><strong>Last updated:</strong> November 2026 · <strong>Support Contact:</strong> <a href="mailto:driverflow.support@gmail.com" style="color: var(--primary-light);">driverflow.support@gmail.com</a></p>
+            <h3>7. Contacto</h3>
+            <p>Para cualquier consulta sobre esta Política de Privacidad o soporte técnico, comunicate al correo oficial: <a href="mailto:driverflow.support@gmail.com">driverflow.support@gmail.com</a>.</p>
+        </section>
+    </div>
 
-        <p><strong>DriverFlow</strong> is a visual and voice road-safety assistant designed for professional rideshare drivers. This Privacy Policy transparently explains how the application works and why it <strong>does not collect, store, or share any personal or sensitive user data</strong>.</p>
-
-        <h3>1. Prominent Disclosure on AccessibilityService API Usage</h3>
-        <div class="highlight-box">
-            <p><strong>Ephemeral Read-Only Operation Without Automation:</strong> DriverFlow uses the Android <code>AccessibilityService</code> API (<code>android.permission.BIND_ACCESSIBILITY_SERVICE</code>) with gesture execution strictly disabled in its system configuration (<code>android:canPerformGestures="false"</code> and <code>canTakeScreenshot="false"</code>).</p>
+    <div id="lang-pt" class="lang-panel" lang="pt" dir="ltr" hidden="until-found">
+        <div class="badges">
+                <div class="badge-card">
+                    <strong>100% Passivo</strong>
+                    <span><code>canPerformGestures="false"</code> — Sem toques nem automação</span>
+                </div>
+                <div class="badge-card">
+                    <strong>Sem Servidores Próprios</strong>
+                    <span>Processamento 100% local; rede usada apenas pelo SDK Google Play Billing</span>
+                </div>
+                <div class="badge-card">
+                    <strong>Sem GPS ou Microfone</strong>
+                    <span>Não solicita permissões de localização nem grava áudio</span>
+                </div>
+                <div class="badge-card">
+                    <strong>Memória Efêmera</strong>
+                    <span>Cálculo em tempo real na RAM local sem guardar dados pessoais</span>
+                </div>
         </div>
-        <ul>
-            <li><strong>Sole Purpose:</strong> When an incoming trip offer appears on the driver app selected by the user, the service passively reads the on-screen numerical offer values (fare amount, distance, and estimated time) in real time solely to calculate instant profitability metrics (<code>$/km</code> or <code>$/mi</code>, and <code>$/h</code>), display the high-contrast floating traffic-light indicator, and announce the rating via native Android <code>TextToSpeech</code> to prevent visual and cognitive distraction while driving.</li>
-            <li><strong>Zero Automation:</strong> DriverFlow <strong>DOES NOT perform automated screen touches</strong>, never calls <code>dispatchGesture</code>, and never auto-accepts or auto-rejects rides. The driver retains 100% manual control at all times.</li>
-            <li><strong>100% Ephemeral Local Memory Processing:</strong> On-screen offer text is evaluated instantaneously in volatile device RAM and immediately discarded. No trip history, passenger names, addresses, or personal data are ever stored.</li>
-        </ul>
+        <section class="policy-block">
+            <span class="lang-tag">🇧🇷 Português</span>
+            <h2>Política de Privacidade — DriverFlow (<code>com.driverflow</code>)</h2>
+            <p><strong>Última atualização:</strong> Novembro de 2026 · <strong>Contato de Suporte:</strong> <a href="mailto:driverflow.support@gmail.com">driverflow.support@gmail.com</a></p>
+            <p><strong>DriverFlow</strong> é um assistente visual e por voz de segurança viária desenvolvido para motoristas e entregadores profissionais. Esta Política de Privacidade explica de forma transparente como o aplicativo funciona e por que <strong>não coleta, armazena nem compartilha dados pessoais ou sensíveis do usuário</strong>.</p>
 
-        <h3>2. Zero Data Collection &amp; Zero External Transmission</h3>
-        <p>DriverFlow is built with strict <em>Privacy by Design</em> guarantees:</p>
-        <ul>
-            <li><strong>No Own Servers &amp; Zero Offer Transmission:</strong> DriverFlow's application code <strong>DOES NOT declare <code>android.permission.INTERNET</code></strong> and opens zero own network connections. Network permissions (<code>INTERNET</code> / <code>ACCESS_NETWORK_STATE</code> / <code>com.android.vending.BILLING</code>) are merged solely by the official <strong>Google Play Billing SDK</strong> exclusively to validate and process optional one-time in-app purchases with Google Play Store. No accessibility text or ride offer data ever leaves your device.</li>
-            <li><strong>No Location Tracking (GPS):</strong> Does not request <code>ACCESS_FINE_LOCATION</code> or <code>ACCESS_COARSE_LOCATION</code>.</li>
-            <li><strong>No Microphone Access:</strong> Does not request <code>RECORD_AUDIO</code>. Voice announcements rely exclusively on Android's built-in <code>TextToSpeech</code> engine.</li>
-            <li><strong>No Third-Party Analytics or Ads:</strong> Contains zero advertising SDKs, analytics trackers, or remote telemetry.</li>
-        </ul>
+            <h3>1. Divulgação em Destaque sobre a API AccessibilityService</h3>
+            <div class="highlight-box">
+                <p><strong>Somente Leitura Efêmera e Sem Toques Automáticos:</strong> O DriverFlow utiliza a API <code>AccessibilityService</code> do Android (<code>android.permission.BIND_ACCESSIBILITY_SERVICE</code>) com gestos estritamente desativados na configuração do sistema (<code>android:canPerformGestures="false"</code> e <code>canTakeScreenshot="false"</code>).</p>
+            </div>
+            <ul>
+                <li><strong>Finalidade exclusiva:</strong> Quando uma oferta aparece no aplicativo selecionado pelo usuário, o serviço lê passivamente em tempo real apenas os valores numéricos visíveis na tela (valor, distância e tempo estimado) para calcular a rentabilidade (<code>$/km</code> ou <code>$/mi</code> e <code>$/h</code>), exibir o semáforo flutuante e anunciar o resultado via <code>TextToSpeech</code>.</li>
+                <li><strong>Zero automação:</strong> O DriverFlow <strong>NÃO realiza toques automáticos na tela</strong>, nunca chama <code>dispatchGesture</code> e nunca aceita nem recusa corridas automaticamente. O motorista mantém 100% de controle manual.</li>
+                <li><strong>Processamento 100% efêmero na memória local:</strong> Os dados da oferta são avaliados instantaneamente na RAM volátil e descartados em seguida. Nenhum histórico, nome de passageiro ou endereço é armazenado.</li>
+                <li><strong>Captura Assistida opcional (janela de 30 segundos):</strong> Ao tocar manualmente em <em>"Adicionar app"</em>, o DriverFlow abre uma janela passiva temporária de 30 segundos apenas para identificar o pacote em primeiro plano confirmado pelo usuário, sem usar <code>QUERY_ALL_PACKAGES</code>.</li>
+            </ul>
 
-        <h3>3. Permissions Requested and Technical Justification</h3>
-        <ul>
-            <li><code>SYSTEM_ALERT_WINDOW</code> (Display over other apps): Used exclusively to render the compact floating profitability indicator over incoming ride offers.</li>
-            <li><code>BIND_ACCESSIBILITY_SERVICE</code> (Accessibility Service): Used solely for read-only inspection of on-screen ride offer numbers after the user explicitly accepts the in-app Prominent Disclosure dialog.</li>
-            <li><code>BLUETOOTH</code> / <code>BLUETOOTH_CONNECT</code> &amp; <code>MODIFY_AUDIO_SETTINGS</code>: Used solely to detect connected Bluetooth headsets or car audio systems and route <code>TextToSpeech</code> voice announcements appropriately.</li>
-            <li><code>VIBRATE</code>: Used for tactile feedback when adjusting UI steppers.</li>
-        </ul>
+            <h3>2. Zero Coleta e Zero Transmissão Externa de Dados</h3>
+            <p>O DriverFlow foi construído com garantias estritas de <em>Privacy by Design</em>:</p>
+            <ul>
+                <li><strong>Sem servidores próprios e zero envio de ofertas:</strong> O código do aplicativo <strong>NÃO declara <code>android.permission.INTERNET</code></strong>. Apenas o SDK oficial <strong>Google Play Billing 9.1.0</strong> inclui permissões de rede (<code>INTERNET</code> / <code>ACCESS_NETWORK_STATE</code> / <code>com.android.vending.BILLING</code>) exclusivamente para validar compras únicas opcionais na Google Play Store.</li>
+                <li><strong>Sem rastreamento por GPS:</strong> Não solicita <code>ACCESS_FINE_LOCATION</code> nem <code>ACCESS_COARSE_LOCATION</code>.</li>
+                <li><strong>Sem acesso ao microfone:</strong> Não solicita <code>RECORD_AUDIO</code>. Os avisos utilizam apenas o mecanismo nativo <code>TextToSpeech</code>.</li>
+                <li><strong>Sem anúncios nem rastreadores:</strong> Zero SDKs de publicidade, analytics de terceiros ou telemetria remota.</li>
+            </ul>
 
-        <h3>4. Local Storage &amp; User Data Control (Instant Reset)</h3>
-        <ul>
-            <li><strong>Local Preferences:</strong> User-configured profitability thresholds (<code>$/km</code>, <code>$/h</code>), voice dialect, theme mode, and enabled driver app packages are stored exclusively in local device preferences (<code>SharedPreferences</code>), with cloud Auto Backup explicitly disabled (<code>android:allowBackup="false"</code>).</li>
-            <li><strong>Anonymous Traffic-Light Counters:</strong> To display a usage summary during the free trial, the app stores only 3 local aggregate integer counters (total evaluated offers, optimal offers, and low-paying offers) with zero fares, addresses, app names, timestamps, or trip history.</li>
-            <li><strong>Optional Local Technical Diagnostics:</strong> Local diagnostic logs (redacted in production builds so zero fares, rates, app names, or offer histories are recorded) are kept solely within the app's private device storage for up to 7 days (automatically pruned) and are only shared if the user manually initiates an export via the <em>"Export diagnostics"</em> action.</li>
-            <li><strong>Instant Data Deletion:</strong> Users can erase all local settings, anonymous counters, and diagnostic files at any time using the in-app <strong>"Restablecer datos locales"</strong> (Reset local data) button on the main screen, or by uninstalling the app.</li>
-        </ul>
+            <h3>3. Permissões Solicitadas e Justificativa Técnica</h3>
+            <ul>
+                <li><code>SYSTEM_ALERT_WINDOW</code> (Sobrepor a outros apps): Usada exclusivamente para exibir o semáforo flutuante compacto sobre ofertas recebidas.</li>
+                <li><code>BIND_ACCESSIBILITY_SERVICE</code> (Serviço de Acessibilidade): Usada apenas para leitura passiva dos números da oferta após aceitação explícita da Divulgação em Destaque.</li>
+                <li><code>BLUETOOTH</code> / <code>BLUETOOTH_CONNECT</code> e <code>MODIFY_AUDIO_SETTINGS</code>: Usadas exclusivamente para detectar fones Bluetooth ou áudio veicular e direcionar a voz TTS.</li>
+                <li><code>VIBRATE</code>: Retorno tátil discreto ao ajustar limites na interface.</li>
+            </ul>
 
-        <h3>5. Free Trial &amp; In-App Purchases (Google Play Billing)</h3>
-        <ul>
-            <li><strong>Local Free Trial:</strong> DriverFlow includes a <strong>7-day free trial</strong> starting on first installation, tracked locally on your device with no account creation or credit card required.</li>
-            <li><strong>One-Time Lifetime Unlock (Traffic Light &amp; Voice):</strong> After the trial ends, users may unlock permanent access to the floating traffic light and voice alerts via a single one-time in-app purchase processed exclusively by <strong>Google Play Store</strong> (<code>Google Play Billing</code>). DriverFlow never accesses, processes, or stores payment cards or billing details; purchase entitlement is verified directly with Google Play on your device so you can restore access on reinstall or a new phone.</li>
-        </ul>
+            <h3>4. Armazenamento Local e Controle Total do Usuário</h3>
+            <ul>
+                <li><strong>Preferências locais:</strong> Limites do semáforo, idioma/voz, tema visual e apps ativados ficam apenas em <code>SharedPreferences</code> privadas do aparelho, com backup automático em nuvem desativado (<code>android:allowBackup="false"</code>).</li>
+                <li><strong>Contadores anônimos:</strong> Para exibir o resumo no teste gratuito, o app guarda apenas 3 contadores locais (ofertas avaliadas, ótimas e vermelhas), sem valores, endereços, apps ou histórico.</li>
+                <li><strong>Diagnóstico técnico local opcional:</strong> Logs técnicos (redigidos em produção, sem valores, taxas ou nomes de apps) permanecem privados no aparelho por até 7 dias e só são compartilhados se o usuário acionar manualmente <em>"Exportar diagnóstico"</em>.</li>
+                <li><strong>Exclusão instantânea:</strong> Todos os dados locais podem ser apagados a qualquer momento tocando em <strong>"Redefinir dados locais"</strong> na tela principal ou desinstalando o aplicativo.</li>
+            </ul>
 
-        <h3>6. Non-Affiliation Disclaimer</h3>
-        <p>DriverFlow is an independent road-safety and profitability calculation tool developed for professional rideshare and delivery drivers and is not affiliated with, endorsed by, or sponsored by Cabify, Uber, DiDi, DoorDash, Rappi, PedidosYa, or any rideshare or delivery platform.</p>
+            <h3>5. Teste Gratuito e Compra Única (Google Play Billing)</h3>
+            <ul>
+                <li><strong>Teste gratuito local:</strong> O DriverFlow inclui <strong>7 dias grátis</strong> desde a primeira instalação, controlados localmente sem criação de conta nem cartão.</li>
+                <li><strong>Passe Vitalício único:</strong> Após o teste, o desbloqueio permanente ocorre via compra única processada exclusivamente pela <strong>Google Play Store</strong> (<code>Google Play Billing</code>), sem acesso a dados bancários pelo DriverFlow.</li>
+            </ul>
 
-        <h3>7. Contact Information</h3>
-        <p>If you have any questions regarding this Privacy Policy or technical support, please contact: <a href="mailto:driverflow.support@gmail.com" style="color: var(--primary-light);">driverflow.support@gmail.com</a>.</p>
-    </section>
+            <h3>6. Aviso de Não Afiliação</h3>
+            <p>O DriverFlow é uma ferramenta independente e não é afiliado, patrocinado nem endossado por Uber, Cabify, DiDi, 99, iFood, Rappi, PedidosYa, DoorDash ou qualquer outra plataforma.</p>
+
+            <h3>7. Contato</h3>
+            <p>Dúvidas sobre esta Política de Privacidade ou suporte: <a href="mailto:driverflow.support@gmail.com">driverflow.support@gmail.com</a>.</p>
+        </section>
+    </div>
+
+    <div id="lang-de" class="lang-panel" lang="de" dir="ltr" hidden="until-found">
+        <div class="badges">
+                <div class="badge-card">
+                    <strong>100 % Passiv</strong>
+                    <span><code>canPerformGestures="false"</code> — Keine Touch-Aktionen oder Automatisierung</span>
+                </div>
+                <div class="badge-card">
+                    <strong>Keine Eigenen Server</strong>
+                    <span>100 % lokale Verarbeitung; Netzwerk nur über Google Play Billing SDK</span>
+                </div>
+                <div class="badge-card">
+                    <strong>Kein GPS oder Mikrofon</strong>
+                    <span>Keine Standortberechtigung und keine Audioaufnahme</span>
+                </div>
+                <div class="badge-card">
+                    <strong>Flüchtiger Speicher</strong>
+                    <span>Echtzeit-Berechnung im lokalen RAM ohne Datenspeicherung</span>
+                </div>
+        </div>
+        <section class="policy-block">
+            <span class="lang-tag">🇩🇪 Deutsch</span>
+            <h2>Datenschutzerklärung — DriverFlow (<code>com.driverflow</code>)</h2>
+            <p><strong>Stand:</strong> November 2026 · <strong>Support-Kontakt:</strong> <a href="mailto:driverflow.support@gmail.com">driverflow.support@gmail.com</a></p>
+            <p><strong>DriverFlow</strong> ist ein visueller und sprachgestützter Sicherheitsassistent für Berufskraftfahrer und Lieferkuriere. Diese Datenschutzerklärung erläutert transparent die Funktionsweise und warum <strong>keine personenbezogenen oder sensiblen Nutzerdaten erhoben, gespeichert oder weitergegeben werden</strong>.</p>
+
+            <h3>1. Deutlicher Hinweis zur Android AccessibilityService API</h3>
+            <div class="highlight-box">
+                <p><strong>Flüchtiger Lesezugriff ohne Automatisierung:</strong> DriverFlow nutzt die Android-API <code>AccessibilityService</code> (<code>android.permission.BIND_ACCESSIBILITY_SERVICE</code>) mit strikt deaktivierter Gestensteuerung (<code>android:canPerformGestures="false"</code>, <code>canTakeScreenshot="false"</code>).</p>
+            </div>
+            <ul>
+                <li><strong>Ausschließlicher Zweck:</strong> Bei eingehenden Fahrt- oder Lieferangeboten in einer vom Nutzer gewählten App liest der Dienst nur sichtbare Zahlenwerte (Fahrpreis, Distanz, geschätzte Dauer) passiv aus, berechnet Rentabilitätswerte (<code>$/km</code> bzw. <code>$/mi</code> und <code>$/h</code>), zeigt die schwebende Ampel an und liest das Ergebnis per <code>TextToSpeech</code> vor.</li>
+                <li><strong>Null Automatisierung:</strong> DriverFlow führt <strong>KEINE automatischen Bildschirm-Taps</strong> aus, ruft niemals <code>dispatchGesture</code> auf und nimmt keine Aufträge automatisch an oder lehnt sie ab.</li>
+                <li><strong>100 % flüchtige Verarbeitung im lokalen RAM:</strong> Angebotstexte werden sofort im flüchtigen Arbeitsspeicher ausgewertet und direkt verworfen. Es werden keine Fahrtenhistorien, Adressen oder Fahrgastdaten gespeichert.</li>
+                <li><strong>Optionale Assistierte Erfassung (30-Sekunden-Fenster):</strong> Beim manuellen Antippen von <em>„App hinzufügen“</em> öffnet DriverFlow ein passives 30-Sekunden-Fenster, um nach Bestätigung nur den Paketnamen der geöffneten App zu erkennen — ohne <code>QUERY_ALL_PACKAGES</code>.</li>
+            </ul>
+
+            <h3>2. Keine Datenerhebung &amp; keine externe Übertragung</h3>
+            <p>DriverFlow folgt konsequent dem Prinzip <em>Privacy by Design</em>:</p>
+            <ul>
+                <li><strong>Keine eigenen Server:</strong> Der App-Code deklariert <strong>kein <code>android.permission.INTERNET</code></strong>. Netzwerk-Berechtigungen (<code>INTERNET</code> / <code>ACCESS_NETWORK_STATE</code> / <code>com.android.vending.BILLING</code>) stammen ausschließlich vom offiziellen <strong>Google Play Billing 9.1.0 SDK</strong> für optionale Einmalkäufe über Google Play.</li>
+                <li><strong>Kein GPS-Tracking:</strong> Fordert weder <code>ACCESS_FINE_LOCATION</code> noch <code>ACCESS_COARSE_LOCATION</code> an.</li>
+                <li><strong>Kein Mikrofonzugriff:</strong> Fordert kein <code>RECORD_AUDIO</code> an; Sprachausgabe erfolgt rein über Android <code>TextToSpeech</code>.</li>
+                <li><strong>Keine Werbung oder Tracker:</strong> Keine Drittanbieter-Analyse-SDKs oder Remote-Telemetrie.</li>
+            </ul>
+
+            <h3>3. Angeforderte Berechtigungen &amp; Begründung</h3>
+            <ul>
+                <li><code>SYSTEM_ALERT_WINDOW</code> (Über anderen Apps einblenden): Nur zur Anzeige der kompakten schwebenden Ampel über Angeboten.</li>
+                <li><code>BIND_ACCESSIBILITY_SERVICE</code>: Nur zum passiven Auslesen der Angebotszahlen nach ausdrücklicher Zustimmung im Hinweisdialog.</li>
+                <li><code>BLUETOOTH</code> / <code>BLUETOOTH_CONNECT</code> &amp; <code>MODIFY_AUDIO_SETTINGS</code>: Nur zur Erkennung von Bluetooth-Headsets/Kfz-Audio für die TTS-Ausgabe.</li>
+                <li><code>VIBRATE</code>: Haptisches Feedback beim Einstellen der Schwellenwerte.</li>
+            </ul>
+
+            <h3>4. Lokale Speicherung &amp; volle Nutzerkontrolle</h3>
+            <ul>
+                <li><strong>Lokale Einstellungen:</strong> Ampelgrenzwerte, Sprache, Design und ausgewählte Apps werden nur privat lokal (<code>SharedPreferences</code>) ohne Cloud-Backup (<code>android:allowBackup="false"</code>) gespeichert.</li>
+                <li><strong>Anonyme Zähler:</strong> Für die Testphase speichert die App lediglich 3 lokale Summenzähler (geprüft, optimal, niedrig) ohne Beträge, Orte oder Historien.</li>
+                <li><strong>Optionale lokale Diagnose:</strong> Produktions-Logs sind strikt geschwärzt (keine Beträge oder App-Namen), werden lokal maximal 7 Tage aufbewahrt und nur auf manuellen Export geteilt.</li>
+                <li><strong>Sofortige Löschung:</strong> Alle lokalen Daten können jederzeit über <strong>„Lokale Daten zurücksetzen“</strong> auf dem Hauptbildschirm oder per Deinstallation gelöscht werden.</li>
+            </ul>
+
+            <h3>5. Kostenlose Testphase &amp; Einmalkauf (Google Play Billing)</h3>
+            <ul>
+                <li><strong>7 Tage kostenlos testen:</strong> Lokal ab Erstinstallation gezählt, ohne Konto oder Kreditkarte.</li>
+                <li><strong>Einmaliger Lifetime-Pass:</strong> Dauerhafte Freischaltung erfolgt ausschließlich als Einmalkauf über den <strong>Google Play Store</strong> (<code>Google Play Billing</code>) ohne Zugriff von DriverFlow auf Zahlungsdaten.</li>
+            </ul>
+
+            <h3>6. Hinweis zur Unabhängigkeit</h3>
+            <p>DriverFlow ist ein unabhängiges Werkzeug und steht in keiner Verbindung zu Uber, Cabify, DiDi, Lieferando, DoorDash, Bolt, FreeNow oder anderen Plattformen.</p>
+
+            <h3>7. Kontakt</h3>
+            <p>Bei Fragen oder Support-Anfragen: <a href="mailto:driverflow.support@gmail.com">driverflow.support@gmail.com</a>.</p>
+        </section>
+    </div>
+
+    <div id="lang-fr" class="lang-panel" lang="fr" dir="ltr" hidden="until-found">
+        <div class="badges">
+                <div class="badge-card">
+                    <strong>100 % Passif</strong>
+                    <span><code>canPerformGestures="false"</code> — Aucun appui ni automatisation</span>
+                </div>
+                <div class="badge-card">
+                    <strong>Aucun Serveur Propre</strong>
+                    <span>Traitement 100 % local ; réseau réservé au SDK Google Play Billing</span>
+                </div>
+                <div class="badge-card">
+                    <strong>Sans GPS ni Micro</strong>
+                    <span>Aucune demande de localisation ni d'enregistrement audio</span>
+                </div>
+                <div class="badge-card">
+                    <strong>Mémoire Éphémère</strong>
+                    <span>Calcul en temps réel en RAM locale sans conservation de données</span>
+                </div>
+        </div>
+        <section class="policy-block">
+            <span class="lang-tag">🇫🇷 Français</span>
+            <h2>Politique de confidentialité — DriverFlow (<code>com.driverflow</code>)</h2>
+            <p><strong>Dernière mise à jour :</strong> Novembre 2026 · <strong>Contact :</strong> <a href="mailto:driverflow.support@gmail.com">driverflow.support@gmail.com</a></p>
+            <p><strong>DriverFlow</strong> est un assistant visuel et vocal de sécurité routière conçu pour les chauffeurs et livreurs professionnels. Cette politique explique en toute transparence pourquoi l'application <strong>ne collecte, ne stocke ni ne partage aucune donnée personnelle ou sensible</strong>.</p>
+
+            <h3>1. Divulgation importante concernant l'API AccessibilityService</h3>
+            <div class="highlight-box">
+                <p><strong>Lecture éphémère uniquement et zéro automatisation :</strong> DriverFlow utilise l'API Android <code>AccessibilityService</code> (<code>android.permission.BIND_ACCESSIBILITY_SERVICE</code>) avec les gestes strictement désactivés dans la configuration système (<code>android:canPerformGestures="false"</code> et <code>canTakeScreenshot="false"</code>).</p>
+            </div>
+            <ul>
+                <li><strong>Finalité unique :</strong> Lorsqu'une offre apparaît dans l'application choisie par le conducteur, le service lit passivement les valeurs numériques affichées (montant, distance et durée estimée) afin de calculer la rentabilité (<code>$/km</code> ou <code>$/mi</code> et <code>$/h</code>), d'afficher le feu flottant et d'annoncer l'évaluation via <code>TextToSpeech</code>.</li>
+                <li><strong>Zéro automatisation :</strong> DriverFlow <strong>n'effectue AUCUN appui automatique sur l'écran</strong>, n'appelle jamais <code>dispatchGesture</code> et n'accepte ni ne refuse jamais les courses automatiquement.</li>
+                <li><strong>Traitement 100 % éphémère en RAM locale :</strong> Le texte lu est évalué instantanément en mémoire volatile puis immédiatement oublié. Aucun historique, adresse ou nom de passager n'est conservé.</li>
+                <li><strong>Capture assistée facultative (fenêtre de 30 s) :</strong> En appuyant manuellement sur <em>« Ajouter une app »</em>, DriverFlow ouvre une fenêtre passive de 30 secondes pour identifier le paquet confirmé par l'utilisateur, sans utiliser <code>QUERY_ALL_PACKAGES</code>.</li>
+            </ul>
+
+            <h3>2. Aucune collecte ni transmission externe</h3>
+            <p>DriverFlow applique le principe de protection dès la conception (<em>Privacy by Design</em>) :</p>
+            <ul>
+                <li><strong>Aucun serveur propre :</strong> Le code de DriverFlow <strong>ne déclare pas <code>android.permission.INTERNET</code></strong>. Seul le SDK officiel <strong>Google Play Billing 9.1.0</strong> ajoute les permissions réseau (<code>INTERNET</code> / <code>ACCESS_NETWORK_STATE</code> / <code>com.android.vending.BILLING</code>) pour les achats intégrés optionnels.</li>
+                <li><strong>Aucune géolocalisation (GPS) :</strong> Ne demande ni <code>ACCESS_FINE_LOCATION</code> ni <code>ACCESS_COARSE_LOCATION</code>.</li>
+                <li><strong>Aucun accès microphone :</strong> Ne demande pas <code>RECORD_AUDIO</code> ; la voix repose uniquement sur le moteur système <code>TextToSpeech</code>.</li>
+                <li><strong>Zéro publicité ni traceur :</strong> Aucun SDK publicitaire, outil d'analyse ou télémétrie distante.</li>
+            </ul>
+
+            <h3>3. Permissions demandées et justification</h3>
+            <ul>
+                <li><code>SYSTEM_ALERT_WINDOW</code> : Utilisée uniquement pour afficher le feu flottant compact par-dessus l'offre reçue.</li>
+                <li><code>BIND_ACCESSIBILITY_SERVICE</code> : Utilisée uniquement pour lire passivement les chiffres de l'offre après acceptation explicite de la divulgation.</li>
+                <li><code>BLUETOOTH</code> / <code>BLUETOOTH_CONNECT</code> et <code>MODIFY_AUDIO_SETTINGS</code> : Utilisées uniquement pour détecter un casque Bluetooth ou l'audio du véhicule et acheminer la voix TTS.</li>
+                <li><code>VIBRATE</code> : Retour haptique discret lors du réglage des seuils.</li>
+            </ul>
+
+            <h3>4. Stockage local et contrôle total de l'utilisateur</h3>
+            <ul>
+                <li><strong>Préférences locales :</strong> Les seuils, la langue vocale, le thème et les apps choisies restent en stockage privé (<code>SharedPreferences</code>) avec sauvegarde cloud désactivée (<code>android:allowBackup="false"</code>).</li>
+                <li><strong>Compteurs anonymes :</strong> Pendant l'essai gratuit, l'application ne conserve que 3 compteurs numériques locaux sans montants, adresses ni historique.</li>
+                <li><strong>Diagnostic local facultatif :</strong> Les journaux de production sont expurgés (aucun tarif ni nom d'app), conservés au maximum 7 jours en local et partagés uniquement sur export manuel.</li>
+                <li><strong>Suppression instantanée :</strong> Effacez toutes les données à tout moment via le bouton <strong>« Réinitialiser les données locales »</strong> sur l'écran principal ou en désinstallant l'application.</li>
+            </ul>
+
+            <h3>5. Essai gratuit et achat unique (Google Play Billing)</h3>
+            <ul>
+                <li><strong>Essai gratuit de 7 jours :</strong> Calculé localement dès la première installation sans création de compte ni carte bancaire.</li>
+                <li><strong>Passe à vie unique :</strong> Déblocage permanent via un achat unique géré exclusivement par le <strong>Google Play Store</strong> (<code>Google Play Billing</code>), sans accès de DriverFlow aux données de paiement.</li>
+            </ul>
+
+            <h3>6. Clause de non-affiliation</h3>
+            <p>DriverFlow est un outil indépendant qui n'est ni affilié, ni sponsorisé, ni approuvé par Uber, Cabify, DiDi, Bolt, Deliveroo, DoorDash ou toute autre plateforme.</p>
+
+            <h3>7. Contact</h3>
+            <p>Pour toute question ou assistance technique : <a href="mailto:driverflow.support@gmail.com">driverflow.support@gmail.com</a>.</p>
+        </section>
+    </div>
+
+    <div id="lang-it" class="lang-panel" lang="it" dir="ltr" hidden="until-found">
+        <div class="badges">
+                <div class="badge-card">
+                    <strong>100% Passivo</strong>
+                    <span><code>canPerformGestures="false"</code> — Nessun tocco né automazione</span>
+                </div>
+                <div class="badge-card">
+                    <strong>Nessun Server Proprio</strong>
+                    <span>Elaborazione 100% locale; rete usata solo da Google Play Billing SDK</span>
+                </div>
+                <div class="badge-card">
+                    <strong>Senza GPS né Microfono</strong>
+                    <span>Non richiede posizione né registrazione audio</span>
+                </div>
+                <div class="badge-card">
+                    <strong>Memoria Effimera</strong>
+                    <span>Calcolo in tempo reale in RAM locale senza salvare dati personali</span>
+                </div>
+        </div>
+        <section class="policy-block">
+            <span class="lang-tag">🇮🇹 Italiano</span>
+            <h2>Informativa sulla Privacy — DriverFlow (<code>com.driverflow</code>)</h2>
+            <p><strong>Ultimo aggiornamento:</strong> Novembre 2026 · <strong>Supporto:</strong> <a href="mailto:driverflow.support@gmail.com">driverflow.support@gmail.com</a></p>
+            <p><strong>DriverFlow</strong> è un assistente visivo e vocale per la sicurezza stradale di autisti e rider professionisti. Questa informativa spiega in modo trasparente perché l'app <strong>non raccoglie, memorizza né condivide dati personali o sensibili</strong>.</p>
+
+            <h3>1. Divulgazione in evidenza sull'API AccessibilityService</h3>
+            <div class="highlight-box">
+                <p><strong>Sola lettura effimera senza automazione:</strong> DriverFlow utilizza l'API Android <code>AccessibilityService</code> (<code>android.permission.BIND_ACCESSIBILITY_SERVICE</code>) con i gesti rigorosamente disabilitati (<code>android:canPerformGestures="false"</code>, <code>canTakeScreenshot="false"</code>).</p>
+            </div>
+            <ul>
+                <li><strong>Scopo esclusivo:</strong> Quando appare un'offerta nell'app selezionata dall'utente, il servizio legge passivamente i numeri sullo schermo (compenso, distanza e tempo stimato) per calcolare i parametri (<code>$/km</code> o <code>$/mi</code> e <code>$/h</code>), mostrare il semaforo flottante e pronunciare la valutazione con <code>TextToSpeech</code>.</li>
+                <li><strong>Zero automazione:</strong> DriverFlow <strong>NON esegue tocchi automatici</strong>, non chiama mai <code>dispatchGesture</code> e non accetta o rifiuta mai corse automaticamente.</li>
+                <li><strong>Elaborazione 100% effimera in RAM locale:</strong> Il testo letto viene valutato in memoria volatile e subito scartato. Nessuna cronologia di viaggi, indirizzi o dati passeggeri viene salvata.</li>
+                <li><strong>Acquisizione assistita opzionale (finestra di 30 s):</strong> Toccando manualmente <em>«Aggiungi app»</em>, DriverFlow apre una finestra passiva di 30 secondi solo per identificare il pacchetto confermato dall'utente, senza usare <code>QUERY_ALL_PACKAGES</code>.</li>
+            </ul>
+
+            <h3>2. Nessuna raccolta né trasmissione esterna</h3>
+            <p>DriverFlow segue rigorosamente il principio <em>Privacy by Design</em>:</p>
+            <ul>
+                <li><strong>Nessun server proprio:</strong> Il codice dell'app <strong>non dichiara <code>android.permission.INTERNET</code></strong>. Solo l'SDK ufficiale <strong>Google Play Billing 9.1.0</strong> include permessi di rete (<code>INTERNET</code> / <code>ACCESS_NETWORK_STATE</code> / <code>com.android.vending.BILLING</code>) per gestire gli acquisti una tantum opzionali tramite Google Play.</li>
+                <li><strong>Nessun GPS:</strong> Non richiede <code>ACCESS_FINE_LOCATION</code> né <code>ACCESS_COARSE_LOCATION</code>.</li>
+                <li><strong>Nessun accesso al microfono:</strong> Non richiede <code>RECORD_AUDIO</code>; la sintesi vocale usa solo <code>TextToSpeech</code> di sistema.</li>
+                <li><strong>Zero pubblicità o tracciamento:</strong> Nessun SDK pubblicitario, analytics o telemetria remota.</li>
+            </ul>
+
+            <h3>3. Permessi richiesti e motivazione tecnica</h3>
+            <ul>
+                <li><code>SYSTEM_ALERT_WINDOW</code>: Solo per mostrare il semaforo flottante compatto sopra le offerte in arrivo.</li>
+                <li><code>BIND_ACCESSIBILITY_SERVICE</code>: Solo per leggere passivamente i valori numerici dell'offerta dopo l'accettazione esplicita dell'informativa.</li>
+                <li><code>BLUETOOTH</code> / <code>BLUETOOTH_CONNECT</code> e <code>MODIFY_AUDIO_SETTINGS</code>: Solo per rilevare auricolari Bluetooth o audio auto e instradare la voce TTS.</li>
+                <li><code>VIBRATE</code>: Feedback tattile durante la regolazione delle soglie.</li>
+            </ul>
+
+            <h3>4. Archiviazione locale e controllo completo dell'utente</h3>
+            <ul>
+                <li><strong>Preferenze locali:</strong> Soglie, lingua vocale, tema e app abilitate restano esclusivamente nelle preferenze private locali (<code>SharedPreferences</code>) con backup cloud disabilitato (<code>android:allowBackup="false"</code>).</li>
+                <li><strong>Contatori anonimi:</strong> Durante la prova gratuita vengono salvati solo 3 contatori numerici locali senza importi, indirizzi o cronologie.</li>
+                <li><strong>Diagnostica locale opzionale:</strong> I log di produzione sono oscurati (senza tariffe o nomi app), conservati localmente fino a 7 giorni ed esportati solo su azione manuale dell'utente.</li>
+                <li><strong>Cancellazione istantanea:</strong> Puoi azzerare tutti i dati locali in qualsiasi momento toccando <strong>«Ripristina dati locali»</strong> nella schermata principale o disinstallando l'app.</li>
+            </ul>
+
+            <h3>5. Prova gratuita e acquisto una tantum (Google Play Billing)</h3>
+            <ul>
+                <li><strong>Prova gratuita di 7 giorni:</strong> Calcolata localmente dalla prima installazione senza account né carte.</li>
+                <li><strong>Pass a vita una tantum:</strong> Lo sblocco permanente avviene con un acquisto singolo elaborato esclusivamente da <strong>Google Play Store</strong> (<code>Google Play Billing</code>), senza accesso ai dati di pagamento.</li>
+            </ul>
+
+            <h3>6. Dichiarazione di non affiliazione</h3>
+            <p>DriverFlow è uno strumento indipendente e non è affiliato, sponsorizzato né approvato da Uber, Cabify, DiDi, Glovo, Deliveroo, DoorDash o altre piattaforme.</p>
+
+            <h3>7. Contatti</h3>
+            <p>Per qualsiasi richiesta relativa alla privacy o supporto tecnico: <a href="mailto:driverflow.support@gmail.com">driverflow.support@gmail.com</a>.</p>
+        </section>
+    </div>
+
+    <div id="lang-nl" class="lang-panel" lang="nl" dir="ltr" hidden="until-found">
+        <div class="badges">
+                <div class="badge-card">
+                    <strong>100% Passief</strong>
+                    <span><code>canPerformGestures="false"</code> — Geen aanrakingen of automatisering</span>
+                </div>
+                <div class="badge-card">
+                    <strong>Geen Eigen Servers</strong>
+                    <span>100% lokale verwerking; netwerk alleen via Google Play Billing SDK</span>
+                </div>
+                <div class="badge-card">
+                    <strong>Geen GPS of Microfoon</strong>
+                    <span>Geen locatiepermissies en geen audio-opname</span>
+                </div>
+                <div class="badge-card">
+                    <strong>Vluchtig Geheugen</strong>
+                    <span>Realtime berekening in lokaal RAM zonder opslag van persoonsgegevens</span>
+                </div>
+        </div>
+        <section class="policy-block">
+            <span class="lang-tag">🇳🇱 Nederlands</span>
+            <h2>Privacybeleid — DriverFlow (<code>com.driverflow</code>)</h2>
+            <p><strong>Laatst bijgewerkt:</strong> November 2026 · <strong>Ondersteuning:</strong> <a href="mailto:driverflow.support@gmail.com">driverflow.support@gmail.com</a></p>
+            <p><strong>DriverFlow</strong> is een visuele en gesproken verkeersveiligheidsassistent voor professionele chauffeurs en bezorgers. Dit privacybeleid legt transparant uit waarom de app <strong>geen persoonlijke of gevoelige gegevens verzamelt, opslaat of deelt</strong>.</p>
+
+            <h3>1. Duidelijke Verklaring over de AccessibilityService API</h3>
+            <div class="highlight-box">
+                <p><strong>Vluchtig Alleen-Lezen zonder Automatisering:</strong> DriverFlow gebruikt de Android <code>AccessibilityService</code> API (<code>android.permission.BIND_ACCESSIBILITY_SERVICE</code>) waarbij gebaren strikt zijn uitgeschakeld (<code>android:canPerformGestures="false"</code>, <code>canTakeScreenshot="false"</code>).</p>
+            </div>
+            <ul>
+                <li><strong>Uitsluitend doel:</strong> Bij een inkomende rit- of bezorgopdracht in de door u gekozen app leest de service passief de zichtbare cijfers (tarief, afstand en geschatte tijd) om direct de rentabiliteit (<code>$/km</code> of <code>$/mi</code> en <code>$/h</code>) te berekenen, het zwevende verkeerslicht te tonen en het resultaat via <code>TextToSpeech</code> uit te spreken.</li>
+                <li><strong>Geen automatisering:</strong> DriverFlow voert <strong>NOOIT automatische schermaanrakingen uit</strong>, roept nooit <code>dispatchGesture</code> aan en accepteert of weigert nooit ritten automatisch.</li>
+                <li><strong>100% vluchtige lokale verwerking:</strong> Tekst op het scherm wordt direct in RAM geëvalueerd en onmiddellijk verwijderd. Er worden geen ritgeschiedenis, adressen of passagiersgegevens opgeslagen.</li>
+                <li><strong>Optionele Geassisteerde Vastlegging (30s-venster):</strong> Als u handmatig op <em>'App toevoegen'</em> tikt, opent DriverFlow tijdelijk een passief venster van 30 seconden om alleen het door u bevestigde app-pakket te herkennen zonder <code>QUERY_ALL_PACKAGES</code>.</li>
+            </ul>
+
+            <h3>2. Geen Gegevensverzameling en Geen Externe Verzending</h3>
+            <p>DriverFlow is gebouwd volgens strikte <em>Privacy by Design</em>-principes:</p>
+            <ul>
+                <li><strong>Geen eigen servers:</strong> De appcode verklaart <strong>geen <code>android.permission.INTERNET</code></strong>. Alleen de officiële <strong>Google Play Billing 9.1.0 SDK</strong> voegt netwerkpermissies (<code>INTERNET</code> / <code>ACCESS_NETWORK_STATE</code> / <code>com.android.vending.BILLING</code>) toe voor optionele eenmalige aankopen via Google Play.</li>
+                <li><strong>Geen GPS-locatie:</strong> Vraagt geen <code>ACCESS_FINE_LOCATION</code> of <code>ACCESS_COARSE_LOCATION</code>.</li>
+                <li><strong>Geen microfoon:</strong> Vraagt geen <code>RECORD_AUDIO</code>; spraak gebruikt uitsluitend Android <code>TextToSpeech</code>.</li>
+                <li><strong>Geen advertenties of trackers:</strong> Geen advertentie-SDK's, externe analyses of externe telemetrie.</li>
+            </ul>
+
+            <h3>3. Gevraagde Machtigingen en Technische Reden</h3>
+            <ul>
+                <li><code>SYSTEM_ALERT_WINDOW</code>: Uitsluitend om het compacte zwevende verkeerslicht over binnenkomende opdrachten te tonen.</li>
+                <li><code>BIND_ACCESSIBILITY_SERVICE</code>: Uitsluitend voor passief lezen van opdrachtcijfers nadat u akkoord bent gegaan met de duidelijke melding.</li>
+                <li><code>BLUETOOTH</code> / <code>BLUETOOTH_CONNECT</code> en <code>MODIFY_AUDIO_SETTINGS</code>: Alleen om verbonden Bluetooth-headsets of auto-audio te detecteren voor TTS-aankondigingen.</li>
+                <li><code>VIBRATE</code>: Subtiele trilling bij het aanpassen van drempelwaarden.</li>
+            </ul>
+
+            <h3>4. Lokale Opslag en Volledige Gebruikerscontrole</h3>
+            <ul>
+                <li><strong>Lokale voorkeuren:</strong> Drempels, taal, thema en gekozen apps worden uitsluitend lokaal opgeslagen (<code>SharedPreferences</code>) met cloudback-up uitgeschakeld (<code>android:allowBackup="false"</code>).</li>
+                <li><strong>Anonieme tellers:</strong> Tijdens de proefperiode bewaart de app slechts 3 lokale tellers zonder bedragen, adressen of ritgeschiedenis.</li>
+                <li><strong>Optionele lokale diagnose:</strong> Productielogs zijn strikt geanonimiseerd (geen bedragen of app-namen), worden maximaal 7 dagen lokaal bewaard en alleen gedeeld na handmatige export.</li>
+                <li><strong>Direct verwijderen:</strong> Wis alle lokale gegevens op elk moment via <strong>'Lokale gegevens resetten'</strong> op het hoofdscherm of door de app te verwijderen.</li>
+            </ul>
+
+            <h3>5. Gratis Proefperiode en Eenmalige Aankoop (Google Play Billing)</h3>
+            <ul>
+                <li><strong>7 dagen gratis proberen:</strong> Lokaal bijgehouden vanaf de eerste installatie zonder account of creditcard.</li>
+                <li><strong>Eenmalige Lifetime Pass:</strong> Permanente ontgrendeling via één aankoop via de <strong>Google Play Store</strong> (<code>Google Play Billing</code>); DriverFlow verwerkt nooit betaalgegevens.</li>
+            </ul>
+
+            <h3>6. Disclaimer van Onafhankelijkheid</h3>
+            <p>DriverFlow is een onafhankelijke tool en is niet gelieerd aan of gesponsord door Uber, Cabify, DiDi, Bolt, Thuisbezorgd, DoorDash of andere platformen.</p>
+
+            <h3>7. Contact</h3>
+            <p>Voor vragen over dit privacybeleid of ondersteuning: <a href="mailto:driverflow.support@gmail.com">driverflow.support@gmail.com</a>.</p>
+        </section>
+    </div>
+
+    <div id="lang-pl" class="lang-panel" lang="pl" dir="ltr" hidden="until-found">
+        <div class="badges">
+                <div class="badge-card">
+                    <strong>100% Pasywna</strong>
+                    <span><code>canPerformGestures="false"</code> — Zero dotknięć i automatyzacji</span>
+                </div>
+                <div class="badge-card">
+                    <strong>Brak Własnych Serwerów</strong>
+                    <span>Przetwarzanie 100% lokalne; sieć używana wyłącznie przez Google Play Billing SDK</span>
+                </div>
+                <div class="badge-card">
+                    <strong>Bez GPS i Mikrofonu</strong>
+                    <span>Brak dostępu do lokalizacji oraz brak nagrywania dźwięku</span>
+                </div>
+                <div class="badge-card">
+                    <strong>Pamięć Ulotna</strong>
+                    <span>Obliczenia w czasie rzeczywistym w pamięci RAM bez zapisu danych</span>
+                </div>
+        </div>
+        <section class="policy-block">
+            <span class="lang-tag">🇵🇱 Polski</span>
+            <h2>Polityka prywatności — DriverFlow (<code>com.driverflow</code>)</h2>
+            <p><strong>Ostatnia aktualizacja:</strong> Listopad 2026 · <strong>Kontakt:</strong> <a href="mailto:driverflow.support@gmail.com">driverflow.support@gmail.com</a></p>
+            <p><strong>DriverFlow</strong> to wizualny i głosowy asystent bezpieczeństwa ruchu drogowego dla zawodowych kierowców i kurierów. Niniejsza Polityka prywatności wyjaśnia, dlaczego aplikacja <strong>nie zbiera, nie przechowuje ani nie udostępnia danych osobowych ani wrażliwych</strong>.</p>
+
+            <h3>1. Wyraźne ujawnienie dotyczące API AccessibilityService</h3>
+            <div class="highlight-box">
+                <p><strong>Wyłącznie ulotny odczyt bez automatyzacji:</strong> DriverFlow korzysta z API Android <code>AccessibilityService</code> (<code>android.permission.BIND_ACCESSIBILITY_SERVICE</code>) ze ściśle wyłączoną obsługą gestów (<code>android:canPerformGestures="false"</code> oraz <code>canTakeScreenshot="false"</code>).</p>
+            </div>
+            <ul>
+                <li><strong>Wyłączny cel:</strong> Gdy na ekranie wybranej aplikacji kierowcy pojawi się oferta zlecenia, usługa pasywnie odczytuje widoczne wartości liczbowe (stawka, dystans, czas) wyłącznie w celu obliczenia opłacalności (<code>$/km</code> lub <code>$/mi</code> oraz <code>$/h</code>), wyświetlenia pływającej sygnalizacji świetlnej i ogłoszenia oceny przez <code>TextToSpeech</code>.</li>
+                <li><strong>Zero automatyzacji:</strong> DriverFlow <strong>NIE wykonuje automatycznych dotknięć ekranu</strong>, nigdy nie wywołuje <code>dispatchGesture</code> i nie akceptuje ani nie odrzuca zleceń samoczynnie.</li>
+                <li><strong>100% ulotne przetwarzanie w lokalnym RAM:</strong> Odczytany tekst jest natychmiast oceniany w pamięci operacyjnej i odrzucany. Historia przejazdów, adresy i dane pasażerów nie są zapisywane.</li>
+                <li><strong>Opcjonalne wspomagane przechwytywanie (okno 30 s):</strong> Po ręcznym dotknięciu <em>„Dodaj aplikację”</em> DriverFlow otwiera pasywne okno 30 s w celu rozpoznania potwierdzonego przez użytkownika pakietu, bez używania <code>QUERY_ALL_PACKAGES</code>.</li>
+            </ul>
+
+            <h3>2. Brak gromadzenia i przesyłania danych na zewnątrz</h3>
+            <p>DriverFlow powstał zgodnie z zasadą <em>Privacy by Design</em>:</p>
+            <ul>
+                <li><strong>Brak własnych serwerów:</strong> Kod aplikacji <strong>nie deklaruje <code>android.permission.INTERNET</code></strong>. Uprawnienia sieciowe (<code>INTERNET</code> / <code>ACCESS_NETWORK_STATE</code> / <code>com.android.vending.BILLING</code>) pochodzą wyłącznie z oficjalnego SDK <strong>Google Play Billing 9.1.0</strong> dla opcjonalnego jednorazowego zakupu w Google Play.</li>
+                <li><strong>Brak lokalizacji GPS:</strong> Nie żąda <code>ACCESS_FINE_LOCATION</code> ani <code>ACCESS_COARSE_LOCATION</code>.</li>
+                <li><strong>Brak dostępu do mikrofonu:</strong> Nie żąda <code>RECORD_AUDIO</code>; komunikaty używają wyłącznie systemowego syntezatora <code>TextToSpeech</code>.</li>
+                <li><strong>Brak reklam i trackerów:</strong> Zero zewnętrznych SDK reklamowych, analitycznych lub telemetrii.</li>
+            </ul>
+
+            <h3>3. Wymagane uprawnienia i uzasadnienie techniczne</h3>
+            <ul>
+                <li><code>SYSTEM_ALERT_WINDOW</code>: Wyłącznie do wyświetlania kompaktowej pływającej sygnalizacji nad ofertami.</li>
+                <li><code>BIND_ACCESSIBILITY_SERVICE</code>: Wyłącznie do pasywnego odczytu liczb z oferty po wyraźnej akceptacji ujawnienia w aplikacji.</li>
+                <li><code>BLUETOOTH</code> / <code>BLUETOOTH_CONNECT</code> i <code>MODIFY_AUDIO_SETTINGS</code>: Wyłącznie do wykrywania zestawów Bluetooth lub audio samochodowego dla komunikatów TTS.</li>
+                <li><code>VIBRATE</code>: Delikatna wibracja przy regulacji progów.</li>
+            </ul>
+
+            <h3>4. Pamięć lokalna i pełna kontrola użytkownika</h3>
+            <ul>
+                <li><strong>Ustawienia lokalne:</strong> Progi, język głosu, motyw i wybrane aplikacje przechowywane są prywatnie w <code>SharedPreferences</code> z wyłączoną kopią w chmurze (<code>android:allowBackup="false"</code>).</li>
+                <li><strong>Anonimowe liczniki:</strong> W okresie próbnym zapisywane są wyłącznie 3 lokalne liczniki liczbowe bez kwot, adresów i historii.</li>
+                <li><strong>Opcjonalna lokalna diagnostyka:</strong> Logi produkcyjne są ściśle redagowane (bez kwot i nazw aplikacji), przechowywane maksymalnie 7 dni i udostępniane tylko po ręcznym eksporcie.</li>
+                <li><strong>Natychmiastowe usunięcie:</strong> Wszystkie lokalne dane można usunąć w dowolnym momencie przyciskiem <strong>„Resetuj dane lokalne”</strong> na ekranie głównym lub odinstalowując aplikację.</li>
+            </ul>
+
+            <h3>5. Okres próbny i zakup jednorazowy (Google Play Billing)</h3>
+            <ul>
+                <li><strong>7-dniowy okres próbny:</strong> Liczony lokalnie od pierwszej instalacji bez zakładania konta ani podawania karty.</li>
+                <li><strong>Jednorazowy dostęp dożywotni:</strong> Stałe odblokowanie realizowane jest wyłącznie przez pojedynczy zakup w <strong>Google Play Store</strong> (<code>Google Play Billing</code>), bez dostępu aplikacji do danych płatniczych.</li>
+            </ul>
+
+            <h3>6. Informacja o braku powiązań</h3>
+            <p>DriverFlow jest niezależnym narzędziem i nie jest powiązany ani wspierany przez Uber, Cabify, DiDi, Bolt, Glovo, DoorDash ani żadną inną platformę.</p>
+
+            <h3>7. Kontakt</h3>
+            <p>W sprawach dotyczących prywatności lub wsparcia technicznego: <a href="mailto:driverflow.support@gmail.com">driverflow.support@gmail.com</a>.</p>
+        </section>
+    </div>
+
+    <div id="lang-ro" class="lang-panel" lang="ro" dir="ltr" hidden="until-found">
+        <div class="badges">
+                <div class="badge-card">
+                    <strong>100% Pasiv</strong>
+                    <span><code>canPerformGestures="false"</code> — Fără atingeri sau automatizare</span>
+                </div>
+                <div class="badge-card">
+                    <strong>Fără Servere Proprii</strong>
+                    <span>Procesare 100% locală; rețeaua folosită doar de Google Play Billing SDK</span>
+                </div>
+                <div class="badge-card">
+                    <strong>Fără GPS sau Microfon</strong>
+                    <span>Nu solicită locația și nu înregistrează audio</span>
+                </div>
+                <div class="badge-card">
+                    <strong>Memorie Efemeră</strong>
+                    <span>Calcul în timp real în RAM local fără stocare de date personale</span>
+                </div>
+        </div>
+        <section class="policy-block">
+            <span class="lang-tag">🇷🇴 Română</span>
+            <h2>Politica de confidențialitate — DriverFlow (<code>com.driverflow</code>)</h2>
+            <p><strong>Ultima actualizare:</strong> Noiembrie 2026 · <strong>Contact:</strong> <a href="mailto:driverflow.support@gmail.com">driverflow.support@gmail.com</a></p>
+            <p><strong>DriverFlow</strong> este un asistent vizual și vocal de siguranță rutieră creat pentru șoferi și curieri profesioniști. Această politică explică transparent de ce aplicația <strong>nu colectează, nu stochează și nu partajează date personale sau sensibile</strong>.</p>
+
+            <h3>1. Informare clară privind API-ul AccessibilityService</h3>
+            <div class="highlight-box">
+                <p><strong>Doar citire efemeră fără automatizare:</strong> DriverFlow folosește API-ul Android <code>AccessibilityService</code> (<code>android.permission.BIND_ACCESSIBILITY_SERVICE</code>) cu gesturile strict dezactivate în sistem (<code>android:canPerformGestures="false"</code> și <code>canTakeScreenshot="false"</code>).</p>
+            </div>
+            <ul>
+                <li><strong>Scop exclusiv:</strong> Când apare o ofertă în aplicația selectată de șofer, serviciul citește pasiv valorile numerice de pe ecran (tarif, distanță, durată) doar pentru a calcula rentabilitatea (<code>$/km</code> sau <code>$/mi</code> și <code>$/h</code>), a afișa semaforul flotant și a anunța evaluarea prin <code>TextToSpeech</code>.</li>
+                <li><strong>Zero automatizare:</strong> DriverFlow <strong>NU efectuează atingeri automate pe ecran</strong>, nu apelează niciodată <code>dispatchGesture</code> și nu acceptă sau refuză curse automat.</li>
+                <li><strong>Procesare 100% efemeră în RAM local:</strong> Textul citit este evaluat instantaneu în memoria volatilă și eliminat imediat. Nu se salvează istoricul curselor, adrese sau date ale pasagerilor.</li>
+                <li><strong>Captură asistată opțională (fereastră de 30 s):</strong> La apăsarea manuală a butonului <em>„Adaugă aplicație”</em>, DriverFlow deschide o fereastră pasivă de 30 de secunde doar pentru a identifica pachetul confirmat de utilizator, fără <code>QUERY_ALL_PACKAGES</code>.</li>
+            </ul>
+
+            <h3>2. Fără colectare și fără transmitere externă</h3>
+            <p>DriverFlow respectă strict principiul <em>Privacy by Design</em>:</p>
+            <ul>
+                <li><strong>Fără servere proprii:</strong> Codul aplicației <strong>nu declară <code>android.permission.INTERNET</code></strong>. Doar SDK-ul oficial <strong>Google Play Billing 9.1.0</strong> include permisiuni de rețea (<code>INTERNET</code> / <code>ACCESS_NETWORK_STATE</code> / <code>com.android.vending.BILLING</code>) pentru achiziția opțională unică prin Google Play.</li>
+                <li><strong>Fără urmărire GPS:</strong> Nu solicită <code>ACCESS_FINE_LOCATION</code> sau <code>ACCESS_COARSE_LOCATION</code>.</li>
+                <li><strong>Fără microfon:</strong> Nu solicită <code>RECORD_AUDIO</code>; anunțurile vocale folosesc doar motorul <code>TextToSpeech</code> al sistemului.</li>
+                <li><strong>Fără reclame sau trackere:</strong> Zero SDK-uri publicitare, analitice terțe sau telemetrie la distanță.</li>
+            </ul>
+
+            <h3>3. Permisiunile solicitate și justificarea tehnică</h3>
+            <ul>
+                <li><code>SYSTEM_ALERT_WINDOW</code>: Exclusiv pentru afișarea semaforului flotant compact peste ofertele primite.</li>
+                <li><code>BIND_ACCESSIBILITY_SERVICE</code>: Exclusiv pentru citirea pasivă a cifrelor ofertei după acceptarea explicită a informării în aplicație.</li>
+                <li><code>BLUETOOTH</code> / <code>BLUETOOTH_CONNECT</code> și <code>MODIFY_AUDIO_SETTINGS</code>: Doar pentru detectarea căștilor Bluetooth sau sistemului audio auto și rutarea vocii TTS.</li>
+                <li><code>VIBRATE</code>: Feedback tactil la ajustarea pragurilor.</li>
+            </ul>
+
+            <h3>4. Stocare locală și control total al utilizatorului</h3>
+            <ul>
+                <li><strong>Preferințe locale:</strong> Pragurile, limba vocală, tema și aplicațiile activate sunt păstrate exclusiv local (<code>SharedPreferences</code>) cu backup-ul cloud dezactivat (<code>android:allowBackup="false"</code>).</li>
+                <li><strong>Contoare anonime:</strong> În perioada de probă se păstrează doar 3 contoare numerice locale fără sume, adrese sau istoric.</li>
+                <li><strong>Diagnostic local opțional:</strong> Jurnalele de producție sunt redactate (fără sume sau nume de aplicații), păstrate local cel mult 7 zile și partajate doar prin export manual.</li>
+                <li><strong>Ștergere instantanee:</strong> Puteți șterge oricând toate datele locale atingând <strong>„Resetează datele locale”</strong> din ecranul principal sau dezinstalând aplicația.</li>
+            </ul>
+
+            <h3>5. Perioadă de probă și achiziție unică (Google Play Billing)</h3>
+            <ul>
+                <li><strong>7 zile gratuit:</strong> Urmărite local de la prima instalare, fără cont și fără card.</li>
+                <li><strong>Abonament unic pe viață:</strong> Deblocarea permanentă se face printr-o singură achiziție prin <strong>Google Play Store</strong> (<code>Google Play Billing</code>), fără acces la date bancare.</li>
+            </ul>
+
+            <h3>6. Declarație de neafiliere</h3>
+            <p>DriverFlow este un instrument independent și nu este afiliat, sponsorizat sau susținut de Uber, Bolt, Cabify, DiDi, Glovo, DoorDash sau altă platformă.</p>
+
+            <h3>7. Contact</h3>
+            <p>Pentru întrebări privind confidențialitatea sau suport tehnic: <a href="mailto:driverflow.support@gmail.com">driverflow.support@gmail.com</a>.</p>
+        </section>
+    </div>
+
+    <div id="lang-ru" class="lang-panel" lang="ru" dir="ltr" hidden="until-found">
+        <div class="badges">
+                <div class="badge-card">
+                    <strong>100% Пассивный режим</strong>
+                    <span><code>canPerformGestures="false"</code> — Без нажатий и автоматизации</span>
+                </div>
+                <div class="badge-card">
+                    <strong>Без своих серверов</strong>
+                    <span>100% локальная обработка; сеть только для Google Play Billing SDK</span>
+                </div>
+                <div class="badge-card">
+                    <strong>Без GPS и микрофона</strong>
+                    <span>Не запрашивает геолокацию и не записывает звук</span>
+                </div>
+                <div class="badge-card">
+                    <strong>Эфемерная память</strong>
+                    <span>Мгновенный расчёт в локальной RAM без сохранения личных данных</span>
+                </div>
+        </div>
+        <section class="policy-block">
+            <span class="lang-tag">🇷🇺 Русский</span>
+            <h2>Политика конфиденциальности — DriverFlow (<code>com.driverflow</code>)</h2>
+            <p><strong>Обновлено:</strong> Ноябрь 2026 · <strong>Поддержка:</strong> <a href="mailto:driverflow.support@gmail.com">driverflow.support@gmail.com</a></p>
+            <p><strong>DriverFlow</strong> — визуальный и голосовой помощник безопасности дорожного движения для профессиональных водителей и курьеров. В настоящей Политике конфиденциальности описано, почему приложение <strong>не собирает, не хранит и не передаёт персональные или конфиденциальные данные пользователя</strong>.</p>
+
+            <h3>1. Раскрытие информации об использовании AccessibilityService API</h3>
+            <div class="highlight-box">
+                <p><strong>Только эфемерное чтение без автоматизации:</strong> DriverFlow использует Android <code>AccessibilityService</code> API (<code>android.permission.BIND_ACCESSIBILITY_SERVICE</code>) со строго отключёнными жестами (<code>android:canPerformGestures="false"</code>, <code>canTakeScreenshot="false"</code>).</p>
+            </div>
+            <ul>
+                <li><strong>Единственная цель:</strong> При поступлении предложения в выбранном пользователем приложении сервис пассивно считывает числовые значения с экрана (стоимость, расстояние и время), чтобы рассчитать выгодность (<code>$/км</code> или <code>$/миля</code> и <code>$/ч</code>), показать плавающий светофор и озвучить оценку через <code>TextToSpeech</code>.</li>
+                <li><strong>Нулевая автоматизация:</strong> DriverFlow <strong>НЕ выполняет автоматические нажатия на экран</strong>, никогда не вызывает <code>dispatchGesture</code> и не принимает или отклоняет заказы автоматически.</li>
+                <li><strong>100% эфемерная обработка в локальной RAM:</strong> Текст заказа мгновенно обрабатывается в оперативной памяти и сразу удаляется. История поездок, адреса и данные пассажиров не сохраняются.</li>
+                <li><strong>Опциональный ассистированный захват (окно 30 с):</strong> При нажатии <em>«Добавить приложение»</em> DriverFlow открывает временное пассивное окно на 30 секунд для определения подтверждённого пользователем пакета без использования <code>QUERY_ALL_PACKAGES</code>.</li>
+            </ul>
+
+            <h3>2. Отсутствие сбора и внешней передачи данных</h3>
+            <p>DriverFlow создан по принципу <em>Privacy by Design</em>:</p>
+            <ul>
+                <li><strong>Без собственных серверов:</strong> Код приложения <strong>не объявляет <code>android.permission.INTERNET</code></strong>. Сетевые разрешения (<code>INTERNET</code> / <code>ACCESS_NETWORK_STATE</code> / <code>com.android.vending.BILLING</code>) добавляются исключительно официальным <strong>Google Play Billing 9.1.0 SDK</strong> для разовой покупки в Google Play.</li>
+                <li><strong>Без GPS-отслеживания:</strong> Не запрашивает <code>ACCESS_FINE_LOCATION</code> и <code>ACCESS_COARSE_LOCATION</code>.</li>
+                <li><strong>Без доступа к микрофону:</strong> Не запрашивает <code>RECORD_AUDIO</code>; голосовые подсказки работают только через встроенный синтезатор речи <code>TextToSpeech</code>.</li>
+                <li><strong>Без рекламы и трекеров:</strong> Нет сторонней аналитики, рекламных SDK или удалённой телеметрии.</li>
+            </ul>
+
+            <h3>3. Запрашиваемые разрешения и техническое обоснование</h3>
+            <ul>
+                <li><code>SYSTEM_ALERT_WINDOW</code>: Только для отображения компактного плавающего светофора поверх входящих заказов.</li>
+                <li><code>BIND_ACCESSIBILITY_SERVICE</code>: Только для пассивного чтения цифр заказа после явного согласия пользователя с уведомлением в приложении.</li>
+                <li><code>BLUETOOTH</code> / <code>BLUETOOTH_CONNECT</code> и <code>MODIFY_AUDIO_SETTINGS</code>: Только для определения подключённых Bluetooth-гарнитур или автозвука для вывода речи TTS.</li>
+                <li><code>VIBRATE</code>: Тактильный отклик при настройке порогов.</li>
+            </ul>
+
+            <h3>4. Локальное хранение и полный контроль пользователя</h3>
+            <ul>
+                <li><strong>Локальные настройки:</strong> Пороги светофора, язык, тема и выбранные приложения хранятся только локально (<code>SharedPreferences</code>) с отключённым облачным резервным копированием (<code>android:allowBackup="false"</code>).</li>
+                <li><strong>Анонимные счётчики:</strong> В пробный период сохраняются лишь 3 числовых локальных счётчика без сумм, адресов и истории.</li>
+                <li><strong>Опциональная локальная диагностика:</strong> Журналы в релизной сборке строго обезличены (без тарифов и названий приложений), хранятся до 7 дней и передаются только при ручном экспорте.</li>
+                <li><strong>Мгновенное удаление:</strong> Все локальные данные можно очистить в любой момент кнопкой <strong>«Сбросить локальные данные»</strong> на главном экране или удалив приложение.</li>
+            </ul>
+
+            <h3>5. Пробный период и разовая покупка (Google Play Billing)</h3>
+            <ul>
+                <li><strong>7 дней бесплатно:</strong> Отсчитываются локально с первой установки без регистрации и карты.</li>
+                <li><strong>Пожизненный доступ:</strong> Постоянная разблокировка оформляется одной покупкой исключительно через <strong>Google Play Store</strong> (<code>Google Play Billing</code>).</li>
+            </ul>
+
+            <h3>6. Отказ от аффилированности</h3>
+            <p>DriverFlow является независимым инструментом и не связан, не спонсируется и не поддерживается Uber, Cabify, DiDi, Яндекс, DoorDash или другими платформами.</p>
+
+            <h3>7. Контакты</h3>
+            <p>По вопросам конфиденциальности и технической поддержки: <a href="mailto:driverflow.support@gmail.com">driverflow.support@gmail.com</a>.</p>
+        </section>
+    </div>
+
+    <div id="lang-tr" class="lang-panel" lang="tr" dir="ltr" hidden="until-found">
+        <div class="badges">
+                <div class="badge-card">
+                    <strong>%100 Pasif</strong>
+                    <span><code>canPerformGestures="false"</code> — Dokunma veya otomasyon yok</span>
+                </div>
+                <div class="badge-card">
+                    <strong>Kendi Sunucusu Yok</strong>
+                    <span>%100 yerel işleme; ağ yalnızca Google Play Billing SDK için kullanılır</span>
+                </div>
+                <div class="badge-card">
+                    <strong>GPS veya Mikrofon Yok</strong>
+                    <span>Konum izni istemez ve ses kaydı yapmaz</span>
+                </div>
+                <div class="badge-card">
+                    <strong>Geçici Bellek</strong>
+                    <span>Kişisel veri saklamadan yerel RAM'de anlık hesaplama</span>
+                </div>
+        </div>
+        <section class="policy-block">
+            <span class="lang-tag">🇹🇷 Türkçe</span>
+            <h2>Gizlilik Politikası — DriverFlow (<code>com.driverflow</code>)</h2>
+            <p><strong>Son güncelleme:</strong> Kasım 2026 · <strong>Destek:</strong> <a href="mailto:driverflow.support@gmail.com">driverflow.support@gmail.com</a></p>
+            <p><strong>DriverFlow</strong>, profesyonel sürücüler ve kuryeler için geliştirilmiş görsel ve sesli yol güvenliği asistanıdır. Bu Gizlilik Politikası uygulamanın neden <strong>hiçbir kişisel veya hassas kullanıcı verisini toplamadığını, saklamadığını veya paylaşmadığını</strong> açıklar.</p>
+
+            <h3>1. AccessibilityService API Kullanımı Hakkında Açık Bildirim</h3>
+            <div class="highlight-box">
+                <p><strong>Otomasyon Olmadan Yalnızca Geçici Okuma:</strong> DriverFlow, Android <code>AccessibilityService</code> API'sini (<code>android.permission.BIND_ACCESSIBILITY_SERVICE</code>) sistem ayarlarında hareket yeteneği tamamen kapalı olarak kullanır (<code>android:canPerformGestures="false"</code> ve <code>canTakeScreenshot="false"</code>).</p>
+            </div>
+            <ul>
+                <li><strong>Tek amaç:</strong> Kullanıcının seçtiği uygulamada bir teklif göründüğünde servis yalnızca ekrandaki sayısal değerleri (ücret, mesafe, süre) pasif olarak okuyup kârlılığı (<code>$/km</code> veya <code>$/mi</code> ve <code>$/h</code>) hesaplar, kayan trafik ışığını gösterir ve <code>TextToSpeech</code> ile seslendirir.</li>
+                <li><strong>Sıfır otomasyon:</strong> DriverFlow <strong>ekrana otomatik dokunmaz</strong>, asla <code>dispatchGesture</code> çağırmaz ve yolculukları otomatik kabul veya reddetmez.</li>
+                <li><strong>Yerel RAM'de %100 geçici işleme:</strong> Teklif metinleri geçici bellekte değerlendirilip anında silinir. Yolculuk geçmişi, adres veya yolcu bilgisi kaydedilmez.</li>
+                <li><strong>İsteğe bağlı yardımlı yakalama (30 sn penceresi):</strong> Kullanıcı elle <em>'Uygulama ekle'</em> seçeneğine dokunduğunda yalnızca onaylanan paket adını belirlemek için <code>QUERY_ALL_PACKAGES</code> kullanmadan 30 saniyelik pasif pencere açar.</li>
+            </ul>
+
+            <h3>2. Sıfır Veri Toplama ve Dış Aktarım</h3>
+            <p>DriverFlow katı <em>Tasarımdan İtibaren Gizlilik (Privacy by Design)</em> ilkeleriyle üretilmiştir:</p>
+            <ul>
+                <li><strong>Kendi sunucusu yok:</strong> Uygulama kodu <strong><code>android.permission.INTERNET</code> bildirmez</strong>. Ağ izinleri (<code>INTERNET</code> / <code>ACCESS_NETWORK_STATE</code> / <code>com.android.vending.BILLING</code>) yalnızca isteğe bağlı tek seferlik satın alımlar için resmi <strong>Google Play Billing 9.1.0 SDK</strong> tarafından eklenir.</li>
+                <li><strong>GPS takibi yok:</strong> <code>ACCESS_FINE_LOCATION</code> veya <code>ACCESS_COARSE_LOCATION</code> istemez.</li>
+                <li><strong>Mikrofon erişimi yok:</strong> <code>RECORD_AUDIO</code> istemez; sesli uyarılar yalnızca cihazın <code>TextToSpeech</code> motorunu kullanır.</li>
+                <li><strong>Reklam veya izleyici yok:</strong> Üçüncü taraf analiz veya reklam SDK'sı içermez.</li>
+            </ul>
+
+            <h3>3. İstenen İzinler ve Teknik Gerekçe</h3>
+            <ul>
+                <li><code>SYSTEM_ALERT_WINDOW</code>: Yalnızca gelen tekliflerin üzerinde kompakt kayan trafik ışığını göstermek için.</li>
+                <li><code>BIND_ACCESSIBILITY_SERVICE</code>: Yalnızca kullanıcı açık bildirimi onayladıktan sonra teklif sayılarını pasif okumak için.</li>
+                <li><code>BLUETOOTH</code> / <code>BLUETOOTH_CONNECT</code> ve <code>MODIFY_AUDIO_SETTINGS</code>: Yalnızca Bluetooth kulaklık veya araç ses sistemini algılayıp TTS sesini yönlendirmek için.</li>
+                <li><code>VIBRATE</code>: Eşik ayarlarında hafif dokunsal geri bildirim için.</li>
+            </ul>
+
+            <h3>4. Yerel Depolama ve Tam Kullanıcı Kontrolü</h3>
+            <ul>
+                <li><strong>Yerel tercihler:</strong> Eşikler, ses dili, tema ve seçili uygulamalar bulut yedeği kapalı şekilde (<code>android:allowBackup="false"</code>) yalnızca cihazdaki özel <code>SharedPreferences</code> alanında saklanır.</li>
+                <li><strong>Anonim sayaçlar:</strong> Ücretsiz denemede tutar, adres veya geçmiş olmadan yalnızca 3 yerel sayısal sayaç tutulur.</li>
+                <li><strong>İsteğe bağlı yerel tanılama:</strong> Üretim günlükleri sansürlüdür (ücret veya uygulama adı içermez), en fazla 7 gün saklanır ve yalnızca kullanıcı elle dışa aktardığında paylaşılır.</li>
+                <li><strong>Anında silme:</strong> Ana ekrandaki <strong>'Yerel verileri sıfırla'</strong> düğmesiyle veya uygulamayı kaldırarak tüm yerel verileri silebilirsiniz.</li>
+            </ul>
+
+            <h3>5. Ücretsiz Deneme ve Tek Seferlik Satın Alma (Google Play Billing)</h3>
+            <ul>
+                <li><strong>7 gün ücretsiz deneme:</strong> Hesap veya kart gerektirmeden ilk kurulumdan itibaren yerel olarak takip edilir.</li>
+                <li><strong>Tek seferlik Ömür Boyu Geçiş:</strong> Kalıcı erişim yalnızca <strong>Google Play Store</strong> (<code>Google Play Billing</code>) üzerinden tek seferlik satın alma ile sağlanır.</li>
+            </ul>
+
+            <h3>6. Bağlantısızlık Bildirimi</h3>
+            <p>DriverFlow bağımsız bir araçtır; Uber, Cabify, DiDi, BiTaksi, Getir, DoorDash veya herhangi bir platformla bağlantılı değildir.</p>
+
+            <h3>7. İletişim</h3>
+            <p>Gizlilik veya teknik destek için iletişim: <a href="mailto:driverflow.support@gmail.com">driverflow.support@gmail.com</a>.</p>
+        </section>
+    </div>
+
+    <div id="lang-ar" class="lang-panel" lang="ar" dir="rtl" hidden="until-found">
+        <div class="badges">
+                <div class="badge-card">
+                    <strong>قراءة سلبية 100%</strong>
+                    <span><code>canPerformGestures="false"</code> — بدون لمس أو أتمتة</span>
+                </div>
+                <div class="badge-card">
+                    <strong>بدون خوادم خاصة</strong>
+                    <span>معالجة محلية 100%؛ الاتصال مقتصر على حزمة Google Play Billing</span>
+                </div>
+                <div class="badge-card">
+                    <strong>بدون GPS أو ميكروفون</strong>
+                    <span>لا يطلب إذن الموقع ولا يسجل أي صوت</span>
+                </div>
+                <div class="badge-card">
+                    <strong>ذاكرة مؤقتة فورية</strong>
+                    <span>حساب فوري في الذاكرة العشوائية RAM دون حفظ بيانات شخصية</span>
+                </div>
+        </div>
+        <section class="policy-block">
+            <span class="lang-tag">🇸🇦 العربية</span>
+            <h2>سياسة الخصوصية — DriverFlow (<code>com.driverflow</code>)</h2>
+            <p><strong>آخر تحديث:</strong> نوفمبر 2026 · <strong>الدعم الفني:</strong> <a href="mailto:driverflow.support@gmail.com">driverflow.support@gmail.com</a></p>
+            <p><strong>DriverFlow</strong> هو مساعد بصري وصوتي للسلامة المرورية مصمم لسائقي التوصيل ونقل الركاب المحترفين. توضح سياسة الخصوصية هذه بشفافية كيف يعمل التطبيق ولماذا <strong>لا يجمع أو يخزن أو يشارك أي بيانات شخصية أو حساسة للمستخدم</strong>.</p>
+
+            <h3>1. إفصاح بارز حول استخدام واجهة AccessibilityService</h3>
+            <div class="highlight-box">
+                <p><strong>قراءة مؤقتة فقط بدون أتمتة:</strong> يستخدم DriverFlow واجهة Android <code>AccessibilityService</code> (<code>android.permission.BIND_ACCESSIBILITY_SERVICE</code>) مع تعطيل تنفيذ الإيماءات بشكل صارم في إعدادات النظام (<code>android:canPerformGestures="false"</code> و<code>canTakeScreenshot="false"</code>).</p>
+            </div>
+            <ul>
+                <li><strong>الغرض الحصري:</strong> عند ظهور عرض رحلة أو توصيل في التطبيق الذي يختاره المستخدم، يقرأ التطبيق بشكل سلبي القيم الرقمية الظاهرة على الشاشة فقط (الأجرة، المسافة، والوقت المقدر) لحساب الجدوى الفورية (<code>$/كم</code> أو <code>$/ميل</code> و<code>$/ساعة</code>)، وعرض إشارة المرور العائمة وإعلان التقييم عبر <code>TextToSpeech</code>.</li>
+                <li><strong>صفر أتمتة:</strong> <strong>لا يقوم DriverFlow أبداً باللمس التلقائي للشاشة</strong>، ولا يستدعي <code>dispatchGesture</code> مطلقاً، ولا يقبل أو يرفض أي طلبات تلقائياً.</li>
+                <li><strong>معالجة مؤقتة 100% في الذاكرة المحلية:</strong> يتم تقييم النص فوراً في ذاكرة RAM المؤقتة ويُحذف مباشرةً. لا يتم حفظ سجل الرحلات أو العناوين أو بيانات الركاب.</li>
+                <li><strong>الالتقاط المساعد الاختياري (نافذة 30 ثانية):</strong> عند الضغط يدوياً على <em>«إضافة تطبيق»</em>، يفتح التطبيق نافذة سلبية مؤقتة لمدة 30 ثانية للتعرف فقط على حزمة التطبيق التي يؤكدها المستخدم دون استخدام <code>QUERY_ALL_PACKAGES</code>.</li>
+            </ul>
+
+            <h3>2. عدم جمع أو إرسال أي بيانات خارج الجهاز</h3>
+            <p>تم تصميم DriverFlow وفق مبدأ <em>الخصوصية حسب التصميم (Privacy by Design)</em>:</p>
+            <ul>
+                <li><strong>بدون خوادم خاصة:</strong> كود التطبيق <strong>لا يطلب إذن <code>android.permission.INTERNET</code></strong>. تُدمج أذونات الشبكة (<code>INTERNET</code> / <code>ACCESS_NETWORK_STATE</code> / <code>com.android.vending.BILLING</code>) حصرياً بواسطة حزمة <strong>Google Play Billing 9.1.0 SDK</strong> الرسمية للتحقق من عمليات الشراء الاختيارية لمرة واحدة.</li>
+                <li><strong>بدون تتبع الموقع GPS:</strong> لا يطلب <code>ACCESS_FINE_LOCATION</code> ولا <code>ACCESS_COARSE_LOCATION</code>.</li>
+                <li><strong>بدون الوصول للميكروفون:</strong> لا يطلب <code>RECORD_AUDIO</code>؛ تعتمد التنبيهات الصوتية فقط على محرك النظام <code>TextToSpeech</code>.</li>
+                <li><strong>بدون إعلانات أو أدوات تتبع:</strong> خالٍ تماماً من حزم الإعلانات والتحليلات والقياس عن بُعد.</li>
+            </ul>
+
+            <h3>3. الأذونات المطلوبة والمبرر التقني</h3>
+            <ul>
+                <li><code>SYSTEM_ALERT_WINDOW</code>: يُستخدم حصرياً لعرض إشارة المرور العائمة فوق عروض الرحلات الواردة.</li>
+                <li><code>BIND_ACCESSIBILITY_SERVICE</code>: يُستخدم فقط لقراءة أرقام العرض بشكل سلبي بعد موافقة المستخدم الصريحة على الإفصاح البارز.</li>
+                <li><code>BLUETOOTH</code> / <code>BLUETOOTH_CONNECT</code> و<code>MODIFY_AUDIO_SETTINGS</code>: يُستخدمان فقط لاكتشاف سماعات البلوتوث أو نظام صوت السيارة لتوجيه الصوت.</li>
+                <li><code>VIBRATE</code>: اهتزاز خفيف عند ضبط الحدود في الواجهة.</li>
+            </ul>
+
+            <h3>4. التخزين المحلي والتحكم الكامل للمستخدم</h3>
+            <ul>
+                <li><strong>التفضيلات المحلية:</strong> تُحفظ الحدود واللغة والمظهر والتطبيقات المختارة محلياً فقط في <code>SharedPreferences</code> الخاصة مع تعطيل النسخ الاحتياطي السحابي (<code>android:allowBackup="false"</code>).</li>
+                <li><strong>عدادات مجهولة:</strong> خلال التجربة المجانية يحتفظ التطبيق بـ 3 عدادات رقمية محلية فقط دون مبالغ أو عناوين أو سجل.</li>
+                <li><strong>سجلات التشخيص المحلية الاختيارية:</strong> سجلات الإنتاج منقحة تماماً (بلا أسعار أو أسماء تطبيقات)، وتُحفظ محلياً حتى 7 أيام كحد أقصى وتُشارك فقط عند التصدير اليدوي.</li>
+                <li><strong>الحذف الفوري:</strong> يمكنك مسح جميع البيانات المحلية في أي وقت عبر زر <strong>«إعادة ضبط البيانات المحلية»</strong> في الشاشة الرئيسية أو بإلغاء تثبيت التطبيق.</li>
+            </ul>
+
+            <h3>5. التجربة المجانية والشراء لمرة واحدة (Google Play Billing)</h3>
+            <ul>
+                <li><strong>تجربة مجانية لمدة 7 أيام:</strong> تُحتسب محلياً من أول تثبيت دون إنشاء حساب أو بطاقة بنكية.</li>
+                <li><strong>الترخيص الدائم لمرة واحدة:</strong> يتم الفتح الدائم عبر عملية شراء واحدة تتم حصرياً عبر <strong>Google Play Store</strong> (<code>Google Play Billing</code>).</li>
+            </ul>
+
+            <h3>6. إخلاء المسؤولية وعدم الانتماء</h3>
+            <p>DriverFlow أداة مستقلة ولا يتبع ولا يُرعى ولا يُعتمد من قبل Uber أو Careem أو Cabify أو DiDi أو أي منصة أخرى.</p>
+
+            <h3>7. التواصل</h3>
+            <p>لأي استفسار حول الخصوصية أو الدعم الفني: <a href="mailto:driverflow.support@gmail.com">driverflow.support@gmail.com</a>.</p>
+        </section>
+    </div>
+
+    <div id="lang-hi" class="lang-panel" lang="hi" dir="ltr" hidden="until-found">
+        <div class="badges">
+                <div class="badge-card">
+                    <strong>100% निष्क्रिय (Passive)</strong>
+                    <span><code>canPerformGestures="false"</code> — कोई ऑटो-टच या ऑटोमेशन नहीं</span>
+                </div>
+                <div class="badge-card">
+                    <strong>कोई निजी सर्वर नहीं</strong>
+                    <span>100% स्थानीय प्रोसेसिंग; नेटवर्क केवल Google Play Billing SDK के लिए</span>
+                </div>
+                <div class="badge-card">
+                    <strong>GPS या माइक्रोफ़ोन नहीं</strong>
+                    <span>लोकेशन की अनुमति नहीं और कोई ऑडियो रिकॉर्डिंग नहीं</span>
+                </div>
+                <div class="badge-card">
+                    <strong>अस्थायी मेमोरी (RAM)</strong>
+                    <span>व्यक्तिगत डेटा सहेजे बिना लोकल RAM में तुरंत गणना</span>
+                </div>
+        </div>
+        <section class="policy-block">
+            <span class="lang-tag">🇮🇳 हिन्दी</span>
+            <h2>गोपनीयता नीति — DriverFlow (<code>com.driverflow</code>)</h2>
+            <p><strong>अंतिम अपडेट:</strong> नवंबर 2026 · <strong>सहायता संपर्क:</strong> <a href="mailto:driverflow.support@gmail.com">driverflow.support@gmail.com</a></p>
+            <p><strong>DriverFlow</strong> पेशेवर राइडशेयर और डिलीवरी ड्राइवरों के लिए एक विज़ुअल और वॉइस रोड-सेफ्टी सहायक है। यह नीति स्पष्ट करती है कि ऐप क्यों <strong>कोई भी व्यक्तिगत या संवेदनशील डेटा एकत्र, संग्रहीत या साझा नहीं करता है</strong>।</p>
+
+            <h3>1. AccessibilityService API के उपयोग का प्रमुख प्रकटीकरण</h3>
+            <div class="highlight-box">
+                <p><strong>बिना ऑटोमेशन के अस्थायी रीड-ओनली संचालन:</strong> DriverFlow सिस्टम कॉन्फ़िगरेशन में जेस्चर को सख्ती से बंद रखते हुए Android <code>AccessibilityService</code> API (<code>android.permission.BIND_ACCESSIBILITY_SERVICE</code>) का उपयोग करता है (<code>android:canPerformGestures="false"</code>, <code>canTakeScreenshot="false"</code>)।</p>
+            </div>
+            <ul>
+                <li><strong>एकमात्र उद्देश्य:</strong> उपयोगकर्ता द्वारा चुने गए ऐप पर नया ऑफ़र आने पर, सेवा केवल लाभप्रदता (<code>$/km</code> या <code>$/mi</code> और <code>$/h</code>) की गणना करने, फ़्लोटिंग ट्रैफ़िक लाइट दिखाने और <code>TextToSpeech</code> से बोलकर बताने के लिए स्क्रीन के संख्यात्मक मान निष्क्रिय रूप से पढ़ती है।</li>
+                <li><strong>शून्य ऑटोमेशन:</strong> DriverFlow <strong>स्क्रीन पर ऑटोमैटिक टच नहीं करता</strong>, कभी <code>dispatchGesture</code> कॉल नहीं करता और कभी राइड अपने-आप स्वीकार या अस्वीकार नहीं करता।</li>
+                <li><strong>स्थानीय RAM में 100% अस्थायी प्रोसेसिंग:</strong> स्क्रीन का टेक्स्ट तुरंत RAM में जाँचा जाता है और तुरंत हटा दिया जाता है। कोई ट्रिप इतिहास, पता या यात्री डेटा सहेजा नहीं जाता।</li>
+                <li><strong>वैकल्पिक असिस्टेड कैप्चर (30-सेकंड विंडो):</strong> मैन्युअल रूप से <em>'ऐप जोड़ें'</em> पर टैप करने पर ऐप केवल उपयोगकर्ता द्वारा पुष्टि किए गए पैकेज की पहचान करने हेतु <code>QUERY_ALL_PACKAGES</code> के बिना 30 सेकंड की निष्क्रिय विंडो खोलता है।</li>
+            </ul>
+
+            <h3>2. शून्य डेटा संग्रह और शून्य बाहरी ट्रांसमिशन</h3>
+            <p>DriverFlow सख्त <em>Privacy by Design</em> सिद्धांतों पर बनाया गया है:</p>
+            <ul>
+                <li><strong>कोई निजी सर्वर नहीं:</strong> ऐप कोड <strong><code>android.permission.INTERNET</code> घोषित नहीं करता</strong>। नेटवर्क अनुमतियाँ (<code>INTERNET</code> / <code>ACCESS_NETWORK_STATE</code> / <code>com.android.vending.BILLING</code>) केवल वैकल्पिक एकमुश्त खरीदारी हेतु आधिकारिक <strong>Google Play Billing 9.1.0 SDK</strong> द्वारा जोड़ी जाती हैं।</li>
+                <li><strong>कोई GPS ट्रैकिंग नहीं:</strong> <code>ACCESS_FINE_LOCATION</code> या <code>ACCESS_COARSE_LOCATION</code> नहीं माँगता।</li>
+                <li><strong>माइक्रोफ़ोन एक्सेस नहीं:</strong> <code>RECORD_AUDIO</code> नहीं माँगता; आवाज़ के लिए केवल सिस्टम <code>TextToSpeech</code> का उपयोग होता है।</li>
+                <li><strong>कोई विज्ञापन या ट्रैकर नहीं:</strong> कोई तृतीय-पक्ष एनालिटिक्स या दूरस्थ टेलीमेट्री नहीं।</li>
+            </ul>
+
+            <h3>3. माँगी गई अनुमतियाँ और तकनीकी कारण</h3>
+            <ul>
+                <li><code>SYSTEM_ALERT_WINDOW</code>: केवल ऑफ़र के ऊपर कॉम्पैक्ट फ़्लोटिंग ट्रैफ़िक लाइट दिखाने के लिए।</li>
+                <li><code>BIND_ACCESSIBILITY_SERVICE</code>: केवल प्रमुख प्रकटीकरण स्वीकार करने के बाद ऑफ़र के नंबर निष्क्रिय रूप से पढ़ने के लिए।</li>
+                <li><code>BLUETOOTH</code> / <code>BLUETOOTH_CONNECT</code> और <code>MODIFY_AUDIO_SETTINGS</code>: केवल Bluetooth हेडसेट या कार ऑडियो का पता लगाकर TTS ध्वनि भेजने के लिए।</li>
+                <li><code>VIBRATE</code>: थ्रेशोल्ड समायोजित करते समय हल्के स्पर्श फ़ीडबैक के लिए।</li>
+            </ul>
+
+            <h3>4. स्थानीय संग्रहण और पूर्ण उपयोगकर्ता नियंत्रण</h3>
+            <ul>
+                <li><strong>स्थानीय प्राथमिकताएँ:</strong> सीमाएँ, भाषा, थीम और चुने गए ऐप्स क्लाउड बैकअप बंद रखते हुए (<code>android:allowBackup="false"</code>) केवल निजी <code>SharedPreferences</code> में सहेजे जाते हैं।</li>
+                <li><strong>गुमनाम काउंटर:</strong> मुफ़्त ट्रायल के दौरान बिना किराया, पता या इतिहास के केवल 3 स्थानीय संख्यात्मक काउंटर रखे जाते हैं।</li>
+                <li><strong>वैकल्पिक स्थानीय डायग्नोस्टिक्स:</strong> रिलीज़ लॉग्स पूरी तरह संपादित (बिना राशि या ऐप नाम) होते हैं, अधिकतम 7 दिनों तक डिवाइस में रहते हैं और केवल मैन्युअल एक्सपोर्ट करने पर ही साझा होते हैं।</li>
+                <li><strong>तुरंत हटाना:</strong> मुख्य स्क्रीन पर <strong>'स्थानीय डेटा रीसेट करें'</strong> दबाकर या ऐप अनइंस्टॉल करके कभी भी सारा डेटा मिटाया जा सकता है।</li>
+            </ul>
+
+            <h3>5. मुफ़्त ट्रायल और एकमुश्त खरीदारी (Google Play Billing)</h3>
+            <ul>
+                <li><strong>7-दिन का मुफ़्त ट्रायल:</strong> बिना खाता या कार्ड के पहली इंस्टॉलेशन से डिवाइस पर स्थानीय रूप से गिना जाता है।</li>
+                <li><strong>एकमुश्त लाइफटाइम पास:</strong> स्थायी अनलॉक केवल <strong>Google Play Store</strong> (<code>Google Play Billing</code>) द्वारा संसाधित एकल खरीदारी से होता है।</li>
+            </ul>
+
+            <h3>6. गैर-संबद्धता अस्वीकरण</h3>
+            <p>DriverFlow एक स्वतंत्र टूल है और Uber, Ola, Rapido, Zomato, Swiggy, DoorDash या किसी भी प्लेटफ़ॉर्म से संबद्ध या प्रायोजित नहीं है।</p>
+
+            <h3>7. संपर्क जानकारी</h3>
+            <p>गोपनीयता या सहायता संबंधी प्रश्नों के लिए संपर्क करें: <a href="mailto:driverflow.support@gmail.com">driverflow.support@gmail.com</a>.</p>
+        </section>
+    </div>
+
+    <div id="lang-id" class="lang-panel" lang="id" dir="ltr" hidden="until-found">
+        <div class="badges">
+                <div class="badge-card">
+                    <strong>100% Pasif</strong>
+                    <span><code>canPerformGestures="false"</code> — Tanpa sentuhan atau otomatisasi</span>
+                </div>
+                <div class="badge-card">
+                    <strong>Tanpa Server Sendiri</strong>
+                    <span>Pemrosesan 100% lokal; jaringan hanya untuk SDK Google Play Billing</span>
+                </div>
+                <div class="badge-card">
+                    <strong>Tanpa GPS atau Mikrofon</strong>
+                    <span>Tidak meminta izin lokasi maupun merekam audio</span>
+                </div>
+                <div class="badge-card">
+                    <strong>Memori Sementara</strong>
+                    <span>Perhitungan real-time di RAM lokal tanpa menyimpan data pribadi</span>
+                </div>
+        </div>
+        <section class="policy-block">
+            <span class="lang-tag">🇮🇩 Bahasa Indonesia</span>
+            <h2>Kebijakan Privasi — DriverFlow (<code>com.driverflow</code>)</h2>
+            <p><strong>Pembaruan terakhir:</strong> November 2026 · <strong>Kontak Dukungan:</strong> <a href="mailto:driverflow.support@gmail.com">driverflow.support@gmail.com</a></p>
+            <p><strong>DriverFlow</strong> adalah asisten keselamatan berkendara visual dan suara untuk pengemudi dan kurir profesional. Kebijakan Privasi ini menjelaskan secara transparan mengapa aplikasi <strong>tidak mengumpulkan, menyimpan, atau membagikan data pribadi maupun sensitif pengguna</strong>.</p>
+
+            <h3>1. Pengungkapan Jelas Penggunaan API AccessibilityService</h3>
+            <div class="highlight-box">
+                <p><strong>Hanya Baca Sementara Tanpa Otomatisasi:</strong> DriverFlow menggunakan API Android <code>AccessibilityService</code> (<code>android.permission.BIND_ACCESSIBILITY_SERVICE</code>) dengan kemampuan gestur dinonaktifkan secara ketat di sistem (<code>android:canPerformGestures="false"</code> dan <code>canTakeScreenshot="false"</code>).</p>
+            </div>
+            <ul>
+                <li><strong>Tujuan tunggal:</strong> Saat penawaran masuk muncul di aplikasi yang dipilih pengguna, layanan membaca angka di layar secara pasif (tarif, jarak, dan estimasi waktu) untuk menghitung profitabilitas (<code>$/km</code> atau <code>$/mi</code> dan <code>$/h</code>), menampilkan lampu lalu lintas mengambang, dan mengumumkannya via <code>TextToSpeech</code>.</li>
+                <li><strong>Nol otomatisasi:</strong> DriverFlow <strong>TIDAK melakukan ketukan layar otomatis</strong>, tidak pernah memanggil <code>dispatchGesture</code>, dan tidak pernah menerima/menolak order secara otomatis.</li>
+                <li><strong>100% sementara di RAM lokal:</strong> Teks penawaran langsung dievaluasi di RAM sementara lalu langsung dibuang. Riwayat perjalanan, alamat, dan data penumpang tidak pernah disimpan.</li>
+                <li><strong>Tangkapan Terbantu Opsional (jendela 30 detik):</strong> Saat pengguna mengetuk manual <em>'Tambah aplikasi'</em>, DriverFlow membuka jendela pasif 30 detik hanya untuk mengenali paket aplikasi yang dikonfirmasi pengguna tanpa <code>QUERY_ALL_PACKAGES</code>.</li>
+            </ul>
+
+            <h3>2. Nol Pengumpulan &amp; Nol Transmisi Eksternal</h3>
+            <p>DriverFlow dirancang berdasarkan prinsip ketat <em>Privacy by Design</em>:</p>
+            <ul>
+                <li><strong>Tanpa server sendiri:</strong> Kode aplikasi <strong>TIDAK mendeklarasikan <code>android.permission.INTERNET</code></strong>. Izin jaringan (<code>INTERNET</code> / <code>ACCESS_NETWORK_STATE</code> / <code>com.android.vending.BILLING</code>) hanya berasal dari SDK resmi <strong>Google Play Billing 9.1.0</strong> untuk memproses pembelian satu kali opsional via Google Play.</li>
+                <li><strong>Tanpa pelacakan GPS:</strong> Tidak meminta <code>ACCESS_FINE_LOCATION</code> atau <code>ACCESS_COARSE_LOCATION</code>.</li>
+                <li><strong>Tanpa akses mikrofon:</strong> Tidak meminta <code>RECORD_AUDIO</code>; suara hanya memakai mesin <code>TextToSpeech</code> bawaan Android.</li>
+                <li><strong>Tanpa iklan atau pelacak:</strong> Tidak menyertakan SDK iklan, analitik pihak ketiga, atau telemetri jarak jauh.</li>
+            </ul>
+
+            <h3>3. Izin yang Diminta &amp; Alasan Teknis</h3>
+            <ul>
+                <li><code>SYSTEM_ALERT_WINDOW</code>: Hanya untuk menampilkan indikator lampu mengambang di atas penawaran masuk.</li>
+                <li><code>BIND_ACCESSIBILITY_SERVICE</code>: Hanya untuk pembacaan pasif angka penawaran setelah pengguna menyetujui dialog Pengungkapan Jelas.</li>
+                <li><code>BLUETOOTH</code> / <code>BLUETOOTH_CONNECT</code> &amp; <code>MODIFY_AUDIO_SETTINGS</code>: Hanya untuk mendeteksi headset Bluetooth atau audio kendaraan agar pengumuman TTS terdengar jelas.</li>
+                <li><code>VIBRATE</code>: Umpan balik getar halus saat menyesuaikan batas ambang.</li>
+            </ul>
+
+            <h3>4. Penyimpanan Lokal &amp; Kontrol Penuh Pengguna</h3>
+            <ul>
+                <li><strong>Preferensi lokal:</strong> Batas ambang, bahasa suara, tema, dan aplikasi aktif disimpan hanya di <code>SharedPreferences</code> lokal dengan cadangan cloud dinonaktifkan (<code>android:allowBackup="false"</code>).</li>
+                <li><strong>Penghitung anonim:</strong> Selama uji coba gratis, aplikasi hanya menyimpan 3 penghitung angka lokal tanpa nominal, alamat, atau riwayat.</li>
+                <li><strong>Diagnostik lokal opsional:</strong> Log produksi disensor ketat (tanpa tarif atau nama aplikasi), disimpan maksimal 7 hari secara lokal, dan hanya dibagikan bila diekspor manual.</li>
+                <li><strong>Penghapusan instan:</strong> Hapus seluruh data lokal kapan saja dengan mengetuk <strong>'Setel ulang data lokal'</strong> di layar utama atau menghapus aplikasi.</li>
+            </ul>
+
+            <h3>5. Uji Coba Gratis &amp; Pembelian Satu Kali (Google Play Billing)</h3>
+            <ul>
+                <li><strong>Uji coba gratis 7 hari:</strong> Dihitung secara lokal sejak pemasangan pertama tanpa akun atau kartu.</li>
+                <li><strong>Lifetime Pass Satu Kali:</strong> Pembukaan permanen dilakukan lewat satu kali pembelian eksklusif melalui <strong>Google Play Store</strong> (<code>Google Play Billing</code>).</li>
+            </ul>
+
+            <h3>6. Sanggahan Non-Afiliasi</h3>
+            <p>DriverFlow adalah alat bantu independen dan tidak berafiliasi dengan atau disponsori oleh Gojek, Grab, Uber, Maxim, inDrive, ShopeeFood, atau platform lainnya.</p>
+
+            <h3>7. Informasi Kontak</h3>
+            <p>Pertanyaan terkait privasi atau dukungan teknis: <a href="mailto:driverflow.support@gmail.com">driverflow.support@gmail.com</a>.</p>
+        </section>
+    </div>
+
+    <div id="lang-th" class="lang-panel" lang="th" dir="ltr" hidden="until-found">
+        <div class="badges">
+                <div class="badge-card">
+                    <strong>ทำงานแบบพาสซีฟ 100%</strong>
+                    <span><code>canPerformGestures="false"</code> — ไม่มีการแตะหน้าจอหรือการทำงานอัตโนมัติ</span>
+                </div>
+                <div class="badge-card">
+                    <strong>ไม่มีเซิร์ฟเวอร์ส่วนตัว</strong>
+                    <span>ประมวลผลบนเครื่อง 100%; ใช้เครือข่ายเฉพาะ SDK Google Play Billing</span>
+                </div>
+                <div class="badge-card">
+                    <strong>ไม่ใช้ GPS และไมโครโฟน</strong>
+                    <span>ไม่ขอสิทธิ์ตำแหน่งและไม่บันทึกเสียง</span>
+                </div>
+                <div class="badge-card">
+                    <strong>หน่วยความจำชั่วคราว</strong>
+                    <span>คำนวณแบบเรียลไทม์บน RAM โดยไม่เก็บข้อมูลส่วนบุคคล</span>
+                </div>
+        </div>
+        <section class="policy-block">
+            <span class="lang-tag">🇹🇭 ไทย</span>
+            <h2>นโยบายความเป็นส่วนตัว — DriverFlow (<code>com.driverflow</code>)</h2>
+            <p><strong>อัปเดตล่าสุด:</strong> พฤศจิกายน 2026 · <strong>ติดต่อฝ่ายสนับสนุน:</strong> <a href="mailto:driverflow.support@gmail.com">driverflow.support@gmail.com</a></p>
+            <p><strong>DriverFlow</strong> เป็นผู้ช่วยด้านความปลอดภัยทางถนนแบบภาพและเสียงสำหรับผู้ขับขี่และไรเดอร์มืออาชีพ นโยบายนี้อธิบายอย่างโปร่งใสว่าเหตุใดแอปจึง<strong>ไม่เก็บรวบรวม จัดเก็บ หรือแบ่งปันข้อมูลส่วนบุคคลหรือข้อมูลอ่อนไหวของผู้ใช้</strong></p>
+
+            <h3>1. การเปิดเผยข้อมูลสำคัญเกี่ยวกับ AccessibilityService API</h3>
+            <div class="highlight-box">
+                <p><strong>อ่านอย่างเดียวชั่วคราวโดยไม่มีระบบอัตโนมัติ:</strong> DriverFlow ใช้ Android <code>AccessibilityService</code> API (<code>android.permission.BIND_ACCESSIBILITY_SERVICE</code>) โดยปิดการจำลองท่าทางอย่างเคร่งครัดในระบบ (<code>android:canPerformGestures="false"</code> และ <code>canTakeScreenshot="false"</code>)</p>
+            </div>
+            <ul>
+                <li><strong>วัตถุประสงค์เดียว:</strong> เมื่อมีงานเสนอเข้ามาในแอปที่ผู้ใช้เลือก บริการจะอ่านค่าตัวเลขบนหน้าจอแบบพาสซีฟ (ค่าโดยสาร ระยะทาง และเวลาโดยประมาณ) เพื่อคำนวณความคุ้มค่า (<code>$/กม.</code> หรือ <code>$/ไมล์</code> และ <code>$/ชม.</code>) แสดงไฟจราจรลอย และอ่านผลผ่าน <code>TextToSpeech</code></li>
+                <li><strong>ไม่มีการทำงานอัตโนมัติ:</strong> DriverFlow <strong>ไม่แตะหน้าจออัตโนมัติ</strong> ไม่เรียกใช้ <code>dispatchGesture</code> และไม่รับหรือปฏิเสธงานแทนผู้ขับขี่</li>
+                <li><strong>ประมวลผลชั่วคราวใน RAM บนเครื่อง 100%:</strong> ข้อความบนหน้าจอจะถูกประมวลผลทันทีในหน่วยความจำชั่วคราวแล้วลบทิ้ง ไม่มีการบันทึกประวัติงาน ที่อยู่ หรือข้อมูลผู้โดยสาร</li>
+                <li><strong>การจับภาพช่วยเลือกเพิ่มเติม (หน้าต่าง 30 วินาที):</strong> เมื่อแตะ <em>"เพิ่มแอป"</em> ด้วยตนเอง แอปจะเปิดหน้าต่างพาสซีฟ 30 วินาทีเพื่อระบุแพ็กเกจที่ผู้ใช้ยืนยันโดยไม่ใช้ <code>QUERY_ALL_PACKAGES</code></li>
+            </ul>
+
+            <h3>2. ไม่มีการเก็บรวบรวมและไม่ส่งข้อมูลออกนอกเครื่อง</h3>
+            <p>DriverFlow พัฒนาตามหลัก <em>Privacy by Design</em> อย่างเคร่งครัด:</p>
+            <ul>
+                <li><strong>ไม่มีเซิร์ฟเวอร์ของตนเอง:</strong> โค้ดแอป<strong>ไม่ประกาศใช้ <code>android.permission.INTERNET</code></strong> สิทธิ์เครือข่าย (<code>INTERNET</code> / <code>ACCESS_NETWORK_STATE</code> / <code>com.android.vending.BILLING</code>) มาจาก <strong>Google Play Billing 9.1.0 SDK</strong> เพื่อตรวจสอบการซื้อครั้งเดียวผ่าน Google Play เท่านั้น</li>
+                <li><strong>ไม่มีการติดตาม GPS:</strong> ไม่ขอสิทธิ์ <code>ACCESS_FINE_LOCATION</code> หรือ <code>ACCESS_COARSE_LOCATION</code></li>
+                <li><strong>ไม่เข้าถึงไมโครโฟน:</strong> ไม่ขอสิทธิ์ <code>RECORD_AUDIO</code> เสียงประกาศใช้เพียง <code>TextToSpeech</code> ของระบบ</li>
+                <li><strong>ไม่มีโฆษณาหรือตัวติดตาม:</strong> ไม่มี SDK โฆษณา การวิเคราะห์บุคคลที่สาม หรือการส่งข้อมูลระยะไกล</li>
+            </ul>
+
+            <h3>3. สิทธิ์ที่ร้องขอและเหตุผลทางเทคนิค</h3>
+            <ul>
+                <li><code>SYSTEM_ALERT_WINDOW</code>: ใช้แสดงแถบไฟจราจรลอยขนาดกะทัดรัดเหนือหน้าจองานที่เข้ามาเท่านั้น</li>
+                <li><code>BIND_ACCESSIBILITY_SERVICE</code>: ใช้เพื่ออ่านตัวเลขข้อเสนอแบบพาสซีฟหลังจากผู้ใช้ยอมรับคำชี้แจงในแอปแล้วเท่านั้น</li>
+                <li><code>BLUETOOTH</code> / <code>BLUETOOTH_CONNECT</code> และ <code>MODIFY_AUDIO_SETTINGS</code>: ใช้ตรวจจับหูฟังบลูทูธหรือเครื่องเสียงรถยนต์เพื่อส่งเสียง TTS เท่านั้น</li>
+                <li><code>VIBRATE</code>: ตอบสนองการสั่นเบาๆ เมื่อปรับเกณฑ์ค่า</li>
+            </ul>
+
+            <h3>4. การจัดเก็บในเครื่องและการควบคุมข้อมูลของผู้ใช้</h3>
+            <ul>
+                <li><strong>การตั้งค่าในเครื่อง:</strong> เกณฑ์ไฟจราจร ภาษา ธีม และแอปที่เลือกจะเก็บไว้ใน <code>SharedPreferences</code> ส่วนตัวบนเครื่องโดยปิดการสำรองข้อมูลบนคลาวด์ (<code>android:allowBackup="false"</code>)</li>
+                <li><strong>ตัวนับแบบไม่ระบุตัวตน:</strong> ระหว่างทดลองใช้ฟรี แอปเก็บเฉพาะตัวนับตัวเลข 3 ค่าในเครื่องโดยไม่เก็บจำนวนเงิน ที่อยู่ หรือประวัติ</li>
+                <li><strong>บันทึกการวินิจฉัยในเครื่อง (ไม่บังคับ):</strong> บันทึกในเวอร์ชันจริงถูกปกปิดข้อมูลสำคัญ ไม่มีค่าโดยสารหรือชื่อแอป เก็บไว้สูงสุด 7 วันและแชร์เฉพาะเมื่อกดส่งออกด้วยตนเอง</li>
+                <li><strong>ลบข้อมูลทันที:</strong> ลบการตั้งค่าและข้อมูลในเครื่องทั้งหมดได้ตลอดเวลาโดยกด <strong>"รีเซ็ตข้อมูลในเครื่อง"</strong> บนหน้าจอหลักหรือถอนการติดตั้งแอป</li>
+            </ul>
+
+            <h3>5. ทดลองใช้ฟรีและการซื้อครั้งเดียว (Google Play Billing)</h3>
+            <ul>
+                <li><strong>ทดลองใช้ฟรี 7 วัน:</strong> นับเวลาในเครื่องตั้งแต่ติดตั้งครั้งแรก โดยไม่ต้องสร้างบัญชีหรือใช้บัตร</li>
+                <li><strong>Lifetime Pass ซื้อครั้งเดียว:</strong> ปลดล็อกถาวรผ่านการซื้อครั้งเดียวที่ดำเนินการโดย <strong>Google Play Store</strong> (<code>Google Play Billing</code>) เท่านั้น</li>
+            </ul>
+
+            <h3>6. ข้อจำกัดความรับผิดชอบด้านความไม่เกี่ยวข้อง</h3>
+            <p>DriverFlow เป็นเครื่องมืออิสระ และไม่มีส่วนเกี่ยวข้องหรือได้รับการสนับสนุนจาก Grab, Bolt, LINE MAN, Uber, DiDi, DoorDash หรือแพลตฟอร์มใดๆ</p>
+
+            <h3>7. ติดต่อเรา</h3>
+            <p>สอบถามเกี่ยวกับความเป็นส่วนตัวหรือขอความช่วยเหลือทางเทคนิค: <a href="mailto:driverflow.support@gmail.com">driverflow.support@gmail.com</a></p>
+        </section>
+    </div>
+
+    <div id="lang-vi" class="lang-panel" lang="vi" dir="ltr" hidden="until-found">
+        <div class="badges">
+                <div class="badge-card">
+                    <strong>100% Thụ động</strong>
+                    <span><code>canPerformGestures="false"</code> — Không chạm màn hình hay tự động hóa</span>
+                </div>
+                <div class="badge-card">
+                    <strong>Không Máy chủ Riêng</strong>
+                    <span>Xử lý 100% cục bộ; mạng chỉ dùng cho SDK Google Play Billing</span>
+                </div>
+                <div class="badge-card">
+                    <strong>Không GPS hay Micro</strong>
+                    <span>Không yêu cầu quyền vị trí và không ghi âm</span>
+                </div>
+                <div class="badge-card">
+                    <strong>Bộ nhớ Tạm thời</strong>
+                    <span>Tính toán thời gian thực trên RAM cục bộ, không lưu dữ liệu cá nhân</span>
+                </div>
+        </div>
+        <section class="policy-block">
+            <span class="lang-tag">🇻🇳 Tiếng Việt</span>
+            <h2>Chính sách Quyền riêng tư — DriverFlow (<code>com.driverflow</code>)</h2>
+            <p><strong>Cập nhật lần cuối:</strong> Tháng 11 năm 2026 · <strong>Liên hệ Hỗ trợ:</strong> <a href="mailto:driverflow.support@gmail.com">driverflow.support@gmail.com</a></p>
+            <p><strong>DriverFlow</strong> là trợ lý an toàn giao thông bằng hình ảnh và giọng nói dành cho tài xế và shipper chuyên nghiệp. Chính sách này giải thích minh bạch cách ứng dụng hoạt động và lý do <strong>không thu thập, lưu trữ hay chia sẻ bất kỳ dữ liệu cá nhân hoặc nhạy cảm nào</strong>.</p>
+
+            <h3>1. Công bố Nổi bật về API AccessibilityService</h3>
+            <div class="highlight-box">
+                <p><strong>Chỉ Đọc Tạm thời Không Tự động hóa:</strong> DriverFlow sử dụng API Android <code>AccessibilityService</code> (<code>android.permission.BIND_ACCESSIBILITY_SERVICE</code>) với thao tác cử chỉ bị tắt nghiêm ngặt trong cấu hình hệ thống (<code>android:canPerformGestures="false"</code> và <code>canTakeScreenshot="false"</code>).</p>
+            </div>
+            <ul>
+                <li><strong>Mục đích duy nhất:</strong> Khi có cuốc xe hoặc đơn giao hàng hiển thị trên ứng dụng bạn đã chọn, dịch vụ chỉ đọc thụ động các con số hiển thị trên màn hình (giá cước, quãng đường, thời gian ước tính) để tính tỷ suất sinh lời (<code>$/km</code> hoặc <code>$/mi</code> và <code>$/h</code>), hiển thị đèn giao thông nổi và đọc thông báo qua <code>TextToSpeech</code>.</li>
+                <li><strong>Không tự động hóa:</strong> DriverFlow <strong>KHÔNG thực hiện chạm màn hình tự động</strong>, không bao giờ gọi <code>dispatchGesture</code> và không tự động nhận hoặc từ chối đơn.</li>
+                <li><strong>Xử lý tạm thời 100% trong RAM cục bộ:</strong> Nội dung hiển thị được đánh giá tức thì trên RAM và xóa bỏ ngay lập tức. Không lưu lịch sử chuyến đi, địa chỉ hay thông tin hành khách.</li>
+                <li><strong>Ghi nhận Hỗ trợ Tùy chọn (cửa sổ 30 giây):</strong> Khi bạn nhấn thủ công <em>"Thêm ứng dụng"</em>, DriverFlow mở cửa sổ thụ động 30 giây chỉ để nhận diện gói ứng dụng bạn xác nhận mà không sử dụng <code>QUERY_ALL_PACKAGES</code>.</li>
+            </ul>
+
+            <h3>2. Không Thu thập &amp; Không Truyền Dữ liệu Ra ngoài</h3>
+            <p>DriverFlow tuân thủ nghiêm ngặt nguyên tắc <em>Bảo mật từ Thiết kế (Privacy by Design)</em>:</p>
+            <ul>
+                <li><strong>Không máy chủ riêng:</strong> Mã ứng dụng <strong>KHÔNG khai báo <code>android.permission.INTERNET</code></strong>. Các quyền mạng (<code>INTERNET</code> / <code>ACCESS_NETWORK_STATE</code> / <code>com.android.vending.BILLING</code>) chỉ do SDK chính thức <strong>Google Play Billing 9.1.0</strong> hợp nhất để xử lý giao dịch mua một lần tùy chọn trên Google Play.</li>
+                <li><strong>Không theo dõi GPS:</strong> Không yêu cầu <code>ACCESS_FINE_LOCATION</code> hay <code>ACCESS_COARSE_LOCATION</code>.</li>
+                <li><strong>Không truy cập micro:</strong> Không yêu cầu <code>RECORD_AUDIO</code>; thông báo giọng nói chỉ dùng bộ tổng hợp <code>TextToSpeech</code> sẵn có.</li>
+                <li><strong>Không quảng cáo hay trình theo dõi:</strong> Không chứa SDK quảng cáo, phân tích bên thứ ba hoặc đo từ xa.</li>
+            </ul>
+
+            <h3>3. Quyền được Yêu cầu &amp; Lý do Kỹ thuật</h3>
+            <ul>
+                <li><code>SYSTEM_ALERT_WINDOW</code>: Chỉ dùng để hiển thị thanh đèn giao thông nổi nhỏ gọn phía trên cuốc xe mới.</li>
+                <li><code>BIND_ACCESSIBILITY_SERVICE</code>: Chỉ dùng để đọc thụ động các con số đề xuất sau khi bạn đồng ý với hộp thoại Công bố Nổi bật.</li>
+                <li><code>BLUETOOTH</code> / <code>BLUETOOTH_CONNECT</code> &amp; <code>MODIFY_AUDIO_SETTINGS</code>: Chỉ dùng để nhận diện tai nghe Bluetooth hoặc âm thanh xe hơi nhằm phát âm thanh TTS phù hợp.</li>
+                <li><code>VIBRATE</code>: Phản hồi rung nhẹ khi điều chỉnh ngưỡng.</li>
+            </ul>
+
+            <h3>4. Lưu trữ Cục bộ &amp; Toàn quyền Kiểm soát của Người dùng</h3>
+            <ul>
+                <li><strong>Tùy chọn cục bộ:</strong> Các ngưỡng đèn, ngôn ngữ giọng nói, giao diện và danh sách ứng dụng chỉ được lưu trong <code>SharedPreferences</code> riêng tư với sao lưu đám mây tắt hoàn toàn (<code>android:allowBackup="false"</code>).</li>
+                <li><strong>Bộ đếm ẩn danh:</strong> Trong thời gian dùng thử miễn phí, ứng dụng chỉ lưu 3 bộ đếm số cục bộ mà không có số tiền, địa chỉ hay lịch sử.</li>
+                <li><strong>Chẩn đoán kỹ thuật cục bộ tùy chọn:</strong> Nhật ký bản phát hành được ẩn danh nghiêm ngặt (không giá cước hay tên ứng dụng), lưu tối đa 7 ngày trên máy và chỉ chia sẻ khi bạn tự xuất.</li>
+                <li><strong>Xóa dữ liệu tức thì:</strong> Bạn có thể xóa toàn bộ dữ liệu cục bộ bất cứ lúc nào bằng nút <strong>"Đặt lại dữ liệu cục bộ"</strong> trên màn hình chính hoặc gỡ cài đặt ứng dụng.</li>
+            </ul>
+
+            <h3>5. Dùng thử Miễn phí &amp; Mua Một lần (Google Play Billing)</h3>
+            <ul>
+                <li><strong>Dùng thử miễn phí 7 ngày:</strong> Được tính cục bộ từ lần cài đặt đầu tiên, không cần tài khoản hay thẻ thanh toán.</li>
+                <li><strong>Gói Trọn đời một lần:</strong> Mở khóa vĩnh viễn thông qua một lần mua duy nhất do <strong>Google Play Store</strong> (<code>Google Play Billing</code>) xử lý độc quyền.</li>
+            </ul>
+
+            <h3>6. Tuyên bố Không Liên kết</h3>
+            <p>DriverFlow là công cụ độc lập và không liên kết, tài trợ hay chứng thực bởi Grab, Be, Xanh SM, Uber, ShopeeFood, DoorDash hoặc bất kỳ nền tảng nào khác.</p>
+
+            <h3>7. Thông tin Liên hệ</h3>
+            <p>Mọi thắc mắc về quyền riêng tư hoặc hỗ trợ kỹ thuật xin liên hệ: <a href="mailto:driverflow.support@gmail.com">driverflow.support@gmail.com</a>.</p>
+        </section>
+    </div>
+
+    <div id="lang-ja" class="lang-panel" lang="ja" dir="ltr" hidden="until-found">
+        <div class="badges">
+                <div class="badge-card">
+                    <strong>100% パッシブ動作</strong>
+                    <span><code>canPerformGestures="false"</code> — 自動タップ・操作なし</span>
+                </div>
+                <div class="badge-card">
+                    <strong>自社サーバーなし</strong>
+                    <span>100%端末内処理・通信はGoogle Play Billing SDKのみ</span>
+                </div>
+                <div class="badge-card">
+                    <strong>GPS・マイク不使用</strong>
+                    <span>位置情報権限や音声録音を一切要求しません</span>
+                </div>
+                <div class="badge-card">
+                    <strong>揮発性メモリ処理</strong>
+                    <span>個人データを保存せずローカルRAM上でリアルタイム計算</span>
+                </div>
+        </div>
+        <section class="policy-block">
+            <span class="lang-tag">🇯🇵 日本語</span>
+            <h2>プライバシーポリシー — DriverFlow (<code>com.driverflow</code>)</h2>
+            <p><strong>最終更新:</strong> 2026年11月 · <strong>サポート連絡先:</strong> <a href="mailto:driverflow.support@gmail.com">driverflow.support@gmail.com</a></p>
+            <p><strong>DriverFlow</strong>は、プロのドライバーや配達員向けに設計された視覚・音声による運転安全アシスタントです。本ポリシーでは、本アプリが<strong>個人情報や機密データを一切収集・保存・共有しない理由と仕組み</strong>を透明性をもって説明します。</p>
+
+            <h3>1. AccessibilityService APIに関する明確な開示</h3>
+            <div class="highlight-box">
+                <p><strong>自動化を行わない揮発性読み取り専用動作：</strong> DriverFlowはAndroidの<code>AccessibilityService</code> API（<code>android.permission.BIND_ACCESSIBILITY_SERVICE</code>）を使用しますが、システム設定でジェスチャー実行を厳格に無効化しています（<code>android:canPerformGestures="false"</code>、<code>canTakeScreenshot="false"</code>）。</p>
+            </div>
+            <ul>
+                <li><strong>唯一の目的：</strong> ユーザーが選択したアプリで案件オファーが表示された際、画面上の数値（報酬額・距離・予想時間）のみを受動的に読み取り、収益性（<code>$/km</code>または<code>$/mi</code>、<code>$/h</code>）を計算してフローティング信号を表示し、<code>TextToSpeech</code>で音声案内します。</li>
+                <li><strong>自動化ゼロ：</strong> DriverFlowは<strong>自動タップを一切行わず</strong>、<code>dispatchGesture</code>を一度も呼び出さず、案件の自動受諾・自動拒否を行いません。</li>
+                <li><strong>ローカルRAMでの100%一時処理：</strong> 画面上のテキストは揮発性RAMで即時に計算・破棄されます。運行履歴、住所、乗客情報等は一切保存されません。</li>
+                <li><strong>任意のアシスト取得（30秒ウィンドウ）：</strong> 手動で<em>「アプリを追加」</em>をタップした際のみ、ユーザーが明示的に確認したパッケージ名を特定するため、<code>QUERY_ALL_PACKAGES</code>を使わずに30秒間の受動ウィンドウを開きます。</li>
+            </ul>
+
+            <h3>2. データ収集ゼロ・外部送信ゼロ</h3>
+            <p>DriverFlowは厳格な<em>プライバシー・バイ・デザイン</em>に基づき構築されています：</p>
+            <ul>
+                <li><strong>独自サーバーなし：</strong> アプリコードは<strong><code>android.permission.INTERNET</code>を宣言しません</strong>。ネットワーク権限（<code>INTERNET</code> / <code>ACCESS_NETWORK_STATE</code> / <code>com.android.vending.BILLING</code>）は、Google Playでの任意の一度切り購入を検証する公式<strong>Google Play Billing 9.1.0 SDK</strong>のみが追加します。</li>
+                <li><strong>GPS位置追跡なし：</strong> <code>ACCESS_FINE_LOCATION</code>や<code>ACCESS_COARSE_LOCATION</code>を要求しません。</li>
+                <li><strong>マイクアクセスなし：</strong> <code>RECORD_AUDIO</code>を要求せず、音声通知は端末標準の<code>TextToSpeech</code>のみを使用します。</li>
+                <li><strong>広告・トラッカーなし：</strong> 第三者の分析SDK、広告SDK、リモートテレメトリは一切含まれていません。</li>
+            </ul>
+
+            <h3>3. 要求する権限と技術的理由</h3>
+            <ul>
+                <li><code>SYSTEM_ALERT_WINDOW</code>：案件上にコンパクトなフローティング信号を表示する目的にのみ使用します。</li>
+                <li><code>BIND_ACCESSIBILITY_SERVICE</code>：アプリ内の明確な開示に同意した後に、画面上のオファー数値を受動的に読み取るためだけに使用します。</li>
+                <li><code>BLUETOOTH</code> / <code>BLUETOOTH_CONNECT</code>および<code>MODIFY_AUDIO_SETTINGS</code>：Bluetoothヘッドセットや車載オーディオを検出してTTS音声を出力するためだけに使用します。</li>
+                <li><code>VIBRATE</code>：しきい値調整時の触覚フィードバックに使用します。</li>
+            </ul>
+
+            <h3>4. ローカル保存とユーザーによる完全な制御</h3>
+            <ul>
+                <li><strong>ローカル設定：</strong> 判定基準、音声言語、テーマ、選択アプリはクラウドバックアップを無効化（<code>android:allowBackup="false"</code>）した端末内の専用<code>SharedPreferences</code>にのみ保存されます。</li>
+                <li><strong>匿名カウンター：</strong> 無料試用期間中は金額・住所・履歴を含まない3つのローカル集計数値のみを保持します。</li>
+                <li><strong>任意のローカル診断ログ：</strong> リリース版のログは厳格に匿名化され（料金やアプリ名を含まない）、端末内に最大7日間保存され、手動エクスポート時のみ共有されます。</li>
+                <li><strong>即時削除：</strong> メイン画面の<strong>「ローカルデータをリセット」</strong>をタップするか、アプリをアンインストールすることでいつでも全データを削除できます。</li>
+            </ul>
+
+            <h3>5. 無料トライアルと買い切り購入（Google Play Billing）</h3>
+            <ul>
+                <li><strong>7日間の無料トライアル：</strong> 初回インストールから端末ローカルで計測され、アカウント登録やカード入力は不要です。</li>
+                <li><strong>一度きりのライフタイムパス：</strong> 恒久ロック解除は<strong>Google Play Store</strong>（<code>Google Play Billing</code>）のみで処理される単発購入によって行われます。</li>
+            </ul>
+
+            <h3>6. 非提携に関する免責事項</h3>
+            <p>DriverFlowは独立したツールであり、Uber、DiDi、出前館、DoorDash、その他いかなる配車・配達プラットフォームとも提携・承認・後援関係にありません。</p>
+
+            <h3>7. お問い合わせ</h3>
+            <p>本プライバシーポリシーやサポートに関するお問い合わせ：<a href="mailto:driverflow.support@gmail.com">driverflow.support@gmail.com</a></p>
+        </section>
+    </div>
+
+    <div id="lang-ko" class="lang-panel" lang="ko" dir="ltr" hidden="until-found">
+        <div class="badges">
+                <div class="badge-card">
+                    <strong>100% 수동 읽기</strong>
+                    <span><code>canPerformGestures="false"</code> — 자동 터치 및 자동화 없음</span>
+                </div>
+                <div class="badge-card">
+                    <strong>자체 서버 없음</strong>
+                    <span>100% 기기 내 처리 · 네트워크는 Google Play Billing SDK 전용</span>
+                </div>
+                <div class="badge-card">
+                    <strong>GPS·마이크 미사용</strong>
+                    <span>위치 권한을 요청하지 않으며 음성을 녹음하지 않음</span>
+                </div>
+                <div class="badge-card">
+                    <strong>휘발성 메모리</strong>
+                    <span>개인정보 저장 없이 로컬 RAM에서 실시간 계산</span>
+                </div>
+        </div>
+        <section class="policy-block">
+            <span class="lang-tag">🇰🇷 한국어</span>
+            <h2>개인정보 처리방침 — DriverFlow (<code>com.driverflow</code>)</h2>
+            <p><strong>최종 업데이트:</strong> 2026년 11월 · <strong>지원 문의:</strong> <a href="mailto:driverflow.support@gmail.com">driverflow.support@gmail.com</a></p>
+            <p><strong>DriverFlow</strong>는 전문 운전자와 배달 기사를 위한 시각·음성 도로 안전 도우미입니다. 본 방침은 앱이 <strong>사용자의 개인정보나 민감한 데이터를 일절 수집, 저장 또는 공유하지 않는 이유와 방식</strong>을 투명하게 설명합니다.</p>
+
+            <h3>1. AccessibilityService API 사용에 관한 중요 고지</h3>
+            <div class="highlight-box">
+                <p><strong>자동화 없는 휘발성 읽기 전용 작동:</strong> DriverFlow는 시스템 설정에서 제스처 실행을 엄격히 비활성화한 상태에서 Android <code>AccessibilityService</code> API(<code>android.permission.BIND_ACCESSIBILITY_SERVICE</code>)를 사용합니다(<code>android:canPerformGestures="false"</code>, <code>canTakeScreenshot="false"</code>).</p>
+            </div>
+            <ul>
+                <li><strong>단독 목적:</strong> 사용자가 선택한 앱에 콜/배달 제안이 표시되면 화면의 숫자(운임, 거리, 예상 시간)만 수동으로 읽어 수익성(<code>$/km</code> 또는 <code>$/mi</code>, <code>$/h</code>)을 계산하고 플로팅 신호등을 표시하며 <code>TextToSpeech</code>로 안내합니다.</li>
+                <li><strong>자동화 제로:</strong> DriverFlow는 <strong>화면 자동 터치를 전혀 수행하지 않으며</strong> <code>dispatchGesture</code>를 호출하거나 콜을 자동 수락·거절하지 않습니다.</li>
+                <li><strong>로컬 RAM 100% 휘발성 처리:</strong> 화면 텍스트는 휘발성 RAM에서 즉시 계산 후 폐기됩니다. 운행 기록, 주소, 승객 정보는 절대 저장되지 않습니다.</li>
+                <li><strong>선택적 보조 캡처(30초 창):</strong> 사용자가 수동으로 <em>'앱 추가'</em>를 누른 경우에만 <code>QUERY_ALL_PACKAGES</code> 없이 확인된 앱 패키지를 식별하기 위해 30초 수동 창을 엽니다.</li>
+            </ul>
+
+            <h3>2. 데이터 수집 및 외부 전송 제로</h3>
+            <p>DriverFlow는 엄격한 <em>Privacy by Design</em> 원칙으로 설계되었습니다:</p>
+            <ul>
+                <li><strong>자체 서버 없음:</strong> 앱 코드는 <strong><code>android.permission.INTERNET</code>을 선언하지 않습니다</strong>. 네트워크 권한(<code>INTERNET</code> / <code>ACCESS_NETWORK_STATE</code> / <code>com.android.vending.BILLING</code>)은 Google Play의 선택적 일회성 구매를 검증하는 공식 <strong>Google Play Billing 9.1.0 SDK</strong>에서만 병합됩니다.</li>
+                <li><strong>GPS 위치 추적 없음:</strong> <code>ACCESS_FINE_LOCATION</code> 또는 <code>ACCESS_COARSE_LOCATION</code>을 요청하지 않습니다.</li>
+                <li><strong>마이크 접근 없음:</strong> <code>RECORD_AUDIO</code>를 요청하지 않으며 음성 안내는 시스템 <code>TextToSpeech</code>만 사용합니다.</li>
+                <li><strong>광고 및 추적기 없음:</strong> 타사 분석 SDK, 광고 SDK 또는 원격 텔레메트리가 전혀 없습니다.</li>
+            </ul>
+
+            <h3>3. 요청 권한 및 기술적 사유</h3>
+            <ul>
+                <li><code>SYSTEM_ALERT_WINDOW</code>: 수신 제안 위에 컴팩트한 플로팅 신호등을 표시하기 위한 용도로만 사용됩니다.</li>
+                <li><code>BIND_ACCESSIBILITY_SERVICE</code>: 앱 내 중요 고지에 명시적으로 동의한 후 제안 숫자만 수동으로 읽기 위해 사용됩니다.</li>
+                <li><code>BLUETOOTH</code> / <code>BLUETOOTH_CONNECT</code> 및 <code>MODIFY_AUDIO_SETTINGS</code>: Bluetooth 이어셋 또는 차량 오디오를 감지하여 TTS 음성을 전달하기 위한 용도로만 사용됩니다.</li>
+                <li><code>VIBRATE</code>: 기준값 조절 시 가벼운 햅틱 피드백 제공용입니다.</li>
+            </ul>
+
+            <h3>4. 로컬 저장 및 사용자 완전 제어</h3>
+            <ul>
+                <li><strong>로컬 설정:</strong> 기준값, 음성 언어, 테마 및 선택된 앱은 클라우드 백업이 비활성화된(<code>android:allowBackup="false"</code>) 기기 내 전용 <code>SharedPreferences</code>에만 저장됩니다.</li>
+                <li><strong>익명 카운터:</strong> 무료 체험 기간 동안 금액, 주소, 기록 없이 로컬 합산 카운터 3개만 유지됩니다.</li>
+                <li><strong>선택적 로컬 진단:</strong> 릴리스 로그는 엄격히 비식별 처리되며(요금·앱 이름 제외) 최대 7일간 로컬에 보관되고 사용자가 수동 내보내기 시에만 공유됩니다.</li>
+                <li><strong>즉시 삭제:</strong> 메인 화면의 <strong>'로컬 데이터 초기화'</strong> 버튼을 누르거나 앱을 삭제하여 언제든 모든 데이터를 지울 수 있습니다.</li>
+            </ul>
+
+            <h3>5. 무료 체험 및 일회성 구매(Google Play Billing)</h3>
+            <ul>
+                <li><strong>7일 무료 체험:</strong> 계정 생성이나 카드 등록 없이 첫 설치 시점부터 기기 내에서 로컬로 계산됩니다.</li>
+                <li><strong>일회성 평생 패스:</strong> 영구 잠금 해제는 <strong>Google Play Store</strong>(<code>Google Play Billing</code>)에서 단독 처리되는 1회 인앱 결제로 진행됩니다.</li>
+            </ul>
+
+            <h3>6. 비제휴 면책 조항</h3>
+            <p>DriverFlow는 독립적인 도구이며 Uber, 카카오, 배민, 쿠팡, DiDi, DoorDash 또는 어떠한 플랫폼과도 제휴·후원 관계가 없습니다.</p>
+
+            <h3>7. 연락처</h3>
+            <p>개인정보 보호 및 기술 지원 문의: <a href="mailto:driverflow.support@gmail.com">driverflow.support@gmail.com</a></p>
+        </section>
+    </div>
+    </main>
 
     <footer>
         <p>© 2026 DriverFlow (<code>com.driverflow</code>) · <a href="https://evecchio.github.io/driverflow-legal/privacy-policy.html">https://evecchio.github.io/driverflow-legal/privacy-policy.html</a></p>
     </footer>
 </div>
+
+<script>
+(() => {
+    const panelsRoot = document.getElementById("policy-panels");
+    const subtitleEl = document.getElementById("header-subtitle");
+    const buttons = Array.from(document.querySelectorAll(".lang-btn"));
+    const panels = Array.from(document.querySelectorAll(".lang-panel"));
+    const supportsUntilFound = "onbeforematch" in HTMLElement.prototype;
+    const subtitles = {"en": 'Privacy Policy & Accessibility Disclosure', "es": 'Política de Privacidad y Divulgación de Accesibilidad', "pt": 'Política de Privacidade e Divulgação de Acessibilidade', "de": 'Datenschutzerklärung & Barrierefreiheits-Hinweis', "fr": "Politique de confidentialité et divulgation d'accessibilité", "it": 'Informativa sulla Privacy e Divulgazione Accessibilità', "nl": 'Privacybeleid en Toegankelijkheidsverklaring', "pl": 'Polityka prywatności i informacja o ułatwieniach dostępu', "ro": 'Politica de confidențialitate și informarea privind accesibilitatea', "ru": 'Политика конфиденциальности и уведомление о специальных возможностях', "tr": 'Gizlilik Politikası ve Erişilebilirlik Bildirimi', "ar": 'سياسة الخصوصية وإفصاح إمكانية الوصول', "hi": 'गोपनीयता नीति और एक्सेसिबिलिटी प्रकटीकरण', "id": 'Kebijakan Privasi & Pengungkapan Aksesibilitas', "th": 'นโยบายความเป็นส่วนตัวและการเปิดเผยข้อมูลการช่วยการเข้าถึง', "vi": 'Chính sách Quyền riêng tư & Công bố Trợ năng', "ja": 'プライバシーポリシーおよびユーザー補助の開示', "ko": '개인정보 처리방침 및 접근성 공개 안내'};
+    const validCodes = new Set(buttons.map((b) => b.dataset.lang));
+
+    function setMetaAndButtons(code) {
+        buttons.forEach((btn) => {
+            const active = btn.dataset.lang === code;
+            btn.classList.toggle("active", active);
+            btn.setAttribute("aria-expanded", active ? "true" : "false");
+        });
+        document.documentElement.lang = code;
+        document.documentElement.dir = code === "ar" ? "rtl" : "ltr";
+        if (subtitleEl && subtitles[code]) {
+            subtitleEl.textContent = subtitles[code];
+        }
+    }
+
+    function activateLanguage(code, { updateUrl = true, scrollToPanel = false } = {}) {
+        if (!validCodes.has(code)) {
+            code = "en";
+        }
+        if (supportsUntilFound) {
+            panels.forEach((panel) => {
+                if (panel.id === "lang-" + code) {
+                    panel.removeAttribute("hidden");
+                } else {
+                    panel.setAttribute("hidden", "until-found");
+                }
+            });
+        } else {
+            panels.forEach((panel) => panel.removeAttribute("hidden"));
+            if (scrollToPanel) {
+                const target = document.getElementById("lang-" + code);
+                if (target) {
+                    target.scrollIntoView({ behavior: "smooth", block: "start" });
+                }
+            }
+        }
+        setMetaAndButtons(code);
+        if (updateUrl && window.history && window.history.replaceState) {
+            window.history.replaceState(null, "", "#" + code);
+        }
+    }
+
+    if (!supportsUntilFound) {
+        panels.forEach((panel) => panel.removeAttribute("hidden"));
+    }
+
+    panelsRoot.addEventListener("beforematch", (event) => {
+        const matchedPanel = event.target.closest(".lang-panel");
+        if (!matchedPanel) return;
+        const code = matchedPanel.id.replace(/^lang-/, "");
+        panels.forEach((panel) => {
+            if (panel !== matchedPanel) {
+                panel.setAttribute("hidden", "until-found");
+            }
+        });
+        setMetaAndButtons(code);
+    });
+
+    buttons.forEach((btn) => {
+        btn.addEventListener("click", () => {
+            activateLanguage(btn.dataset.lang, { updateUrl: true, scrollToPanel: !supportsUntilFound });
+        });
+    });
+
+    function resolveInitialLanguage() {
+        const params = new URLSearchParams(window.location.search);
+        const queryLang = (params.get("lang") || "").trim().toLowerCase();
+        if (validCodes.has(queryLang)) return queryLang;
+        const hashRaw = (window.location.hash || "").replace(/^#/, "").replace(/^lang-/, "").trim().toLowerCase();
+        if (validCodes.has(hashRaw)) return hashRaw;
+        return "en";
+    }
+
+    const initialCode = resolveInitialLanguage();
+    activateLanguage(initialCode, { updateUrl: false, scrollToPanel: initialCode !== "en" && !supportsUntilFound });
+})();
+</script>
 </body>
 </html>
